@@ -1,0 +1,167 @@
+{
+  "metrics": {
+    "department_accuracy": 0.78,
+    "sentiment_accuracy": 0.91,
+    "department_f1": 0.7169236351787672,
+    "sentiment_f1": 0.9108910891089109
+  },
+  "model_comparison": {
+    "department": {
+      "Logistic Regression": {
+        "accuracy": 0.78,
+        "f1": 0.7169236351787672
+      },
+      "K-Nearest Neighbors": {
+        "accuracy": 0.7,
+        "f1": 0.6518545031542212
+      },
+      "Random Forest": {
+        "accuracy": 0.75,
+        "f1": 0.6914826090757401
+      }
+    },
+    "sentiment": {
+      "Logistic Regression": {
+        "accuracy": 0.91,
+        "f1": 0.9108910891089109
+      },
+      "K-Nearest Neighbors": {
+        "accuracy": 0.84,
+        "f1": 0.8367346938775511
+      },
+      "Random Forest": {
+        "accuracy": 0.84,
+        "f1": 0.8181818181818182
+      }
+    }
+  },
+  "confusion_matrix": {
+    "department": [
+      [
+        19,
+        7,
+        0
+      ],
+      [
+        0,
+        51,
+        0
+      ],
+      [
+        3,
+        12,
+        8
+      ]
+    ],
+    "sentiment": [
+      [
+        45,
+        3
+      ],
+      [
+        6,
+        46
+      ]
+    ],
+    "labels_dept": [
+      "Housekeeping",
+      "Reception",
+      "F&B"
+    ],
+    "labels_sent": [
+      "Negative",
+      "Positive"
+    ]
+  },
+  "feature_importance": {
+    "positive": [
+      {
+        "word": "camera",
+        "coefficient": 2.328082646971361
+      },
+      {
+        "word": "salvato",
+        "coefficient": 1.6696823439679864
+      },
+      {
+        "word": "vacanza",
+        "coefficient": 1.6696823439679864
+      },
+      {
+        "word": "po",
+        "coefficient": 1.6696823439679864
+      },
+      {
+        "word": "staff",
+        "coefficient": 1.6696823439679864
+      },
+      {
+        "word": "reception",
+        "coefficient": 1.6604015038024789
+      },
+      {
+        "word": "cena",
+        "coefficient": 1.377042916710626
+      },
+      {
+        "word": "anzi",
+        "coefficient": 1.2872843705406816
+      },
+      {
+        "word": "affatto",
+        "coefficient": 1.2305347548934884
+      },
+      {
+        "word": "brutte",
+        "coefficient": 1.2305347548934884
+      }
+    ],
+    "negative": [
+      {
+        "word": "esperienza",
+        "coefficient": -3.494730247830932
+      },
+      {
+        "word": "stanza",
+        "coefficient": -2.272099367423079
+      },
+      {
+        "word": "aspettatevi",
+        "coefficient": -2.0297682126721064
+      },
+      {
+        "word": "servizio",
+        "coefficient": -2.0297682126721064
+      },
+      {
+        "word": "pessimo",
+        "coefficient": -1.9658905608888402
+      },
+      {
+        "word": "personale",
+        "coefficient": -1.7314147499647332
+      },
+      {
+        "word": "rovinato",
+        "coefficient": -1.7066615286321138
+      },
+      {
+        "word": "umore",
+        "coefficient": -1.7066615286321138
+      },
+      {
+        "word": "dimostrato",
+        "coefficient": -1.606268498481392
+      },
+      {
+        "word": "sportello",
+        "coefficient": -1.606268498481392
+      }
+    ]
+  },
+  "model_info": {
+    "best_department_model": "Logistic Regression",
+    "best_sentiment_model": "Logistic Regression",
+    "training_date": "2026-02-02 21:36:11"
+  }
+}
