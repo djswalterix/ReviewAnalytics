@@ -23,7 +23,6 @@ altri
 altro
 anche
 ancora
-appo
 assai
 avemmo
 avendo
@@ -81,9 +80,7 @@ consecutivo
 contro
 cosa
 cosi
-cosi"
 cui
-cui"
 da
 dagl
 dagli
@@ -185,10 +182,8 @@ fuori
 furono
 gente
 gia
-gia"
 giu
 giù
-giu"
 gli
 gran
 grande
@@ -199,7 +194,6 @@ ho
 i
 il
 in
-indi
 indietro
 infra
 invece
@@ -220,7 +214,6 @@ maggiore
 mai
 malgrado
 me
-meco
 meglio
 mi
 mia
@@ -260,11 +253,6 @@ otto
 oue
 ove
 peggio
-pegli
-pei
-pel
-pella
-pello
 per
 perche
 perché
@@ -273,8 +261,6 @@ però
 persone
 piu
 più
-piu"
-più"
 pochi
 poco
 poi
@@ -288,7 +274,6 @@ qualche
 qualcun
 qualcuno
 quale
-qualmente
 quanta
 quante
 quanti
@@ -323,7 +308,6 @@ saresti
 sarete
 sarò
 se
-seco
 secondo
 sei
 sembra
@@ -404,7 +388,6 @@ tante
 tanti
 tanto
 te
-teco
 terzo
 ti
 tra
@@ -429,9 +412,6 @@ va
 vai
 verso
 vi
-vn
-vna
-vno
 voi
 volte
 vostra

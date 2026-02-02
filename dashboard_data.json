@@ -1,66 +1,66 @@
 {
   "metrics": {
-    "department_accuracy": 0.78,
+    "department_accuracy": 0.84,
     "sentiment_accuracy": 0.91,
-    "department_f1": 0.7169236351787672,
-    "sentiment_f1": 0.9108910891089109
+    "department_f1": 0.8275026689660837,
+    "sentiment_f1": 0.9090909090909091
   },
   "model_comparison": {
     "department": {
       "Logistic Regression": {
-        "accuracy": 0.78,
-        "f1": 0.7169236351787672
+        "accuracy": 0.84,
+        "f1": 0.8275026689660837
       },
       "K-Nearest Neighbors": {
-        "accuracy": 0.7,
-        "f1": 0.6518545031542212
+        "accuracy": 0.79,
+        "f1": 0.7810733272531722
       },
       "Random Forest": {
-        "accuracy": 0.75,
-        "f1": 0.6914826090757401
+        "accuracy": 0.71,
+        "f1": 0.6505050505050506
       }
     },
     "sentiment": {
       "Logistic Regression": {
         "accuracy": 0.91,
-        "f1": 0.9108910891089109
+        "f1": 0.9090909090909091
       },
       "K-Nearest Neighbors": {
-        "accuracy": 0.84,
-        "f1": 0.8367346938775511
+        "accuracy": 0.78,
+        "f1": 0.7884615384615384
       },
       "Random Forest": {
         "accuracy": 0.84,
-        "f1": 0.8181818181818182
+        "f1": 0.8260869565217391
       }
     }
   },
   "confusion_matrix": {
     "department": [
       [
-        19,
-        7,
-        0
+        16,
+        6,
+        2
       ],
       [
         0,
-        51,
-        0
+        43,
+        2
       ],
       [
-        3,
-        12,
-        8
+        1,
+        5,
+        25
       ]
     ],
     "sentiment": [
       [
-        45,
-        3
+        46,
+        4
       ],
       [
-        6,
-        46
+        5,
+        45
       ]
     ],
     "labels_dept": [
@@ -76,92 +76,92 @@
   "feature_importance": {
     "positive": [
       {
-        "word": "camera",
-        "coefficient": 2.328082646971361
-      },
-      {
-        "word": "salvato",
-        "coefficient": 1.6696823439679864
-      },
-      {
-        "word": "vacanza",
-        "coefficient": 1.6696823439679864
-      },
-      {
-        "word": "po",
-        "coefficient": 1.6696823439679864
-      },
-      {
-        "word": "staff",
-        "coefficient": 1.6696823439679864
-      },
-      {
-        "word": "reception",
-        "coefficient": 1.6604015038024789
-      },
-      {
-        "word": "cena",
-        "coefficient": 1.377042916710626
+        "word": "ottima",
+        "coefficient": 1.5341053393117583
       },
       {
         "word": "anzi",
-        "coefficient": 1.2872843705406816
+        "coefficient": 1.4239044804780987
       },
       {
-        "word": "affatto",
-        "coefficient": 1.2305347548934884
+        "word": "dire",
+        "coefficient": 1.303149050003981
       },
       {
-        "word": "brutte",
-        "coefficient": 1.2305347548934884
+        "word": "compensa",
+        "coefficient": 1.186929279792413
+      },
+      {
+        "word": "promossi",
+        "coefficient": 1.0983255278158823
+      },
+      {
+        "word": "po",
+        "coefficient": 1.0983255278158823
+      },
+      {
+        "word": "top",
+        "coefficient": 1.0922576381741393
+      },
+      {
+        "word": "paura",
+        "coefficient": 1.0387218647882366
+      },
+      {
+        "word": "davvero",
+        "coefficient": 1.0293695663011424
+      },
+      {
+        "word": "cibo",
+        "coefficient": 1.0086937988709064
       }
     ],
     "negative": [
       {
-        "word": "esperienza",
-        "coefficient": -3.494730247830932
+        "word": "inaccettabile",
+        "coefficient": -1.2688595235740985
       },
       {
-        "word": "stanza",
-        "coefficient": -2.272099367423079
+        "word": "disastro",
+        "coefficient": -1.1603144887926196
+      },
+      {
+        "word": "nulla",
+        "coefficient": -1.1442525078494368
+      },
+      {
+        "word": "pessima",
+        "coefficient": -1.1241935759768618
+      },
+      {
+        "word": "aspettavo",
+        "coefficient": -1.11610889897056
       },
       {
         "word": "aspettatevi",
-        "coefficient": -2.0297682126721064
-      },
-      {
-        "word": "servizio",
-        "coefficient": -2.0297682126721064
+        "coefficient": -1.0630971630771417
       },
       {
         "word": "pessimo",
-        "coefficient": -1.9658905608888402
+        "coefficient": -1.0523475846172432
       },
       {
-        "word": "personale",
-        "coefficient": -1.7314147499647332
+        "word": "lasciava",
+        "coefficient": -0.9441113468040481
       },
       {
-        "word": "rovinato",
-        "coefficient": -1.7066615286321138
-      },
-      {
-        "word": "umore",
-        "coefficient": -1.7066615286321138
+        "word": "desiderare",
+        "coefficient": -0.9441113468040481
       },
       {
         "word": "dimostrato",
-        "coefficient": -1.606268498481392
-      },
-      {
-        "word": "sportello",
-        "coefficient": -1.606268498481392
+        "coefficient": -0.8927800768511348
       }
     ]
   },
   "model_info": {
     "best_department_model": "Logistic Regression",
     "best_sentiment_model": "Logistic Regression",
-    "training_date": "2026-02-02 21:36:11"
+    "training_date": "2026-02-02 22:13:37"
   }
 }

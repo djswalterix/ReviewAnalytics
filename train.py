@@ -31,7 +31,7 @@ def evaluate_model(model, X_test, y_test):
 
 def train_model():
     # 1. Load and preprocess data
-    df = pd.read_csv('dataset_recensioni_entropy.csv')
+    df = pd.read_csv('dataset_recensioni.csv')
     df['full_text'] = df['title'] + " " + df['body']
     
     dept_map = {'Housekeeping': 0, 'Reception': 1, 'F&B': 2}
