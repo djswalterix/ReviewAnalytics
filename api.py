@@ -23,12 +23,20 @@ DEPT_LABELS = ['Housekeeping', 'Reception', 'F&B']
 SENT_LABELS = ['Negative', 'Positive']
 
 
+# Title weight multiplier - must match train.py
+TITLE_WEIGHT = 2
+
+
 class ReviewRequest(BaseModel):
-    text: str
+    title: Optional[str] = None
+    body: str
     
     model_config = {
         "json_schema_extra": {
-            "examples": [{"text": "La camera era sporca e il personale scortese"}]
+            "examples": [{
+                "title": "Camera deludente",
+                "body": "La camera era sporca e il personale scortese"
+            }]
         }
     }
 
@@ -58,9 +66,16 @@ def get_dashboard():
 @app.post("/predict", response_model=PredictResponse)
 def predict_review(request: ReviewRequest):
     """Predict department and sentiment for a review using all trained models"""
-    text = request.text.strip()
-    if not text:
-        raise HTTPException(status_code=400, detail="Review text cannot be empty")
+    body = request.body.strip()
+    if not body:
+        raise HTTPException(status_code=400, detail="Review body cannot be empty")
+    
+    # Combine title and body with title weighting (matching train.py)
+    if request.title:
+        title = request.title.strip()
+        text = (title + ' ') * TITLE_WEIGHT + body
+    else:
+        text = body
     
     # Vectorize the input
     X = vectorizer.transform([text])
@@ -102,7 +117,7 @@ def predict_review(request: ReviewRequest):
         ))
     
     return PredictResponse(
-        review=text,
+        review=request.body,
         department=dept_predictions,
         sentiment=sent_predictions
     )

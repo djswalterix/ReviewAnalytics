@@ -29,10 +29,16 @@ def evaluate_model(model, X_test, y_test):
     return {'accuracy': accuracy, 'f1_macro': f1_macro, 'predictions': preds}
 
 
+# Title weight multiplier - titles are repeated to give them more weight
+TITLE_WEIGHT = 2
+
+
 def train_model():
     # 1. Load and preprocess data
     df = pd.read_csv('dataset_recensioni.csv')
-    df['full_text'] = df['title'] + " " + df['body']
+    
+    # Weight titles by repeating them (simple but effective)
+    df['full_text'] = df.apply(lambda row: (row['title'] + ' ') * TITLE_WEIGHT + row['body'], axis=1)
     
     dept_map = {'Housekeeping': 0, 'Reception': 1, 'F&B': 2}
     df['dept_label'] = df['department'].map(dept_map)

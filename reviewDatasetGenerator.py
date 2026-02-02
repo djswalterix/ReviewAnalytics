@@ -82,7 +82,8 @@ VOCAB = {
         "nutriente", "sano", "sostanzioso", "generoso", "ricco", "variegato", "completo",
         "sfizioso", "goloso", "irresistibile", "fantastico", "magnifico", "superbo",
         "ottimo", "buonissimo", "divino", "spaziale", "stellato", "di qualità",
-        "ben presentato", "ben cotto", "perfetto", "da leccarsi i baffi"
+        "ben presentato", "ben cotto", "perfetto", "da leccarsi i baffi",
+        "velocissimo", "puntuale", "immediato", "fumante"
     ],
     
     # Negative adjectives for food
@@ -119,7 +120,8 @@ VOCAB = {
         "piatti", "cibo", "bevande", "caffè", "cappuccino", "cornetto", "brioche",
         "frutta", "dolci", "primi", "secondi", "contorni", "antipasti", "dessert",
         "vino", "acqua", "succo", "pane", "formaggio", "salumi", "uova",
-        "sala colazione", "terrazza", "servizio in camera", "room service"
+        "sala colazione", "terrazza", "servizio in camera", "room service",
+        "colazione in camera"
     ]
 }
 
@@ -432,6 +434,60 @@ def build_multi_aspect_review(sentiment):
 
 
 # =============================================================================
+# TITLE GENERATION - Meaningful titles that reflect content
+# =============================================================================
+
+TITLES = {
+    'positive': {
+        'Housekeeping': [
+            "Camera impeccabile", "Pulizia perfetta", "Stanza splendida",
+            "Ambiente curatissimo", "Ottima manutenzione", "Camera da sogno",
+            "Stanza eccellente", "Pulizia top", "Camera consigliatissima",
+            "Ambiente perfetto", "Sistemazione ottima", "Camera fantastica"
+        ],
+        'Reception': [
+            "Staff eccezionale", "Accoglienza top", "Personale fantastico",
+            "Servizio impeccabile", "Reception efficiente", "Cordialità unica",
+            "Personale gentilissimo", "Accoglienza calorosa", "Staff preparato",
+            "Servizio eccellente", "Reception disponibile", "Team straordinario"
+        ],
+        'F&B': [
+            "Colazione ottima", "Cibo delizioso", "Ristorante top",
+            "Cucina eccellente", "Buffet ricchissimo", "Pranzo memorabile",
+            "Cena fantastica", "Colazione abbondante", "Menu squisito",
+            "Piatti deliziosi", "Qualità eccellente", "Gastronomia top"
+        ]
+    },
+    'negative': {
+        'Housekeeping': [
+            "Camera deludente", "Pulizia scarsa", "Stanza sporca",
+            "Manutenzione assente", "Ambiente trascurato", "Camera da incubo",
+            "Stanza pessima", "Pulizia inesistente", "Camera da evitare",
+            "Ambiente squallido", "Sistemazione indecente", "Camera orribile"
+        ],
+        'Reception': [
+            "Staff scortese", "Accoglienza pessima", "Personale maleducato",
+            "Servizio inesistente", "Reception disorganizzata", "Attesa infinita",
+            "Personale sgarbato", "Accoglienza gelida", "Staff incompetente",
+            "Servizio pessimo", "Reception assente", "Team impreparato"
+        ],
+        'F&B': [
+            "Colazione scarsa", "Cibo immangiabile", "Ristorante deludente",
+            "Cucina pessima", "Buffet povero", "Pranzo da dimenticare",
+            "Cena pessima", "Colazione misera", "Menu scadente",
+            "Piatti orribili", "Qualità assente", "Gastronomia pessima"
+        ]
+    }
+}
+
+
+def generate_title(sentiment: int, department: str) -> str:
+    """Generate a meaningful title based on sentiment and department."""
+    sentiment_key = 'positive' if sentiment == 1 else 'negative'
+    return random.choice(TITLES[sentiment_key][department])
+
+
+# =============================================================================
 # MAIN REVIEW BUILDER
 # =============================================================================
 
@@ -464,12 +520,8 @@ def build_review(target):
     else:  # multi_aspect
         body, dept = build_multi_aspect_review(target)
     
-    # Generate title
-    title_templates = [
-        "Recensione", "Opinione", "Soggiorno", "Feedback", "La mia esperienza",
-        "Hotel review", "Vacanza", "Weekend", "Viaggio", "Esperienza"
-    ]
-    title = f"{random.choice(title_templates)} - {fake.word().capitalize()}"
+    # Generate meaningful title based on sentiment and department
+    title = generate_title(target, dept)
     
     return {
         "id": fake.uuid4(),
