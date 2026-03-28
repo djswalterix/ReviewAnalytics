@@ -15,6 +15,7 @@ install:
 	cd frontend && npm install
 
 train:
+	python -m generator
 	python train.py
 
 build:

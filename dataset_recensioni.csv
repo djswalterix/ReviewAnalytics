@@ -1,501 +1,501 @@
 id,title,body,department,sentiment,target,strategy
-fc8d5b93-a2a2-491f-a49b-1cd99082889b,Accoglienza calorosa,Abbiamo scelto questo hotel per la posizione. Servizio formidabile alla staff. Forse ci torniamo.,Reception,positive,1,detailed
-3605bf54-a021-40ca-b531-968dc342bd2b,Colazione ottima,Nessun problema al check-out. Non posso dire che la cibo fosse risicato. Buonissima!,F&B,positive,1,negation
-4dcabfb7-001a-4a8b-956f-03508c459ce2,Weekend al mare,"Prenotato 30 giorni prima. Camera ventilata, personale formidabile, colazione fresco. Torneremo!",Reception,positive,1,multi_aspect
-e08596db-1d87-4966-8710-d430f071d879,Manutenzione assente,La tende era impresentabile. Al bar niente di speciale.,Housekeeping,negative,0,simple
-1f652a87-333e-4344-bdbf-4bc1ffa623d0,Prima volta qui,La vino era di qualità. Aria condizionata funzionante.,F&B,positive,1,simple
-9e11d2cd-0930-4ef6-8a80-068ddf547e50,Pulizia scarsa,Il concierge ci ha dato qualche indicazione. La letto non era certo ariosa. Delusione totale.,Housekeeping,negative,0,negation
-3a43b2ba-df0f-46cb-8b9b-c326d20eac17,Qualche giorno qui,Scordatevi una bar raffinato. Deludente.,F&B,negative,0,negation
-4e7ed827-455a-4762-b428-a656b3ee4d3b,Ci sono stato,Scordatevi una primi ottimo. Deludente. Camera nella media per la categoria.,F&B,negative,0,negation
-dc4ad56b-d601-4237-ac9e-d156f63fce41,Team impreparato,"Hotel consigliato da amici. La materasso lasciava a desiderare, troppo piccola. Rapporto qualità-prezzo discreto. Colazione continentale standard.",Housekeeping,negative,0,detailed
-f42d47cc-00d4-4f59-b427-3ca3287d06ca,Consigli utili,"Mi aspettavo una ordine rinnovata, ma era non soddisfacente.",Housekeeping,negative,0,ambiguous
-ba2c98ce-0b19-488e-9d77-a45ef206c269,Servizio eccellente,La colazione era quella classica da hotel. Siamo arrivati di giovedì verso le 17. Il fattura era efficiente. Voto: 10/10.,Reception,positive,1,detailed
-2e8d0e87-5334-40e6-99d8-0b8d7e8adee7,Servizio impeccabile,Il personale non era per niente intrattabile. Molto professionali.,Reception,positive,1,negation
-54669d19-10df-4974-95ab-946da5b5cdc2,Servizio impeccabile,Ho trovato la lenzuola ben riscaldata e ben curata.,Housekeeping,positive,1,simple
-cb2fafa3-2c91-4a7c-a340-4f08b34191b8,Cena fantastica,"La dolci era decente. Non gourmet, ma buona.",F&B,positive,1,ambiguous
-ff11c8ba-36ee-4640-b23e-f466b43bd27f,Camera impeccabile,"Abbiamo mangiato qualcosa al ristorante. La tende era accettabile. Non perfetta, ma ci siamo trovati bene.",Housekeeping,positive,1,ambiguous
-203c8c25-fd23-4def-be5a-87e35560db22,Personale gentilissimo,"Il personale era accettabile. Non eccezionale, ma disponibile. Al bar niente di speciale.",Reception,positive,1,ambiguous
-0b1f9163-ce9f-457f-83b7-a3a69a8dca03,Vacanza a metà,"Ok la stanza era piccola, ma il servizio straordinario compensa.",Reception,positive,1,mixed
-0b9bd934-23c8-4d30-9dde-7969688613db,Camera da evitare,"Siamo arrivati di sabato verso le 19. Camera mal tenuta, personale pigro, colazione secco. Mai più!",Housekeeping,negative,0,multi_aspect
-6a34c854-1071-4d51-b6c5-9dacb4d7e28e,Recensione hotel,"Soggiorno di 5 notti. Personale superficiale, soprattutto Eraldo. Comunque torneremo.",Reception,negative,0,detailed
-cfb87e6f-e9d6-4f23-b489-d0707914f8a8,Recensione hotel,Aria condizionata funzionante. Siamo arrivati di sabato verso le 18. Stanza solare. Staff premuroso. Cena fresco. Top!,F&B,positive,1,multi_aspect
-750565f5-9f70-4368-8b3c-f8caa3925731,Reception assente,"Il personale era potrebbe fare di meglio. Non terribile, ma nemmeno soddisfacente.",Reception,negative,0,ambiguous
-f27292b6-7621-42ed-9d0b-c9bde9b5c5cf,Recensione hotel,"Il caffè era decente. Bello l'hotel, climatizzata, ma il servizio poco preparato è inaccettabile.",Reception,negative,0,mixed
-9b49bd26-df57-459a-8715-a10343dac043,Team straordinario,"Camera un po' buia, però Ezio alla reception rispettoso. Promossi!",Reception,positive,1,mixed
-53ffd3a2-4a19-4501-8169-b9fcc3a00c6f,Staff scortese,"Mi aspettavo una minibar lussuosa, ma era mediocre. Al bar niente di speciale.",Housekeeping,negative,0,ambiguous
-7ff4cec6-e7b7-44c6-9631-2a801c612ec2,Vacanza a metà,"Lenzuola cambiate regolarmente. Nonostante la colazione freddo, il personale discreto ha fatto la differenza.",Reception,positive,1,mixed
-92170475-3d95-4e3f-9a52-26e69d642932,Reception efficiente,"Viaggio in famiglia. Stanza profumata. Staff straordinario. Cena profumato. Top! Il bagno funzionava, niente di più.",Reception,positive,1,multi_aspect
-d4d30795-2e4b-4bc4-a989-0880277d1be9,Giudizio personale,Non sapevo cosa aspettarmi. Ho trovato il pagamento antipatico. Rapporto qualità-prezzo discreto.,Reception,negative,0,detailed
-8b9d2434-e465-4150-bd9c-66b3ad3c2d6d,La mia esperienza,"Avevo paura fosse polverosa, ma la lenzuola era perfetta.",Housekeeping,positive,1,negation
-af34cf65-a193-44b2-bc19-e71d118405ad,Stanza splendida,"Avevo paura fosse troppo fredda, ma la phon era perfetta. Il minibar aveva i soliti prodotti.",Housekeeping,positive,1,negation
-c4c2e2e3-444e-47c8-8039-87108976e334,Personale maleducato,Soggiorno di 6 notti. Valeria al reception si è dimostrato distratto. Voto: 7/10.,Reception,negative,0,detailed
-bac7e2b9-6a7e-4c36-a613-2e6974188109,Stanza sporca,"Purtroppo la caffè era sotto la media, un peccato.",F&B,negative,0,ambiguous
-f50bea63-371e-4d7b-a7cd-813047229389,Weekend al mare,Abbiamo soggiornato per il weekend. Stanza datata. Staff freddo. Cena insufficiente. Disastro.,F&B,negative,0,multi_aspect
-5df06e8c-878a-4ed9-a33f-fc8292ec89af,Hotel centrale,"Ok la stanza era insufficiente, ma il servizio paziente compensa.",Reception,positive,1,mixed
-3875394c-e5d6-46e6-9a6e-c2f5ccc42903,Ci sono stato,"Piacevolmente sorpreso dalla pulizia, molto solare.",Housekeeping,positive,1,simple
-e912b4bf-86a4-4ae4-9986-b4b270b7e868,Cordialità unica,"Ok la stanza era deprimente, ma il servizio ospitale compensa.",Reception,positive,1,mixed
-4e20fd1a-5983-46e3-b5d6-6ed4eb1fa9f2,Staff preparato,"Il bagno funzionava, niente di più. Nonostante la colazione piena di insetti, il personale impeccabile ha fatto la differenza.",Reception,positive,1,mixed
-77a7e8b7-5e70-465f-9280-c5aa8dd4595b,La mia esperienza,Hotel consigliato da amici. Ho trovato il fattura molto energico. Mai più. Lenzuola cambiate regolarmente.,Reception,positive,1,detailed
-076979d6-4477-4442-b187-53e6d4578ad9,Vacanza a metà,Viaggio in famiglia. Flavia ci ha trattato in modo poco preparato.,Reception,negative,0,detailed
-d5385b0e-34f3-493c-8ff0-a55c6a702e2f,Struttura recente,Contorni insufficiente. Mi aspettavo qualcosa di più.,F&B,negative,0,ambiguous
-2434a678-a9e2-4ba9-952e-6abb14dd5061,Ambiente perfetto,"Non sapevo cosa aspettarmi. Camera luminosa, personale attento, colazione caldo. Torneremo!",Housekeeping,positive,1,multi_aspect
-09ce3cfb-2339-4a19-a563-7cc3ca97ebf5,Buffet ricchissimo,"Accoglienza standard. Temevo menu di plastica, invece sorpresa positiva.",F&B,positive,1,negation
-965befdf-6b4b-4411-8a4a-0e2df22b5b98,Staff scortese,Alla reception tutto regolare. Scordatevi una specchio splendida. Pessima.,Housekeeping,negative,0,negation
-5ffa46ef-14e4-480c-be99-36a362dbc850,Accoglienza pessima,Abbiamo soggiornato per il weekend. Gianpietro al documento si è dimostrato indifferente. Mai più. La stanza era quella che ci si aspetta.,Reception,negative,0,detailed
-e1301617-c2df-4335-9666-6f9f53ac2ab9,Hotel centrale,"Ho prenotato tramite Booking. Personale impeccabile, specialmente Rodolfo. Forse ci torniamo.",Reception,positive,1,detailed
-5ca0c428-822c-4d32-ac64-5c15aba301cb,La mia esperienza,La bevande era unto. Comunque torneremo. Nessun problema al check-out.,F&B,negative,0,detailed
-05628059-568c-469b-9064-005c3985c3cf,Colazione misera,Vacanza romantica. Purtroppo la uova era acido.,F&B,negative,0,detailed
-42a259a6-c664-4285-8303-cbc11e2595b8,Servizio inesistente,"Stanza anche dotata di tutto, però Annamaria disorganizzato. Mai più.",Reception,negative,0,mixed
-6d3ee1dc-8139-4443-a45b-712eb8225688,Attesa infinita,Reception sotto la media. Mi aspettavo di più per il prezzo pagato. Buffet nella norma.,Reception,negative,0,ambiguous
-d9acd158-4d34-45c5-85c1-4eb4b27b3d90,Ambiente squallido,Prima volta in questa struttura. Vergognoso: cuscini consumata. Voto: 6/10.,Housekeeping,negative,0,detailed
-03802b70-8d03-491e-8f8d-5238288b78b5,Camera da incubo,"Soggiorno di 4 notti. La camera lasciava a desiderare, troppo polverosa. Vedremo la prossima volta.",Housekeeping,negative,0,detailed
-144823f7-e7e6-46c7-8158-24639d8776a0,Nota dolente,"Abbiamo mangiato qualcosa al ristorante. Dopo un viaggio da Pizzoletta, Tutto perfetto: camera curata, reception meticoloso, ristorante magnifico.",Reception,positive,1,multi_aspect
-30a900ad-939b-462d-a645-f129629c2ae3,Colazione misera,Accoglienza standard. La antipasti era orribile.,F&B,negative,0,simple
-895ccd99-43b3-4eb4-8390-2c5d6502d6a2,Niente di speciale,Abbiamo soggiornato per il weekend. Stanza scrostata. Staff villano. Cena rancido. Disastro.,Reception,negative,0,multi_aspect
-40ef3935-5f90-4ed6-bb25-664d630aa767,Servizio inesistente,"Lo staff non soddisfacente, purtroppo non all'altezza delle aspettative. Al bar niente di speciale.",Reception,negative,0,ambiguous
-727716ec-59fe-4bbc-b1a3-fad2b0946d2a,Servizio eccellente,"Ok la stanza era rovinata, ma il servizio esperto compensa.",Reception,positive,1,mixed
-4e2d6645-6dc7-4ac7-bd72-b05096a9954f,Camera da evitare,La cuscini era vecchia.,Housekeeping,negative,0,simple
-d58842de-a2bc-472f-b412-b29347294739,Reception disorganizzata,"La camera era gustoso, ma il personale lento ha rovinato tutto.",Reception,negative,0,mixed
-8ccc9cea-109f-48ee-b5a4-720058f0dd23,Staff preparato,Soggiorno di 5 notti. Stanza comoda. Staff ospitale. Cena spaziale. Top!,Reception,positive,1,multi_aspect
-91b78d8e-d301-4989-bfbb-b17f9854ce4e,Cordialità unica,"Camera un po' soffocante, però Livio alla reception solare. Promossi!",Reception,positive,1,mixed
-5e659654-0e90-48b6-89a0-a0f673b0a091,Esperienza altalenante,Siamo arrivati di martedì verso le 8. Check-in veloce con staff professionale. Comunque torneremo. Camera nella media per la categoria.,Reception,positive,1,detailed
-17dded81-15da-405c-94ef-00aa175a81ec,Reception efficiente,"Nonostante la colazione rancido, il personale preparato ha fatto la differenza.",Reception,positive,1,mixed
-a0a04dc4-2720-4bdf-9c11-f735dc713d96,Recensione hotel,Hotel consigliato da amici. Ho trovato il reclami inefficiente. Vedremo la prossima volta. La colazione era quella classica da hotel.,Reception,negative,0,detailed
-98c7472a-864e-4a13-829c-fc0cfa02eaec,Accoglienza gelida,"Di cordiale lo staff non aveva niente. Il bagno funzionava, niente di più.",Reception,negative,0,negation
-004b6fab-fcf5-4188-932e-6dcd83bc9478,Camera fantastica,Prenotato 19 giorni prima. Stanza luminosa. Staff educato. Cena puntuale. Top!,Housekeeping,positive,1,multi_aspect
-c29d782b-2722-496e-9a36-d1ec2c6a6e9a,Menu squisito,"Complimenti per la piatti, davvero ben presentato.",F&B,positive,1,simple
-56ab087a-8bc7-4e81-9a30-45280b599562,Colazione abbondante,"Temevo cappuccino senza gusto, invece sorpresa positiva.",F&B,positive,1,negation
-c8040fb7-ad97-4b67-9b89-e5cbd942644c,Ci sono stato,Viaggio in famiglia. Stanza ordinata. Staff sempre presente. Cena appetitoso. Top!,Housekeeping,positive,1,multi_aspect
-86ad8a8c-6bc4-423e-bde1-3c1b20733f6d,Stanza splendida,"Colazione continentale standard. La wc era abbastanza buono. Non perfetta, ma ci siamo trovati bene.",Housekeeping,positive,1,ambiguous
-6232b17a-2507-4181-8d1f-b54074eff545,Soggiorno breve,"Mi aspettavo una armadio dotata di tutto, ma era non soddisfacente.",Housekeeping,negative,0,ambiguous
-2285b2ef-cfbe-4fe9-aea9-c542a1b970d0,Servizio pessimo,"Il caffè era decente. Stanza anche rifinita, però Sante villano. Mai più.",Reception,negative,0,mixed
-8a175dfe-bfc0-4dc8-84f6-4d8678660765,Stanza pessima,Scordatevi una riscaldamento eccellente. Pessima.,Housekeeping,negative,0,negation
-38ab854c-9c2e-48de-aa4e-361753f8382b,Nota dolente,"Il minibar aveva i soliti prodotti. Bello l'hotel, da leccarsi i baffi, ma il servizio inefficiente è inaccettabile.",Reception,negative,0,mixed
-3e652603-78e3-454b-baf1-4ff07b85179a,Reception disponibile,"Temevo receptionist altezzoso, invece super disponibili.",Reception,positive,1,negation
-a97065e1-8e46-4534-888a-618efed4057d,Stanza pessima,Di sofisticata la specchio non aveva nulla.,Housekeeping,negative,0,negation
-96ef2ad6-b97e-4703-86c8-adfe7bf47042,Qualche giorno qui,Hotel consigliato da amici. Che dolci gourmet! Nel complesso ok.,F&B,positive,1,detailed
-7010f719-7e69-4d0d-8a3c-3b5e801ef1da,Accoglienza gelida,"Buffet nella norma. Stanza anche solare, però Guarino pigro. Mai più.",Reception,negative,0,mixed
-4a8ff810-784c-4f29-9804-02a2b07aa066,Camera fantastica,"Nessun problema al check-out. Abbiamo scelto questo hotel per la posizione. Camera con vista, personale fantastico, colazione fumante. Torneremo!",Housekeeping,positive,1,multi_aspect
-5ff595ea-5bc4-40f1-8b1a-269b0e5dd462,Poteva andare meglio,Vacanza romantica. Mi aspettavo di meglio dalla bevande: grasso. Rapporto qualità-prezzo discreto.,F&B,negative,0,detailed
-f1eedba3-1343-4e61-9ca3-c4480279b6a6,Reception disponibile,Servizio qualificato alla informazioni.,Reception,positive,1,simple
-2321d1e1-c471-44c0-b613-6e15f200c261,Ottima manutenzione,"Piatti leggero, ottima! Forse ci torniamo.",F&B,positive,1,detailed
-9ad620ab-4821-4ddb-85b8-9cd927cb6f2a,Soggiorno dicembre,"La camera era panoramica, ma il personale saccente ha rovinato tutto.",Reception,negative,0,mixed
-83639007-5cae-4610-872c-1fe372c22a16,Menu scadente,"Dopo un viaggio da Torrio Sopra, Stanza rovinata. Staff inefficiente. Cena scotto. Disastro.",F&B,negative,0,multi_aspect
-6f5842c3-ff86-4c31-9d66-e8155a4153b3,Personale fantastico,"Temevo receptionist villano, invece super disponibili. Il personale delle pulizie era nella norma.",Reception,positive,1,negation
-6160a6b4-9360-415f-83fe-0183e172b725,Ambiente curatissimo,Hotel consigliato da amici. Stanza romantica. Staff tempestivo. Cena ben presentato. Top!,Reception,positive,1,multi_aspect
-1ac70ec0-ab8d-4eb4-9230-dfbd5553b2fe,Cucina pessima,"Ero qui per lavoro con Pierangelo. Pessima succo, limitato. Vedremo la prossima volta.",F&B,negative,0,detailed
-a5cb63a2-398d-4ca6-8b68-70b51d61fac3,Camera da evitare,Abbiamo soggiornato per il weekend. Stanza opprimente. Staff sbrigativo. Cena insipido. Disastro.,Housekeeping,negative,0,multi_aspect
-a974d079-716f-4a0a-85a8-882914e286e5,Ci sono stato,"La caffè non era scialbo. Anzi, deliziosa!",F&B,positive,1,negation
-c7fee39f-1190-4938-a66f-d7f739669fa7,Stanza sporca,"Il caffè era decente. La materasso sembrava tecnologica dalle foto, in realtà potrebbe fare di meglio.",Housekeeping,negative,0,ambiguous
-ff233d5f-6ced-415d-9800-7c0287ea7ff5,Staff incompetente,"La camera era sostanzioso, ma il personale scostante ha rovinato tutto.",Reception,negative,0,mixed
-11c58ef0-dd46-4c09-8752-87aa5408f9ac,Qualche giorno qui,"Dopo un viaggio da Paitone, Finalmente una doccia splendida. Voto: 4/10. Abbiamo mangiato qualcosa al ristorante.",Housekeeping,positive,1,detailed
-65f202f9-83f0-4dc7-8f61-2217eef16694,Soggiorno dicembre,"Ero qui per lavoro con Luchino. Ristorante limitato, deludente. Esperienza da ripetere.",F&B,negative,0,detailed
-baa80dd4-88bd-4407-abcf-be01a28defe3,Cibo immangiabile,Soggiorno di 2 notti. La antipasti era decisamente limitato. Forse ci torniamo.,F&B,negative,0,detailed
-171dabf9-daf4-41a7-ba34-d2e8dd3f7d7e,Camera da evitare,Soggiorno di 2 notti. Stanza buia. Staff antipatico. Cena niente di speciale. Disastro.,Housekeeping,negative,0,multi_aspect
-5cabcc97-663f-4c97-9562-69f0e5d7b875,Poteva andare meglio,Reception sotto la media. Mi aspettavo di più per il prezzo pagato.,Reception,negative,0,ambiguous
-d3d1bf0f-56c4-48e4-a9ef-afb13a7e8e14,Pranzo memorabile,"Lo staff faceva il suo lavoro. Non sapevo cosa aspettarmi. Complimenti per la buffet, davvero croccante. Esperienza da ripetere.",F&B,positive,1,detailed
-12a4def0-c4bb-47a9-9988-68dd9c7c7377,Opinione sincera,"Ok la stanza era opprimente, ma il servizio affabile compensa. La colazione era quella classica da hotel.",Reception,positive,1,mixed
-aabc25fa-3fe1-4e47-ae9b-ec3635c7936c,Accoglienza gelida,"Stanza anche paradisiaca, però Micheletto freddo. Mai più.",Reception,negative,0,mixed
-be0f051b-1b66-45a9-a3c4-36571d8cbbac,Hotel nella media,Che pranzo fantastico! Vedremo la prossima volta.,F&B,positive,1,detailed
-8f5486b7-c7b5-42bc-9a8a-aeca1a50aec3,Buffet ricchissimo,"La caffè era abbastanza buono. Per essere un hotel, promossa.",F&B,positive,1,ambiguous
-3ff350bf-766e-4b15-874e-bc192ef91276,Personale sgarbato,"Hotel consigliato da amici. Camera senza finestre, personale sbrigativo, colazione unto. Mai più! Camera nella media per la categoria.",Reception,negative,0,multi_aspect
-e25d36eb-9e9a-4f83-8668-03ee78b2b549,Niente di speciale,"Camera un po' scialbo, però Gianpaolo alla reception cordiale. Promossi!",Reception,positive,1,mixed
-304b8590-de9e-4757-9260-001eeecf67d2,Camera da incubo,"Il bagno funzionava, niente di più. Vacanza romantica. Camera deprimente, personale arrogante, colazione stantio. Mai più!",Reception,negative,0,multi_aspect
-a7f36ae9-25c7-4c44-be75-c3b4664fa663,Hotel centrale,Non aspettatevi una prese elettriche moderna. Tutt'altro.,Housekeeping,negative,0,negation
-9384ec2b-44fe-4cae-9248-a9a7ac1aa554,Cibo delizioso,"Soggiorno di 2 notti. Tutto perfetto: camera perfetta, reception educato, ristorante fumante.",F&B,positive,1,multi_aspect
-a9597663-6daa-4e68-8861-fe1858e25888,Cibo delizioso,"La cappuccino era discreto. Per essere un hotel, promossa.",F&B,positive,1,ambiguous
-ed7bf656-218a-4536-8c99-a894445dcc38,Personale gentilissimo,Buffet nella norma. Siamo arrivati di giovedì verso le 20. Stanza ben illuminata. Staff formidabile. Cena ben cotto. Top!,Reception,positive,1,multi_aspect
-e61fecc0-0a36-4ce7-9c57-0131f8e1daa7,Ambiente curatissimo,"Camera un po' senza finestre, però Natalia alla reception educato. Promossi! Abbiamo mangiato qualcosa al ristorante.",Reception,positive,1,mixed
-c9277d9b-6e0d-4648-b5ce-884149732d6c,Qualche giorno qui,Scordatevi una cuscini curata. Pessima. Check-in nella norma.,Housekeeping,negative,0,negation
-54c63cd8-8945-4f27-97fa-2d8dfb2ca025,Colazione abbondante,Finalmente una succo ricco. Alla reception tutto regolare.,F&B,positive,1,simple
-195d82f8-ee4a-4b5d-9195-54e307374c86,Reception disponibile,"Il cibo era secco, ma lo staff esperto ha salvato tutto.",Reception,positive,1,mixed
-6dadd6c7-95a7-4d79-bf3c-4c06434308bc,Sistemazione ottima,"Accoglienza standard. Avevo paura fosse indecente, ma la wifi era perfetta.",Housekeeping,positive,1,negation
-c7e53bbb-dcb5-4c53-9b62-a8df493e904d,Stanza pessima,"La cuscini? Non proprio il massimo. Peccato, dalle recensioni sembrava meglio. Il minibar aveva i soliti prodotti.",Housekeeping,negative,0,ambiguous
-79279973-5e78-4fd7-94e0-d3baa9f948b2,Personale gentilissimo,"La lenzuola? Non male. Niente di eccezionale, ma funzionale.",Housekeeping,positive,1,ambiguous
-14822f53-8201-4c62-b5f5-9b220e8fa8e0,Camera deludente,"Stanza anche spaziosa, però Ermenegildo assente. Mai più.",Reception,negative,0,mixed
-8bcf53a1-bc10-4a52-bf5d-2fdf89c8d2ab,Vacanza a metà,"Al bar niente di speciale. Accoglienza non all'altezza. Un peccato, rovinava l'esperienza.",Reception,negative,0,ambiguous
-c1235c91-76c5-40dc-be7e-7419a0c14035,Soggiorno dicembre,"Siamo arrivati di lunedì verso le 8. Personale mai presente, soprattutto Martina. Esperienza da ripetere.",Reception,negative,0,detailed
-9f8ded97-56ab-42f1-83d8-8870f81dbaa1,Accoglienza calorosa,Il personale non era per niente pessimo. Molto professionali.,Reception,positive,1,negation
-14348f62-6cac-428c-ba22-006515260718,Camera da evitare,"Abbiamo mangiato qualcosa al ristorante. Viaggio in famiglia. Aria condizionata fredda, pessima esperienza. Pagato 70€ a notte.",Housekeeping,negative,0,detailed
-575aed2c-a5c5-450c-8186-a57611a72609,Reception disorganizzata,"Colazione dotata di tutto, peccato per lo staff sciatto. Camera nella media per la categoria.",Reception,negative,0,mixed
-93f277cc-1a85-410d-9a05-7c114ffca6b1,Ambiente squallido,Ero qui per lavoro con Cecilia. Deluso dalla finestre: piccola. Potrebbe migliorare. Check-in nella norma.,Housekeeping,negative,0,detailed
-1d34d08e-7a4c-45d4-9c99-e04cf0e98b3b,Camera impeccabile,Non sapevo cosa aspettarmi. Devo dire che la cuscini era impeccabile. Forse ci torniamo.,Housekeeping,positive,1,detailed
-439472e6-da58-4e8a-a25d-6b29afffcfd2,Cena fantastica,La stanza era quella che ci si aspetta. Ero qui per lavoro con Gastone. Ho apprezzato la dolci: equilibrato. Rapporto qualità-prezzo discreto.,F&B,positive,1,detailed
-c6a7ee39-c4b0-42cc-97c5-24a55304317f,Niente di speciale,"Viaggio in famiglia. Camera disastrosa, personale assente, colazione nauseante. Mai più!",Reception,negative,0,multi_aspect
-bff9507d-cd14-403e-8359-9af65d01f55f,Qualche giorno qui,Accoglienza standard. La formaggio non era affatto tradizionale. Pessima.,F&B,negative,0,negation
-0a8076ec-e558-4e16-bd29-ede9cab4923b,Servizio eccellente,"Lo staff era nella media alta, devo ammettere che mi aspettavo peggio.",Reception,positive,1,ambiguous
-afa415e5-6d20-4496-a6d0-6371d8e88ebb,Menu squisito,La acqua vale da sola il soggiorno: perfetto.,F&B,positive,1,simple
-30b187ef-310c-4c00-bfa7-f1041bf90e27,Pulizia top,"Colazione continentale standard. Ok la pulizia poteva sembrare lurida a primo impatto, ma poi non male.",Housekeeping,positive,1,ambiguous
-2dbc2134-c30f-446e-8026-695ff8cda88b,Manutenzione assente,"Mi aspettavo una asciugamani rifinita, ma era non soddisfacente. Il concierge ci ha dato qualche indicazione.",Housekeeping,negative,0,ambiguous
-dfcaf0b7-19b1-4e80-9ea4-ae1754fd9ad3,Accoglienza gelida,"Il bagno funzionava, niente di più. Colazione fumante, peccato per lo staff inesistente.",Reception,negative,0,mixed
-15bfbe97-98a2-4f1c-914d-cfaef10013a7,Camera da sogno,"Prima volta in questa struttura. Tutto perfetto: camera splendida, reception gentile, ristorante abbondante.",Housekeeping,positive,1,multi_aspect
-afbb411a-a123-4a8c-93b7-a88612f70c97,Soggiorno ok,Abbiamo scelto questo hotel per la posizione. Stanza mal tenuta. Staff mai presente. Cena vecchio. Disastro. Personale presente ma niente di memorabile.,F&B,negative,0,multi_aspect
-f891b0c3-dd3f-487e-92bd-c6619fe0a8c7,Sistemazione indecente,"La riscaldamento? Potrebbe fare di meglio. Peccato, dalle recensioni sembrava meglio.",Housekeeping,negative,0,ambiguous
-f4488385-8de7-4d6c-9490-77c27674456f,Hotel centrale,Non aspettatevi ristorante tipico. Immangiabile.,F&B,negative,0,negation
-436d76e2-b83c-4e0b-a037-e5edb8db0672,Personale fantastico,"Reception discreto. Poteva andare peggio, anzi no, è andata bene.",Reception,positive,1,ambiguous
-bcae8081-bdf0-40aa-b0b5-156bb82c9074,Staff incompetente,"La camera era sapido, ma il personale arrogante ha rovinato tutto.",Reception,negative,0,mixed
-6f962882-95d8-4980-bf37-d19c2e76128b,Seconda visita,"Stanza anche spaziosa, però Gustavo lento. Mai più.",Reception,negative,0,mixed
-e3236d1a-3c1b-4acc-98e1-93311dba1267,Pulizia perfetta,"Dopo un viaggio da Castelfirmiano, Camera raffinata, personale premuroso, colazione delizioso. Torneremo! Il caffè era decente.",Housekeeping,positive,1,multi_aspect
-1b19d8b8-d830-4081-afcc-57dd168fae12,Prima volta qui,"Camera un po' di plastica, però Milo alla reception affabile. Promossi! Il minibar aveva i soliti prodotti.",Reception,positive,1,mixed
-c33a1f6c-1d69-4fba-9e18-7b248e676a01,Accoglienza gelida,"Siamo arrivati di mercoledì verso le 20. Check-in interminabile, staff frettoloso. Nel complesso ok.",Reception,negative,0,detailed
-718d4d05-e8e2-4743-b65f-eea97d824264,Ci sono stato,"Staff villano, Corrado in particolare.",Reception,negative,0,simple
-adf4e62d-6651-429e-8268-690ba43825b5,Trasferta di lavoro,"Ero qui per lavoro con Maurizio. Camera buia, personale poco cortese, colazione misero. Mai più!",Reception,negative,0,multi_aspect
-d605e770-8a63-4881-bfd0-f9d5a6f2f7b8,Qualità assente,"Il minibar aveva i soliti prodotti. Prenotato 14 giorni prima. Tutto pessimo: camera consumata, reception impreparato, ristorante scaduto.",Reception,negative,0,multi_aspect
-626d719d-81cf-4252-9815-9d6c9d713084,Soggiorno breve,"Ho trovato la pane nella media alta, più di quello che mi aspettavo.",F&B,positive,1,ambiguous
-96fc734d-a003-4d28-8a8f-3653c9af18f8,Recensione hotel,"La pane era decente. Per essere un hotel, promossa.",F&B,positive,1,ambiguous
-70c2903f-7a8d-43aa-b82a-65e048ca7651,Colazione scarsa,Soggiorno di 7 notti. Purtroppo la menu era industriale. Non lo consiglio.,F&B,negative,0,detailed
-81f631d4-a392-41a7-9777-a4774c66e0a8,Cordialità unica,Il minibar aveva i soliti prodotti. Vacanza romantica. Check-in veloce con staff ottimo. Nel complesso ok.,Reception,positive,1,detailed
-ea9e5c8d-b1a8-471f-891b-90e99ca3fbb3,Prima volta qui,"Purtroppo la servizio in camera era non proprio il massimo, un peccato.",F&B,negative,0,ambiguous
-a01ac992-7f9d-4e64-81a6-423b9f64eeed,Attesa infinita,"La camera era ventilata, ma il personale assente ha rovinato tutto.",Reception,negative,0,mixed
-913e4de2-e0c5-4cb8-bda9-c2a90ed42f1a,Buffet povero,"Dopo un viaggio da Villa Agnedo, Stanza stretta. Staff superficiale. Cena molle. Disastro.",F&B,negative,0,multi_aspect
-dd90e79e-b888-46ed-8d24-4e3ec4dabddb,Servizio inesistente,"Staff incompetente, Tina in particolare.",Reception,negative,0,simple
-9e8fc965-0a2c-427e-9832-685694340a03,La mia esperienza,"Il cibo era unto, ma lo staff qualificato ha salvato tutto.",Reception,positive,1,mixed
-49257af1-b6aa-405b-93d5-f2f7709b7d97,Qualità assente,Viaggio in famiglia. Stanza polverosa. Staff pigro. Cena maleodorante. Disastro.,F&B,negative,0,multi_aspect
-17be3111-1a2a-43ed-962b-0f79c37459ee,Pro e contro,"La pavimento? Non male. Niente di eccezionale, ma funzionale.",Housekeeping,positive,1,ambiguous
-b0ae8f08-c31e-4bbc-b36c-b62b892e6161,Staff incompetente,"Colazione continentale standard. La armadio sembrava lussuosa dalle foto, in realtà non all'altezza.",Housekeeping,negative,0,ambiguous
-6b79afcc-3d0a-4f0c-8c39-4ec71f317405,Soggiorno breve,"Camera nella media per la categoria. Il personale era accettabile. Non eccezionale, ma disponibile.",Reception,positive,1,ambiguous
-6a8a616f-c3b2-40d0-8edd-dfcd1e52d770,Cibo immangiabile,"Prenotato 8 giorni prima. Camera troppo calda, personale sgradevole, colazione poco fresco. Mai più!",F&B,negative,0,multi_aspect
-0e614bcd-9767-4900-8651-0367cbdc4318,Staff incompetente,"Bello l'hotel, tradizionale, ma il servizio non professionale è inaccettabile.",Reception,negative,0,mixed
-d284476c-6b88-483d-997d-c9cd033d2bce,Personale fantastico,"Lo staff era nella media alta, devo ammettere che mi aspettavo peggio. Abbiamo mangiato qualcosa al ristorante.",Reception,positive,1,ambiguous
-680ac07a-2a93-4d62-bc83-5dc0d9441fa5,Hotel in centro,"Stanza anche stellato, però Marcella disinteressato. Mai più. La stanza era quella che ci si aspetta.",Reception,negative,0,mixed
-3e896c64-e117-4ac3-919c-4ea3e1805081,Accoglienza calorosa,"Nonostante la colazione gelida, il personale affidabile ha fatto la differenza. Colazione continentale standard.",Reception,positive,1,mixed
-eb7607c9-b08a-4895-94ff-a66675c8e90d,Vacanza a metà,Dolores ci ha trattato in modo sgarbato.,Reception,negative,0,simple
-26286bfb-e767-4cea-b0e6-a969e21342b0,Poteva andare meglio,"Accoglienza non soddisfacente. Un peccato, rovinava l'esperienza.",Reception,negative,0,ambiguous
-b8976ec5-ea74-4b18-9e3b-496f6c4596f6,Reception efficiente,"Nonostante la colazione stantio, il personale veloce ha fatto la differenza.",Reception,positive,1,mixed
-7bfdcc12-89e0-4ab3-b250-ee18260a5962,Qualità eccellente,"Abbiamo soggiornato per il weekend. Camera ben riscaldata, personale ottimo, colazione profumato. Torneremo!",F&B,positive,1,multi_aspect
-cb08587d-1963-426d-ae21-8b099afd4015,Personale sgarbato,"La camera era sano, ma il personale scostante ha rovinato tutto. Al bar niente di speciale.",Reception,negative,0,mixed
-e91e314e-0c8e-49e3-b93e-08d5bea29dfe,Manutenzione assente,"La prese elettriche? Lascia a desiderare. Peccato, dalle recensioni sembrava meglio.",Housekeeping,negative,0,ambiguous
-a9f25336-83f4-49a9-88a6-39d015b52908,Nota dolente,Prima volta in questa struttura. Finalmente una colazione in camera genuino. Nel complesso ok.,F&B,positive,1,detailed
-45d5a68d-290a-4abb-835b-9fea1578d709,Pro e contro,"Siamo arrivati di mercoledì verso le 21. Camera fatiscente, personale assente, colazione oleoso. Mai più!",Housekeeping,negative,0,multi_aspect
-52c21221-409d-4602-9084-3242168b1625,Pulizia scarsa,"Dopo un viaggio da Soverato Superiore, Camera scrostata, personale maleducato, colazione acido. Mai più!",F&B,negative,0,multi_aspect
-97d7a560-adb1-4670-ad9f-b00d4882d73c,Ambiente squallido,Viaggio in famiglia. Deluso dalla ordine: impresentabile. Non lo consiglio.,Housekeeping,negative,0,detailed
-bb026576-f512-44c3-b253-d2186c4a37ea,Vacanza a metà,"Ok la stanza era indecente, ma il servizio pronto compensa.",Reception,positive,1,mixed
-1ff49b78-8946-4e85-b59c-de66bacfb3d0,Recensione hotel,"La prese elettriche sembrava pulitissima dalle foto, in realtà insufficiente.",Housekeeping,negative,0,ambiguous
-238d6f44-cac4-40eb-b373-730efc31a597,Esperienza altalenante,Ho prenotato tramite Booking. La salumi era decisamente annacquato. Lo consiglio. Il personale delle pulizie era nella norma.,F&B,negative,0,detailed
-236c7b87-14a0-4ccb-8a47-6a87e49d681d,Stanza splendida,Abbiamo scelto questo hotel per la posizione. Stanza paradisiaca. Staff empatico. Cena fresco. Top! Camera nella media per la categoria.,Reception,positive,1,multi_aspect
-e6697833-b841-40a0-9fe7-71d6d9178793,Camera consigliatissima,Che bella wc! Davvero eccellente.,Housekeeping,positive,1,simple
-3eae0032-0bd4-4990-8640-be0f25b8fd4b,Weekend al mare,La cena era deludente.,F&B,negative,0,simple
-93829b43-922f-415a-a1e3-db63ef7ddc76,Soggiorno breve,La pane era nauseante.,F&B,negative,0,simple
-f8c88fae-a217-4f84-bdb0-25ff2451e5a4,Accoglienza calorosa,"Camera nella media per la categoria. Camera un po' niente di speciale, però Bartolomeo alla reception professionale. Promossi!",Reception,positive,1,mixed
-c68a152f-db23-4a8c-bbca-bf85620a60ac,Team impreparato,"Lenzuola cambiate regolarmente. Purtroppo la bevande era non soddisfacente, un peccato.",F&B,negative,0,ambiguous
-67fd64c4-a334-458a-abd2-b5121335e5db,Servizio impeccabile,Check-in veloce con staff esperto.,Reception,positive,1,simple
-6f92f25e-45df-46b6-b82c-043f7cfc9b79,Poteva andare meglio,"Accoglienza non proprio il massimo. Un peccato, rovinava l'esperienza.",Reception,negative,0,ambiguous
-4d183eba-3cd5-4d7f-89c1-0669c6b33fe6,Poteva andare meglio,Vacanza romantica. Evitate la ristorante: congelato. Forse ci torniamo.,F&B,negative,0,detailed
-88b4f474-3be7-4df4-b2ec-f16ec8a723e9,Recensione hotel,La pavimento non era certo ben riscaldata. Delusione totale.,Housekeeping,negative,0,negation
-ce7607ad-f7a6-4b94-bb5a-611af1b64afe,Soggiorno dicembre,"Ok la stanza era indecente, ma il servizio cortese compensa. Il bagno funzionava, niente di più.",Reception,positive,1,mixed
-44b591f7-97ac-4aa8-bb24-88a3d36357b6,Cordialità unica,Check-in veloce con staff gentilissimo.,Reception,positive,1,simple
-269ed4c9-8059-4b93-b9c2-d2e49ae1a991,Pro e contro,"Ho prenotato tramite Booking. Cappuccino precotto, deludente. Pagato 224€ a notte. Personale presente ma niente di memorabile.",F&B,negative,0,detailed
-2227219f-551f-4086-81b5-b5cabc3536df,Camera da evitare,"Lo staff non proprio il massimo, purtroppo non all'altezza delle aspettative. Il personale delle pulizie era nella norma.",Reception,negative,0,ambiguous
-ed2662e9-17e0-41b7-b810-238303c72ba8,Accoglienza calorosa,"Accoglienza discreto. Niente effetto wow, ma professionali. Abbiamo mangiato qualcosa al ristorante.",Reception,positive,1,ambiguous
-114b9547-c9dc-42b8-9b6a-810204287378,La mia esperienza,"Camera un po' limitato, però Ludovica alla reception alla mano. Promossi!",Reception,positive,1,mixed
-a81fdec3-279c-458a-b676-0ce581e5c9f6,Reception efficiente,"Non ho trovato staff poco preparato. Anzi, gentilissimi.",Reception,positive,1,negation
-a9e782d4-fd08-432c-a2d6-0e9361985d54,Personale maleducato,Di tempestivo lo staff non aveva niente.,Reception,negative,0,negation
-e27718c5-737d-4fb6-9113-76e038d77b9a,Servizio pessimo,Reception non proprio il massimo. Mi aspettavo di più per il prezzo pagato.,Reception,negative,0,ambiguous
-821c1336-9970-4f60-abff-8d1530cbd755,Pro e contro,"Reception più che sufficiente. Poteva andare peggio, anzi no, è andata bene. Il minibar aveva i soliti prodotti.",Reception,positive,1,ambiguous
-a4244f23-0d5b-47cd-8000-35f0df7d0dd7,Opinione sincera,Al bar niente di speciale. Reception non proprio il massimo. Mi aspettavo di più per il prezzo pagato.,Reception,negative,0,ambiguous
-edcb8cb6-0692-4c63-9424-aed51bac5c15,Attesa infinita,"Ho prenotato tramite Booking. Tutto pessimo: camera vecchia, reception altezzoso, ristorante industriale.",Reception,negative,0,multi_aspect
-94f79dba-c581-4d2d-9a89-b71ea0d572c8,Servizio eccellente,"Lo staff era decente, devo ammettere che mi aspettavo peggio.",Reception,positive,1,ambiguous
-18dfbc3c-a0d4-4e3d-a303-f6c6d69d42f1,Vacanza a metà,"La materasso sembrava favolosa dalle foto, in realtà non soddisfacente. Colazione continentale standard.",Housekeeping,negative,0,ambiguous
-9c10c572-0f6b-40d0-9efb-a58b9191b363,Sistemazione ottima,"La manutenzione? Più che sufficiente. Niente di eccezionale, ma funzionale.",Housekeeping,positive,1,ambiguous
-cd5f4822-6966-48aa-ae49-f329c84a7b28,Ci sono stato,Mariano ci ha accolto in modo sorridente. Potrebbe migliorare.,Reception,positive,1,detailed
-a1a27485-7134-4c2a-b80b-3657117b355b,Camera consigliatissima,"Piacevolmente sorpreso dalla tende, molto panoramica. Forse ci torniamo.",Housekeeping,positive,1,detailed
-3b8faa18-37f8-488b-97fc-695a07a0ca6e,La mia esperienza,"Hotel consigliato da amici. Camera sciatta, personale scortese, colazione di plastica. Mai più!",F&B,negative,0,multi_aspect
-a9ab364a-1777-48cb-b468-5b98d2fe2fde,Staff scortese,"Lenzuola cambiate regolarmente. La camera era comoda, ma il personale poco disponibile ha rovinato tutto.",Reception,negative,0,mixed
-d88c656d-b61e-4fdb-9a43-5206ef2ddcc4,Recensione hotel,Abbiamo scelto questo hotel per la posizione. Stanza climatizzata. Staff multilingue. Cena genuino. Top!,F&B,positive,1,multi_aspect
-19db3ad0-ddd1-4fb2-bb98-2ef8daf61a26,Colazione ottima,"Dopo un viaggio da Paderno Dugnano, Che colazione in camera goloso! Mai più. Lenzuola cambiate regolarmente.",F&B,positive,1,detailed
-cde22f1c-56b6-4afc-9ed2-55d0bf1e8366,Buffet povero,"Il bagno funzionava, niente di più. Il receptionist era mai presente.",Reception,negative,0,simple
-d5b077e0-6a5d-432b-85ff-2c83b495db4e,Opinione sincera,Abbiamo soggiornato per il weekend. Stanza gelida. Staff arrogante. Cena bruciato. Disastro.,Housekeeping,negative,0,multi_aspect
-e9ff1cae-41c8-4a8c-aa1f-955ad499da99,Esperienza altalenante,Trasferta di lavoro. Evitate la servizio in camera: misero. Comunque torneremo.,F&B,negative,0,detailed
-fe2110d0-4bbe-4aff-9326-dffd5be4bf51,Reception disponibile,"Camera un po' logora, però Antonietta alla reception eccellente. Promossi!",Reception,positive,1,mixed
-b20507bb-fb16-4757-b6f1-86abaf475b49,Recensione hotel,"Ok la stanza era nauseante, ma il servizio formidabile compensa.",Reception,positive,1,mixed
-506e5a9a-b758-488d-ab73-295b344a54b8,Pulizia inesistente,Soggiorno di 2 notti. Vergognoso: riscaldamento squallida. Comunque torneremo. Personale presente ma niente di memorabile.,Housekeeping,negative,0,detailed
-b3aa7efe-4458-4885-ab90-99a435a240ae,Stanza splendida,Prima volta in questa struttura. Che bella materasso! Davvero raffinata.,Housekeeping,positive,1,detailed
-1f45dbfd-f7dc-47e0-b097-4b2b46a02a9b,Pulizia top,"Non sapevo cosa aspettarmi. Tutto perfetto: camera funzionale, reception eccezionale, ristorante sapido.",Housekeeping,positive,1,multi_aspect
-309d258c-27a0-43d7-bc96-7f79b7e99aca,Niente di speciale,"Alla reception tutto regolare. La vino era decente. Per essere un hotel, promossa.",F&B,positive,1,ambiguous
-cd2372c2-2bff-417b-9324-01fcf758dce2,Personale fantastico,"Ristorante non male. Niente di straordinario, ma soddisfacente.",F&B,positive,1,ambiguous
-6a07f213-7129-4ec7-9b69-554d7c54535f,Personale maleducato,"Stanza anche tipico, però Pietro sgradevole. Mai più.",Reception,negative,0,mixed
-13748146-32c5-4d89-b70b-3420f1043785,Menu squisito,"Ero qui per lavoro con Paride. Tutto perfetto: camera sofisticata, reception preparato, ristorante divino.",F&B,positive,1,multi_aspect
-6b44fa8d-d5f2-4073-b414-02b1e4429ebb,Vacanza a metà,"Vacanza romantica. Tutto perfetto: camera rilassante, reception formidabile, ristorante innovativo.",Housekeeping,positive,1,multi_aspect
-ee0caeb5-ecfe-4b99-a790-cebdbfddc3d9,Camera deludente,Abbiamo mangiato qualcosa al ristorante. Prima volta in questa struttura. Stanza opprimente. Staff disorganizzato. Cena insufficiente. Disastro.,Housekeeping,negative,0,multi_aspect
-cf36d58b-4737-4190-96da-1dac72ff5d2a,Cibo immangiabile,Soggiorno di 4 notti. Stanza cupa. Staff orribile. Cena molle. Disastro. Il personale delle pulizie era nella norma.,F&B,negative,0,multi_aspect
-fe9fecaa-6182-4347-933f-5a72b64fa54a,Accoglienza pessima,"Bello l'hotel, spaziosa, ma il servizio poco cortese è inaccettabile. Niente da segnalare sulla manutenzione.",Reception,negative,0,mixed
-6fdc0bad-5e36-4127-8ca1-b45c1fdd980a,Accoglienza top,Trasferta di lavoro. Stanza rilassante. Staff impeccabile. Cena perfetto. Top!,Reception,positive,1,multi_aspect
-1346d1a9-f680-4cdb-b7e4-90c71d7bc313,Servizio impeccabile,Non posso dire che la colazione fosse orribile. Buonissima! Lo staff faceva il suo lavoro.,F&B,positive,1,negation
-aab612c9-415d-474a-b5a6-69814104a8b5,Personale sgarbato,"Vacanza romantica. Camera gelida, personale lento, colazione unto. Mai più!",Reception,negative,0,multi_aspect
-cc3ebdde-5ad5-4f06-b64d-7c877cd0129d,Reception disorganizzata,Scordatevi accoglienza rapido. Disastro.,Reception,negative,0,negation
-14f7ce8d-d5bc-48d0-8094-dded6bebac31,Reception disponibile,"Camera nella media per la categoria. Ok la stanza era con odori strani, ma il servizio entusiasta compensa.",Reception,positive,1,mixed
-48bddb3e-62f5-4f2b-adaa-44ca8ed6ad5e,Team impreparato,"Bello l'hotel, ottimo, ma il servizio approssimativo è inaccettabile.",Reception,negative,0,mixed
-d701410d-3f4b-4a70-8074-718e425a609f,Servizio pessimo,"Dopo un viaggio da Gravellona Toce, Stanza terribile. Staff poco preparato. Cena insufficiente. Disastro.",Reception,negative,0,multi_aspect
-3810ae66-5a31-44cc-8d4b-69a99b689c88,Staff eccezionale,"Ok la stanza era sgradevole, ma il servizio simpatico compensa.",Reception,positive,1,mixed
-5d286aa4-28a3-4779-9c1c-351785d2d0a6,Piatti orribili,Vacanza romantica. La acqua lasciava a desiderare: pessimo. Vedremo la prossima volta.,F&B,negative,0,detailed
-c03f3538-e485-4aa1-816b-6287b00805cc,Hotel centrale,Alla reception tutto regolare. Niente bevande niente di speciale come in altri hotel. Ottima!,F&B,positive,1,negation
-722764e6-8c41-461b-a827-a1b9d4a02e53,Staff eccezionale,Nessuno nervoso alla reception. Complimenti!,Reception,positive,1,negation
-5ab33edf-6e59-4ed3-a8b3-17fa18d0752b,Accoglienza pessima," Camera fatiscente, personale pessimo, colazione marcio. Mai più!",Reception,negative,0,multi_aspect
-ba2c0f19-f0b2-45d1-8c7e-6f422646eaf9,Stanza splendida,"Avevo paura fosse stretta, ma la letto era perfetta.",Housekeeping,positive,1,negation
-d0a44432-9cd6-4852-b14c-7df4e4347d51,Niente di speciale,Nessun problema al check-out. Soggiorno di 5 notti. Che cena innovativo! Esperienza da ripetere.,F&B,positive,1,detailed
-b0cbc61f-3d85-4e89-8217-14298e200724,Soggiorno dicembre,"Hotel consigliato da amici. Complimenti per la vino, davvero sostanzioso. Esperienza da ripetere.",F&B,positive,1,detailed
-e916da57-f248-43ab-977a-8a5f6ffe33b3,Opinione sincera,Abbiamo scelto questo hotel per la posizione. Devo dire che la camera era ben riscaldata. Mai più.,Housekeeping,positive,1,detailed
-e7c421c7-4049-4b71-bd10-6c6081627cf1,Piatti orribili,Di appetitoso la colazione non aveva nulla.,F&B,negative,0,negation
-f2771f63-ada5-4417-9e2a-d32d31ab0b56,Menu squisito,"Personale presente ma niente di memorabile. Prima volta in questa struttura. Complimenti per la frutta, davvero di qualità. Comunque torneremo.",F&B,positive,1,detailed
-bf85bf0e-ad64-456c-a10f-aa3ff0bbac67,Servizio pessimo,Di eccezionale lo staff non aveva niente.,Reception,negative,0,negation
-ebb7a385-aa0b-4b14-b2e9-702d11e9cdaa,Qualche giorno qui, Stanza ampia. Staff gentilissimo. Cena sublime. Top!,Reception,positive,1,multi_aspect
-af88bdec-fb1e-443b-996f-4dfa5cd8fe1a,Camera fantastica,"Soggiorno di 7 notti. Camera comoda, personale fantastico, colazione sfizioso. Torneremo! Personale presente ma niente di memorabile.",Housekeeping,positive,1,multi_aspect
-7426b193-4b7e-4b3c-87d2-92a698eeac2b,Giudizio personale,"Ho trovato la menu sopra la media, più di quello che mi aspettavo.",F&B,positive,1,ambiguous
-297ca4ff-f75d-499f-ab2d-5b0987079ad4,Servizio inesistente,"Lenzuola cambiate regolarmente. Bello l'hotel, abbondante, ma il servizio inqualificabile è inaccettabile.",Reception,negative,0,mixed
-75b17a55-d426-4982-a43e-4288a2b5b498,Piatti deliziosi,"Lo staff faceva il suo lavoro. La pranzo non era insapore. Anzi, deliziosa!",F&B,positive,1,negation
-295d6fbf-430f-401d-bad4-09e2a319dcb4,Cibo delizioso,"Accoglienza standard. La bevande era più che sufficiente. Non gourmet, ma buona.",F&B,positive,1,ambiguous
-138d994c-2b0a-4edd-8774-44cb5543fc3c,Hotel centrale,Di goloso la servizio in camera non aveva nulla.,F&B,negative,0,negation
-21813d25-6552-48a6-83ff-50113d1a85dd,Sistemazione ottima,Ho trovato la manutenzione intima e ben curata.,Housekeeping,positive,1,simple
-90164161-cfa7-41cd-a631-d00b26d794d3,Accoglienza calorosa,"Nonostante la colazione vecchia, il personale cortese ha fatto la differenza.",Reception,positive,1,mixed
-5275eb94-14ae-4f5c-a636-58c912d0498d,La mia esperienza,Ho apprezzato la cena: sostanzioso. Alla reception tutto regolare.,F&B,positive,1,simple
-5efa9c5b-7421-4f46-a37e-4b0122bae10e,Giudizio personale,"La camera era rigenerante, ma il personale impreparato ha rovinato tutto.",Reception,negative,0,mixed
-edd96831-1ca3-4cfb-84fc-6d827d154385,Reception disponibile,Non sapevo cosa aspettarmi. Check-in veloce con staff caloroso. Voto: 10/10. La colazione era quella classica da hotel.,Reception,positive,1,detailed
-f8140102-7de1-4dfe-9072-5b5ca2814044,Cucina eccellente,"La uova era discreto. Non gourmet, ma buona.",F&B,positive,1,ambiguous
-f3821cfd-c083-473a-873b-d358610e6a64,Ci sono stato,"Mi aspettavo una armadio luminosa, ma era lascia a desiderare.",Housekeeping,negative,0,ambiguous
-764414fd-8ae7-49ed-9e8e-de0ba85c6e4a,Sistemazione indecente,"Mi aspettavo una armadio funzionale, ma era non proprio il massimo.",Housekeeping,negative,0,ambiguous
-747b6dba-c8fe-4ccd-88b8-d9c6ed3049cf,Team impreparato,"Soggiorno di 5 notti. Tutto pessimo: camera umida, reception svogliato, ristorante amaro.",Reception,negative,0,multi_aspect
-0d6a05b3-43ef-4016-ac9b-662e040a3aae,Recensione hotel,"Dopo un viaggio da Groppoducale, Ho trovato il reception negligente. Potrebbe migliorare.",Reception,negative,0,detailed
-e746ccb9-4ca9-4f07-b1aa-0f6a2a96e1e2,Soggiorno ok,La salumi mi ha sorpreso: gourmet. Pagato 223€ a notte.,F&B,positive,1,detailed
-c9e26074-4f16-49a0-8a17-991ea5769411,Hotel nella media,Il personale delle pulizie era nella norma. Il receptionist era tempestivo.,Reception,positive,1,simple
-996d5c50-fc04-4168-a52f-fb493873e57f,Seconda visita,"Camera nella media per la categoria. Colazione raffinato, peccato per lo staff poco cortese.",Reception,negative,0,mixed
-4b5305e5-17d2-482e-846a-0df5cafda613,Piatti deliziosi,"Ho trovato la pranzo più che sufficiente, più di quello che mi aspettavo.",F&B,positive,1,ambiguous
-33173470-38f1-4a81-b87f-2425dbccc477,Buffet povero,"Il bagno funzionava, niente di più. La succo sotto la media. Per il prezzo pagato, deludente.",F&B,negative,0,ambiguous
-ac8936bc-0cbd-4c03-9e2a-a4acc122b5b3,Niente di speciale,"Siamo arrivati di giovedì verso le 14. Camera impresentabile, personale frettoloso, colazione amaro. Mai più!",F&B,negative,0,multi_aspect
-89fa6a68-8fb5-427b-beb7-99193f22faf8,Team impreparato,"Viaggio in famiglia. Personale poco disponibile, soprattutto Elladio. Mai più. Il personale delle pulizie era nella norma.",Reception,negative,0,detailed
-246998e8-d39e-498b-8400-7d5ae88da719,Luci e ombre,"Nonostante la colazione senza gusto, il personale alla mano ha fatto la differenza. Il bagno funzionava, niente di più.",Reception,positive,1,mixed
-12922f83-ef8c-485b-807a-30f2edd4253b,Consigli utili,"Colazione continentale standard. Ho prenotato tramite Booking. Staff incapace, Luchino in particolare. Esperienza da ripetere.",Reception,negative,0,detailed
-5d42b9e9-692e-47b6-8b2f-6d5c700b5d5f,Piatti deliziosi,"Ho prenotato tramite Booking. Tutto perfetto: camera ordinata, reception discreto, ristorante gustoso. Il personale delle pulizie era nella norma.",F&B,positive,1,multi_aspect
-eb6c1016-cee6-44d0-9dac-6e8345241ea6,Trasferta di lavoro,"Non ho trovato staff freddo. Anzi, gentilissimi. Camera nella media per la categoria.",Reception,positive,1,negation
-217d65a0-c568-41cd-9563-f61600e85ece,Cena pessima,"La colazione era quella classica da hotel. Non sapevo cosa aspettarmi. Tutto pessimo: camera umida, reception poco cortese, ristorante amaro.",Reception,negative,0,multi_aspect
-21bddb41-0699-4731-9dcf-8766a93b12cd,Soggiorno breve,Viaggio in famiglia. Stanza rifinita. Staff preparato. Cena fumante. Top!,Reception,positive,1,multi_aspect
-0bbb2599-11ce-4dd2-b45e-d1f03139d32c,Team impreparato,"Al bar niente di speciale. Soggiorno di 6 notti. Tutto pessimo: camera troppo calda, reception incompetente, ristorante senza gusto.",Reception,negative,0,multi_aspect
-5cb85aed-f5f6-4c97-aefb-63b11b049863,Servizio pessimo,"Colazione innovativo, peccato per lo staff indifferente.",Reception,negative,0,mixed
-1d48a071-ab61-47b1-b93b-4c3220500494,Pulizia inesistente,"Vacanza romantica. Camera senza finestre, personale poco preparato, colazione congelato. Mai più!",Housekeeping,negative,0,multi_aspect
-a837fe68-bba2-45ca-bdba-6da85844f9fc,Camera da evitare,"La acqua era non proprio il massimo. Non immangiabile, ma neanche buona. Aria condizionata funzionante.",F&B,negative,0,ambiguous
-95da75c1-a211-40f9-9fd3-4579466772ce,Camera consigliatissima,"Sinceramente la bagno era accettabile, meglio del previsto.",Housekeeping,positive,1,ambiguous
-832920b7-c143-4426-b72f-871a45ee432d,Personale fantastico,"La colazione era quella classica da hotel. Non ho trovato staff antipatico. Anzi, gentilissimi.",Reception,positive,1,negation
-f295456e-1967-4f06-bd76-7e35f5c9b047,Cena pessima,"La salumi non soddisfacente. Per il prezzo pagato, deludente.",F&B,negative,0,ambiguous
-f29a6339-577b-455a-b6d5-5494f37fd50d,Ambiente perfetto,"Al bar niente di speciale.  Camera insonorizzata, personale veloce, colazione sapido. Torneremo!",Housekeeping,positive,1,multi_aspect
-71710434-134c-4c92-ac5b-227cdfde4fbf,Piatti deliziosi,Niente bar scotto come in altri hotel. Ottima! Accoglienza standard.,F&B,positive,1,negation
-96a402f2-3ae8-4c93-8dcd-cd03969b6662,Camera da sogno,Finalmente una manutenzione elegante. Colazione continentale standard.,Housekeeping,positive,1,simple
-f7baf55e-4f6b-48c8-998d-daeceaafe543,Colazione scarsa,"Accoglienza mediocre. Un peccato, rovinava l'esperienza.",Reception,negative,0,ambiguous
-f020e992-b576-455e-9854-9f222102f9c9,Poteva andare meglio,"Lo staff sotto la media, purtroppo non all'altezza delle aspettative.",Reception,negative,0,ambiguous
-6d15f16f-b7b8-41a5-9a45-693d7227890e,Alti e bassi,Non sapevo cosa aspettarmi. Deluso dalla igiene: orrenda. Rapporto qualità-prezzo discreto.,Housekeeping,negative,0,detailed
-e506f670-7092-447d-be49-69ec6667d3bb,Servizio pessimo,Veronica ci ha trattato in modo negligente.,Reception,negative,0,simple
-82dc4c8e-36b5-429a-acf5-e81e71316269,Poteva andare meglio,"Colazione accogliente, peccato per lo staff indifferente.",Reception,negative,0,mixed
-d1843324-17e8-492a-95ce-e5db9e87e04c,La mia esperienza,"Abbiamo mangiato qualcosa al ristorante. Stanza anche sublime, però Emma non professionale. Mai più.",Reception,negative,0,mixed
-f41ea3ac-5fd2-4109-8140-752caa448259,Sistemazione ottima,"Prima volta in questa struttura. Piacevolmente sorpreso dalla lenzuola, molto incantevole. Forse ci torniamo.",Housekeeping,positive,1,detailed
-cf8d446a-bc2c-4b0d-9d33-4cc7ab7f089a,Recensione hotel,Di educato lo staff non aveva niente. Abbiamo mangiato qualcosa al ristorante.,Reception,negative,0,negation
-88bd13d1-b540-430e-839f-3a254d6168bd,Accoglienza pessima,La colazione era quella classica da hotel.  Stanza maleodorante. Staff maleducato. Cena non all'altezza. Disastro.,Reception,negative,0,multi_aspect
-f0ede303-aa53-419c-9fa4-bb9f5a856750,Personale sgarbato,Prenotato 23 giorni prima. Stanza sciatta. Staff presuntuoso. Cena insufficiente. Disastro. Il caffè era decente.,Reception,negative,0,multi_aspect
-09e9db0a-df46-4290-a1ee-411a1bac27a7,Personale gentilissimo,Non sapevo cosa aspettarmi. Check-in veloce con staff efficiente. Rapporto qualità-prezzo discreto.,Reception,positive,1,detailed
-61a11729-3cb9-4350-9b4d-a0fe7bb38605,Seconda visita,"Non sapevo cosa aspettarmi. Camera opprimente, personale irritante, colazione insufficiente. Mai più!",F&B,negative,0,multi_aspect
-b2c08394-e17f-49e1-b028-604649bc473f,Soggiorno ok,La contorni lasciava a desiderare: porzioni minuscole.,F&B,negative,0,simple
-3f6c21f7-0a05-47f0-ac2c-d22ba56895c6,Ci sono stato,"Soggiorno di 4 notti. Camera favolosa, personale attento, colazione profumato. Torneremo!",Housekeeping,positive,1,multi_aspect
-bf7b539b-0f9a-4a4b-8acd-4e10bc594585,Cucina pessima,"Viaggio in famiglia. Tutto pessimo: camera bollente, reception incompetente, ristorante riscaldato.",F&B,negative,0,multi_aspect
-6a36af18-06d3-4b93-ae33-688d597e6845,Pulizia perfetta,"La coperte? Sopra la media. Niente di eccezionale, ma funzionale.",Housekeeping,positive,1,ambiguous
-ca3dd859-c5ce-499c-86b8-265911df12d7,Struttura recente,Soggiorno di 6 notti. Mi aspettavo di meglio dalla brioche: pessimo. Forse ci torniamo.,F&B,negative,0,detailed
-e05fb8bc-8a16-406c-8958-e75e21d53971,Camera fantastica,"Il minibar aveva i soliti prodotti. Non sapevo cosa aspettarmi. Tutto perfetto: camera confortevole, reception pronto, ristorante puntuale.",Housekeeping,positive,1,multi_aspect
-e64d1bcb-7027-43a1-9f98-7c71a65e688e,Soggiorno breve,Trasferta di lavoro. Ho trovato la riscaldamento ben illuminata e ben curata. Rapporto qualità-prezzo discreto.,Housekeeping,positive,1,detailed
-cdda24ba-2d06-48cf-b805-f9076cd66193,Reception assente,"Prima volta in questa struttura. Tutto pessimo: camera gelida, reception poco attento, ristorante grasso.",Reception,negative,0,multi_aspect
-deaf528d-2e70-4838-8190-262059dcabd0,Esperienza altalenante," Tutto perfetto: camera climatizzata, reception empatico, ristorante gustoso.",Reception,positive,1,multi_aspect
-14374509-2cd1-486a-ab84-0c672e183554,Cena pessima,"Purtroppo la buffet era insufficiente, un peccato.",F&B,negative,0,ambiguous
-379efc6e-5edb-4d3c-b0b6-3bcf08601833,Struttura recente,Il personale delle pulizie era nella norma. Viaggio in famiglia. La room service era decisamente sgradevole. Voto: 8/10.,F&B,negative,0,detailed
-c359810a-71a6-414c-9f3c-44dc5ef787b8,Consigli utili,"Il personale delle pulizie era nella norma. Lo staff non all'altezza, purtroppo non all'altezza delle aspettative.",Reception,negative,0,ambiguous
-84b871bb-3005-48d2-8de0-51a669ca97d2,Accoglienza top,"Reception accettabile. Poteva andare peggio, anzi no, è andata bene.",Reception,positive,1,ambiguous
-337ea2df-b09b-4a5c-badc-c32ac1590f53,La mia esperienza,Prenotato 22 giorni prima. Ho trovato la pulizia troppo calda. Inaccettabile. Vedremo la prossima volta.,Housekeeping,negative,0,detailed
-7630a8a7-70ca-4dd8-bc04-3f0892070158,Staff scortese,"Accoglienza mediocre. Un peccato, rovinava l'esperienza.",Reception,negative,0,ambiguous
-87f7e1fb-da4b-49ca-ab5c-f46780bacd64,Hotel centrale,Viaggio in famiglia. Ho trovato il check-in molto professionale. Potrebbe migliorare.,Reception,positive,1,detailed
-902059e4-ff9a-45c2-9f04-4aed75523327,Servizio eccellente,"Il cibo era congelato, ma lo staff esperto ha salvato tutto.",Reception,positive,1,mixed
-d56ce8ea-1959-4b5a-a7a8-f6366a35df59,Camera consigliatissima,"Il concierge ci ha dato qualche indicazione. Prima volta in questa struttura. Camera rifinita, personale solare, colazione nutriente. Torneremo!",Housekeeping,positive,1,multi_aspect
-5a0cdd7c-f157-4470-8182-67c47a1b5806,Pulizia scarsa,Sulla carta la igiene doveva essere confortevole. Invece potrebbe fare di meglio.,Housekeeping,negative,0,ambiguous
-743b65a2-dc0f-4fcf-b3f6-fe0d48603b32,Colazione ottima,"La pulizia? Decente. Niente di eccezionale, ma funzionale. Lo staff faceva il suo lavoro.",Housekeeping,positive,1,ambiguous
-f4124360-1153-4e99-9c50-8720f982f4e0,Piatti orribili,Soggiorno di 5 notti. Mi aspettavo di meglio dalla colazione in camera: secco. Vedremo la prossima volta.,F&B,negative,0,detailed
-b535106e-122c-4a56-81d7-425638602ab6,Accoglienza gelida,"Accoglienza mediocre. Un peccato, rovinava l'esperienza.",Reception,negative,0,ambiguous
-61c2645a-c733-4304-8822-3120c4f9eccd,Consigli utili,"Lo staff era abbastanza buono, devo ammettere che mi aspettavo peggio.",Reception,positive,1,ambiguous
-ad81f8bd-4029-43ec-9ef2-b93e30ac7d7b,Alti e bassi,"La stanza era quella che ci si aspetta. Colazione spaziosa, peccato per lo staff brusco.",Reception,negative,0,mixed
-79699ed2-ec48-4f55-afd3-80c42713582c,Servizio pessimo,"Purtroppo la pranzo era lascia a desiderare, un peccato.",F&B,negative,0,ambiguous
-1fd5a423-706c-4c56-89e2-623debd34616,Hotel centrale,La manutenzione non era certo rinnovata. Delusione totale.,Housekeeping,negative,0,negation
-31b1b099-d527-41e7-99bc-143efb02bebb,Staff preparato,"La stanza era quella che ci si aspetta. Nonostante la colazione limitato, il personale simpatico ha fatto la differenza.",Reception,positive,1,mixed
-2369b584-ff5e-4ff0-bf50-bde4382567b8,Giudizio personale,Alla reception tutto regolare. Non posso dire che la dessert fosse grasso. Buonissima!,F&B,positive,1,negation
-702cdd20-2862-48b8-88f4-ef125e9953d2,Alti e bassi,Non aspettatevi personale ospitale. Pessimi.,Reception,negative,0,negation
-6683e107-96c0-44d0-af88-7f283e49fd09,Poteva andare meglio,Non aspettatevi una wc perfetta. Tutt'altro. La colazione era quella classica da hotel.,Housekeeping,negative,0,negation
-00a81de9-d20f-47d0-8465-6d6b81fb18b3,Hotel in centro,"Ero qui per lavoro con Milena. Camera calda, personale paziente, colazione superbo. Torneremo!",F&B,positive,1,multi_aspect
-bf780e3f-f6b7-41f7-9b74-92459b1bc895,Reception efficiente,"Colazione continentale standard. Il cibo era senza gusto, ma lo staff solare ha salvato tutto.",Reception,positive,1,mixed
-21e8ac68-43e4-4caf-8181-a8cc369147eb,Stanza sporca,Trasferta di lavoro. Deluso dalla bidet: mal tenuta. Comunque torneremo.,Housekeeping,negative,0,detailed
-c73f6e1b-af90-4e3c-9d75-0e9890e0b95f,Nota dolente,"La finestre non era affatto minuscola. Anzi, molto curata. Il minibar aveva i soliti prodotti.",Housekeeping,positive,1,negation
-1933918c-fa74-4761-af18-c1081723199d,Alti e bassi,"Vacanza romantica. Tutto pessimo: camera scomoda, reception assente, ristorante sgradevole.",Reception,negative,0,multi_aspect
-33094d35-3f4d-4561-b319-c12507f194f9,Cibo delizioso,Viaggio in famiglia. Stanza comoda. Staff qualificato. Cena tradizionale. Top!,F&B,positive,1,multi_aspect
-ea1fca65-e27a-484d-a548-21d07fcd9eb1,Soggiorno breve,La colazione era quella classica da hotel. Vacanza romantica. Stanza calda. Staff preparato. Cena fatto in casa. Top!,Reception,positive,1,multi_aspect
-24e75e8e-b8f2-4423-83ed-d1f874f93d17,Reception disorganizzata,Di qualificato lo staff non aveva niente.,Reception,negative,0,negation
-0cdf742b-2e85-4b21-b631-de9ddde9f863,Camera da incubo,"Non sapevo cosa aspettarmi. Tutto pessimo: camera minuscola, reception frettoloso, ristorante risicato.",Housekeeping,negative,0,multi_aspect
-6c12ace8-ae34-4454-8ac5-b68c28f49481,Qualità eccellente,"La antipasti non era vecchio. Anzi, deliziosa!",F&B,positive,1,negation
-55d596af-a663-42cd-b6f6-dbf1d6d441cc,Cena pessima,Non aspettatevi personale empatico. Pessimi.,Reception,negative,0,negation
-98de8ebb-a3b5-4ece-a446-be72364c911a,Pranzo memorabile,Non posso dire che la cibo fosse scotto. Buonissima!,F&B,positive,1,negation
-ab8cbf97-20b7-4785-902c-e0c154170a17,Staff preparato,"Prenotato 27 giorni prima. Personale competente, specialmente Morena. Pagato 57€ a notte.",Reception,positive,1,detailed
-ce4a2bbd-c241-430b-81a9-e71fde8a774b,Sistemazione ottima,"La aria condizionata? Sopra la media. Niente di eccezionale, ma funzionale. Al bar niente di speciale.",Housekeeping,positive,1,ambiguous
-acc216a0-1bbc-41f7-9f18-e583f0b6f83f,Hotel centrale,Viaggio in famiglia. Etta al accoglienza si è dimostrato saccente. Rapporto qualità-prezzo discreto.,Reception,negative,0,detailed
-857dd3b3-a8ad-4f36-9df2-75ebe8a3f341,Struttura recente,"La colazione era quella classica da hotel. Colazione silenziosa, peccato per lo staff lento.",Reception,negative,0,mixed
-a9d3c2e6-505c-4686-9f87-1ce75487fd4f,Pulizia scarsa,Di empatico lo staff non aveva niente.,Reception,negative,0,negation
-610461e3-2a25-4888-8f02-bad0e7067ef4,Opinione sincera,Prima volta in questa struttura. Pasquale ci ha accolto in modo puntuale. Pagato 267€ a notte.,Reception,positive,1,detailed
-dc33e1f9-4c1f-45ab-b156-29eee893be3d,Soggiorno dicembre,"Nonostante la colazione sciatta, il personale tempestivo ha fatto la differenza.",Reception,positive,1,mixed
-43b9da13-ec85-4f37-bbc1-a987aff8754d,Colazione scarsa,"Colazione equilibrato, peccato per lo staff approssimativo.",Reception,negative,0,mixed
-a6846099-f729-4951-8591-31d2bbda0242,Stanza sporca,"Ero qui per lavoro con Federigo. Camera piccola, personale pigro, colazione nauseante. Mai più!",F&B,negative,0,multi_aspect
-1efd76e9-ce37-44af-99b4-9350af2b99b4,Ambiente perfetto,"Sinceramente la armadio era accettabile, meglio del previsto.",Housekeeping,positive,1,ambiguous
-877409a9-77d2-4e02-bf01-cf99988c24c9,Giudizio personale,"Dopo un viaggio da Glurns, Ho trovato la finestre cupa. Inaccettabile. Pagato 240€ a notte.",Housekeeping,negative,0,detailed
-71f2ce8f-b69f-48c3-a60f-d4202c33350c,Menu scadente,"Prima volta in questa struttura. Purtroppo la pane era sgradevole. Comunque torneremo. Il bagno funzionava, niente di più.",F&B,negative,0,detailed
-5a104129-54ae-4d1b-8ce6-424dbef59fe6,Staff preparato,Non posso dire che la pane fosse nauseante. Buonissima!,F&B,positive,1,negation
-bd21bc11-be9d-41ee-98b8-72456e8f75a1,Sistemazione indecente,Ho trovato la asciugamani disastrosa. Inaccettabile.,Housekeeping,negative,0,simple
-5e0a72ab-7f5d-4163-b12b-66807f072cb9,Hotel nella media,"Trasferta di lavoro. Tutto perfetto: camera eccellente, reception cortese, ristorante sfizioso.",Reception,positive,1,multi_aspect
-284bf962-5744-4596-b422-21676b7a2460,Stanza sporca,"Prima volta in questa struttura. Pessima ristorante, stantio. Lo consiglio. Lenzuola cambiate regolarmente.",F&B,negative,0,detailed
-21472a15-fcce-46f6-a50a-4578fbe94499,Niente di speciale,Aria condizionata funzionante. Non sapevo cosa aspettarmi. La vino era pessimo. Forse ci torniamo.,F&B,negative,0,detailed
-fadd7ea3-aca5-42fd-b966-442aad238d36,Staff scortese," Tutto pessimo: camera scadente, reception lento, ristorante acido.",Reception,negative,0,multi_aspect
-61554667-2112-407c-acfa-55b06e3f683a,Buffet povero,"Purtroppo la frutta era insufficiente, un peccato. Il personale delle pulizie era nella norma.",F&B,negative,0,ambiguous
-b231c60b-78f2-4e6b-946b-415deada79a3,Personale sgarbato,"Stanza anche pregiato, però Ivan villano. Mai più. Lenzuola cambiate regolarmente.",Reception,negative,0,mixed
-0556daea-67b0-4283-9d7c-00984a1dab32,Ristorante deludente,La dolci era decisamente nauseante.,F&B,negative,0,simple
-3985fb62-17dc-4eff-a872-13f98d605936,Ambiente curatissimo,"La armadio era accettabile. Non perfetta, ma ci siamo trovati bene.",Housekeeping,positive,1,ambiguous
-6d7ce3c9-b4a6-4f3c-8d3a-ed99711c21c9,Personale maleducato,"Colazione croccante, peccato per lo staff scortese.",Reception,negative,0,mixed
-f920264c-0763-4cd0-9f15-c7b67c16128d,Accoglienza top,Non posso dire che la pane fosse insipido. Buonissima! Il personale delle pulizie era nella norma.,F&B,positive,1,negation
-e95f176c-deba-4186-ba10-82170ad7c9a2,Poteva andare meglio,Di fantastico la antipasti non aveva nulla.,F&B,negative,0,negation
-30ec2796-a59b-457f-80d7-ac73095ffa81,Nota dolente,Non sapevo cosa aspettarmi. La primi era profumato. Lo consiglio.,F&B,positive,1,detailed
-1d9af659-82ec-4f2d-bbf6-e16f9b3080d5,Opinione sincera,"Soggiorno di 6 notti. Tv eccellente, niente da dire. Rapporto qualità-prezzo discreto.",Housekeeping,positive,1,detailed
-f2e6195f-732e-4016-add7-02c92747b93c,Pulizia top,"Abbiamo soggiornato per il weekend. Piacevolmente sorpreso dalla wifi, molto rinnovata. Comunque torneremo.",Housekeeping,positive,1,detailed
-b289f224-4ac9-478d-8da8-eee40df56ac6,Luci e ombre,"Mi aspettavo una igiene incantevole, ma era insufficiente.",Housekeeping,negative,0,ambiguous
-ce6322b6-ab05-447f-9556-b37d8f0881ee,Soggiorno dicembre,Il receptionist non era certo qualificato. Maleducato.,Reception,negative,0,negation
-e7c99b26-1141-45c6-ba9b-edd40f1259e0,Reception disponibile,"Nonostante la colazione stretta, il personale alla mano ha fatto la differenza.",Reception,positive,1,mixed
-38b8f24e-56ea-47b3-beed-10b64f6e274b,Accoglienza calorosa,Abbiamo soggiornato per il weekend. Stanza insonorizzata. Staff ottimo. Cena equilibrato. Top!,Reception,positive,1,multi_aspect
-7e8f8095-624c-49b6-b244-45a7b7e58481,Servizio impeccabile,"Ok la stanza era trasandata, ma il servizio attento compensa.",Reception,positive,1,mixed
-aa38d0a1-6ba2-4efe-b11c-6eb62095eef6,Consigli utili,Soggiorno di 1 notti. Stanza rinnovata. Staff efficiente. Cena superbo. Top!,Housekeeping,positive,1,multi_aspect
-63f4c69d-0534-4101-8ddc-e71981f38dd4,Personale sgarbato,"Lo staff sotto la media, purtroppo non all'altezza delle aspettative. Aria condizionata funzionante.",Reception,negative,0,ambiguous
-53a3dd5a-4b8c-4bdc-a8dd-5e5a1712fb16,Pro e contro,Ho prenotato tramite Booking. Il receptionist era scorbutico. Forse ci torniamo. Il caffè era decente.,Reception,negative,0,detailed
-e15ca666-4797-42c9-9720-72464223623b,Cucina eccellente,"La piatti era discreto. Non gourmet, ma buona. Nessun problema al check-out.",F&B,positive,1,ambiguous
-d92c9227-eadf-4085-bfcb-75468eb22579,Servizio eccellente,Non sapevo cosa aspettarmi. Stanza curata. Staff affidabile. Cena caldo. Top!,Reception,positive,1,multi_aspect
-91d63f78-e3e9-4e99-b10c-718b1eb0e38a,Reception disorganizzata,Scordatevi una frutta ben cotto. Deludente.,F&B,negative,0,negation
-8011316b-3ae8-4926-b423-ccde88575117,Ristorante top,"La uova non era povero. Anzi, deliziosa! Il personale delle pulizie era nella norma.",F&B,positive,1,negation
-d4aac9a3-3ed8-456c-9a09-dfa052828d80,Colazione misera,Dessert lascia a desiderare. Mi aspettavo qualcosa di più.,F&B,negative,0,ambiguous
-ea83bf00-7135-4221-a6c9-537f84dad06a,Consigli utili,"Ok la stanza era unto, ma il servizio qualificato compensa.",Reception,positive,1,mixed
-10f1bc81-448a-4a9e-a6b2-bc5b50c187fc,La mia esperienza,"Prima volta in questa struttura. Tutto perfetto: camera confortevole, reception rispettoso, ristorante magnifico. Il minibar aveva i soliti prodotti.",Housekeeping,positive,1,multi_aspect
-7c441fe7-ab42-40a7-874a-493b3ceddf2d,Qualche giorno qui,"Colazione continentale standard. Abbiamo soggiornato per il weekend. Personale svogliato, soprattutto Uberto. Lo consiglio.",Reception,negative,0,detailed
-9c96e9ec-4d71-4366-b41b-31438b10550c,Weekend al mare,"Il cibo era bollente, ma lo staff affabile ha salvato tutto.",Reception,positive,1,mixed
-dc9c96de-65a6-44c2-9273-8a235aaab32f,Sistemazione ottima,Niente aria condizionata obsoleta come temevo. Ottima! Colazione continentale standard.,Housekeeping,positive,1,negation
-cc8218da-c696-45e6-8944-051be726be23,Attesa infinita,"Accoglienza non proprio il massimo. Un peccato, rovinava l'esperienza.",Reception,negative,0,ambiguous
-6c9f82b9-f647-4986-a391-7c994c955f6a,Alti e bassi,Viaggio in famiglia. Stanza fredda. Staff scortese. Cena salato. Disastro. Nessun problema al check-out.,Housekeeping,negative,0,multi_aspect
-9261549d-3d22-4c30-b28f-41defb140bc3,Accoglienza top,"Lo staff era abbastanza buono, devo ammettere che mi aspettavo peggio.",Reception,positive,1,ambiguous
-28711733-8bed-4b12-ad77-e82f49a23a89,Alti e bassi,"Il personale delle pulizie era nella norma. Ho prenotato tramite Booking. Succo gustoso, ottima! Vedremo la prossima volta.",F&B,positive,1,detailed
-c715b2b9-c40c-4d91-86fd-e062a33dc7af,Giudizio personale,"Reception abbastanza buono. Poteva andare peggio, anzi no, è andata bene.",Reception,positive,1,ambiguous
-8fc42092-f4e5-49e5-9622-93480f5ae9d3,Hotel discreto,Trasferta di lavoro. Ho apprezzato la cibo: magnifico. Rapporto qualità-prezzo discreto.,F&B,positive,1,detailed
-a0ee89ae-d453-4d32-8b0d-bb418d5288f1,Staff eccezionale,"Abbiamo scelto questo hotel per la posizione. Tutto perfetto: camera splendida, reception esperto, ristorante equilibrato.",Reception,positive,1,multi_aspect
-a97431db-09a9-41c1-86ca-c6f4e238fe93,Personale gentilissimo,"La stanza era quella che ci si aspetta. Non ho trovato staff presuntuoso. Anzi, gentilissimi.",Reception,positive,1,negation
-adcc3daf-569f-4ab3-8643-530068a51c68,Reception efficiente,Vacanza romantica. Devo dire che la finestre era ordinata. Non lo consiglio. Abbiamo mangiato qualcosa al ristorante.,Housekeeping,positive,1,detailed
-89d7fd6c-ce77-4f00-acf2-7e7685197ff4,Pulizia top,"Dopo un viaggio da Lucrezia, Camera tecnologica, personale esperto, colazione sapido. Torneremo! Buffet nella norma.",Housekeeping,positive,1,multi_aspect
-560c95ee-638c-454c-876e-2bba7c5308bf,Qualche giorno qui,Al bar niente di speciale. La pulizia superava le aspettative: curata!,Housekeeping,positive,1,simple
-8fadc1a6-06cb-4fb3-9a1d-e644815ef6d1,Esperienza altalenante,"Il minibar aveva i soliti prodotti. Il personale era abbastanza buono. Non eccezionale, ma disponibile.",Reception,positive,1,ambiguous
-eb67146a-77a6-417c-972b-61082a405f12,Soggiorno ok,"Trasferta di lavoro. Camera soffocante, personale sgradevole, colazione marcio. Mai più!",F&B,negative,0,multi_aspect
-675dd5af-3c36-4296-9ca0-2eecacdabacc,Hotel centrale,Abbiamo scelto questo hotel per la posizione. Il hall era rispettoso. Esperienza da ripetere. La colazione era quella classica da hotel.,Reception,positive,1,detailed
-ca862225-0b36-4356-b39b-77a84b1f0d7b,Prima volta qui,Vacanza romantica. Stanza calda. Staff solare. Cena tradizionale. Top! Il concierge ci ha dato qualche indicazione.,Housekeeping,positive,1,multi_aspect
-d8f56413-5be6-428e-98c2-67976142ea7d,Consigli utili,"Al bar niente di speciale. Accoglienza lascia a desiderare. Un peccato, rovinava l'esperienza.",Reception,negative,0,ambiguous
-cdf974a7-d882-45c1-b79e-fd7065bcc272,Soggiorno ok,"Il concierge ci ha dato qualche indicazione. La bidet? Accettabile. Niente di eccezionale, ma funzionale.",Housekeeping,positive,1,ambiguous
-7746d0ba-8ae8-405b-94b4-a48268586eba,Cucina eccellente,"La caffè era più che sufficiente. Non gourmet, ma buona.",F&B,positive,1,ambiguous
-a3d70628-ece6-4fa2-bd51-66e6451b4cf3,Ottima manutenzione,Accoglienza standard. Soggiorno di 1 notti. La camera era moderna. Nel complesso ok.,Housekeeping,positive,1,detailed
-64575bc4-a981-4098-b2cf-952da7f333b3,Camera fantastica,"La camera non era affatto orrenda. Anzi, molto curata.",Housekeeping,positive,1,negation
-1a3d1fa7-bc89-40a9-a3b8-c1e9392456de,Piatti orribili,"Abbiamo soggiornato per il weekend. Camera caotica, personale irritante, colazione precotto. Mai più!",F&B,negative,0,multi_aspect
-f96b648a-0ba6-4ab9-8639-447b2067bdac,Accoglienza calorosa,"Accoglienza sopra la media. Niente effetto wow, ma professionali.",Reception,positive,1,ambiguous
-670acc5c-b321-4f21-8dd8-eb85b04d3376,Hotel in centro,"Lenzuola cambiate regolarmente. Camera un po' schifoso, però Ruggero alla reception sensibile. Promossi!",Reception,positive,1,mixed
-9a8cfa3c-5283-4ac7-bc0a-6a5d6e996e3e,Cena fantastica,"Non sapevo cosa aspettarmi. Camera rifinita, personale sorridente, colazione completo. Torneremo! Nessun problema al check-out.",F&B,positive,1,multi_aspect
-e9ddebf5-6311-4aca-848a-f4407fc15858,Reception efficiente,"Nonostante la colazione scrostata, il personale collaborativo ha fatto la differenza. Aria condizionata funzionante.",Reception,positive,1,mixed
-935f2b0a-a138-4ddc-a2d9-de5d6a18ce4c,Qualche giorno qui,"La camera era superbo, ma il personale intrattabile ha rovinato tutto.",Reception,negative,0,mixed
-dcb33df3-13ee-4dc6-abd1-4d2c75b27455,Piatti deliziosi,Niente sala colazione nauseante come in altri hotel. Ottima!,F&B,positive,1,negation
-bd17c5e8-d5ca-49ab-8a2e-6a93c5580bb2,Pro e contro,"Stanza anche ben riscaldata, però Tonino pessimo. Mai più.",Reception,negative,0,mixed
-d5c0244d-3735-462d-8184-3b0304dd7054,Camera orribile,Scordatevi una materasso rifinita. Pessima. Il caffè era decente.,Housekeeping,negative,0,negation
-4e6384bb-3e49-4f43-b118-f68d6786d506,Pro e contro,"Bello l'hotel, spaziale, ma il servizio assente è inaccettabile. Al bar niente di speciale.",Reception,negative,0,mixed
-94a1875d-2db6-4edb-82de-ffccf86c2ca2,Hotel centrale,Che brioche sfizioso!,F&B,positive,1,simple
-cae28e66-ae8a-4813-90e0-a95b697c3923,Hotel nella media,Viaggio in famiglia. Stanza incantevole. Staff sensibile. Cena fumante. Top!,Reception,positive,1,multi_aspect
-0212b554-4644-48b4-a553-867da881bfd3,Qualche giorno qui,"Prima volta in questa struttura. Camera trasandata, personale svogliato, colazione gommoso. Mai più!",Housekeeping,negative,0,multi_aspect
-77097749-527e-4cfa-a79a-c9aa9b4e2c24,Servizio eccellente,"Nonostante la colazione povero, il personale empatico ha fatto la differenza.",Reception,positive,1,mixed
-d2e82f38-a2a9-44d8-902e-fde5a5cc8bf7,Poteva andare meglio,Niente cena rancido come in altri hotel. Ottima!,F&B,positive,1,negation
-770c7798-37cc-463b-b2a0-345990604f62,Pranzo memorabile,"Nessun problema al check-out. Piacevolmente sorpreso dalla pavimento, molto insonorizzata.",Housekeeping,positive,1,simple
-d49405f0-2cd2-4404-a48e-40f1d0421dfa,Stanza sporca,Personale presente ma niente di memorabile. La specchio non era certo impeccabile. Delusione totale.,Housekeeping,negative,0,negation
-b4fb0eb9-49c1-4de7-bb42-06c5085b15fb,Seconda visita,Sulla carta la wc doveva essere favolosa. Invece non all'altezza. Accoglienza standard.,Housekeeping,negative,0,ambiguous
-c96b5edb-0cf2-469b-8577-aea9f8999246,Camera da incubo,Purtroppo la cuscini era con polvere.,Housekeeping,negative,0,simple
-c6b6e4ad-e7ea-4d5a-b1a3-ac4d828c37e7,Accoglienza top,"Trasferta di lavoro. Tutto perfetto: camera ben illuminata, reception sempre presente, ristorante leggero. Il personale delle pulizie era nella norma.",F&B,positive,1,multi_aspect
-9e50aa42-ca6d-4da1-989b-c4da9b37a22b,Pulizia top,"Ok la stanza poteva sembrare disastrosa a primo impatto, ma poi nella media alta. La colazione era quella classica da hotel.",Housekeeping,positive,1,ambiguous
-72bb912d-7da6-4785-b63b-4dc3a559e463,Team impreparato,Servizio distratto alla ingresso.,Reception,negative,0,simple
-5e6fea07-c453-4f1d-8199-2fdfb31022f0,Recensione hotel,Di funzionale la doccia non aveva nulla. Al bar niente di speciale.,Housekeeping,negative,0,negation
-236e1608-9acb-494a-8d1f-5318331f63fb,Camera consigliatissima,"Nonostante la colazione vecchio, il personale molto preparato ha fatto la differenza.",Reception,positive,1,mixed
-59970043-f3b1-425b-bff9-f5850d557b61,Piatti deliziosi,Il minibar aveva i soliti prodotti. Niente lavandino soffocante come temevo. Ottima!,Housekeeping,positive,1,negation
-7701f7bb-7bc6-4e1f-864e-e6e389c5b31a,Niente di speciale,"La colazione era quella classica da hotel. La bidet sembrava paradisiaca dalle foto, in realtà non soddisfacente.",Housekeeping,negative,0,ambiguous
-cae9b4a7-2a79-4a68-8f44-704f1247ea4e,Hotel centrale,"La finestre sembrava fresca dalle foto, in realtà mediocre.",Housekeeping,negative,0,ambiguous
-bfbf397b-ac3e-4b0d-9e5b-a13d746cdb77,Ci sono stato,"Ok la stanza era deprimente, ma il servizio molto preparato compensa. Il bagno funzionava, niente di più.",Reception,positive,1,mixed
-7cea2045-c268-483e-a32f-2e63b7fddd71,Luci e ombre,"Prima volta in questa struttura. Colazione in camera genuino, ottima! Voto: 8/10. Nessun problema al check-out.",F&B,positive,1,detailed
-a9d3d7c7-ee87-405e-8ca4-15ea8dfa6a56,Colazione scarsa,Soggiorno di 6 notti. Paulina ci ha trattato in modo introvabile. Comunque torneremo.,Reception,negative,0,detailed
-a2bb522b-0b25-4279-b85a-c5d0df92a621,Consigli utili,"Colazione sopra la media. Niente di straordinario, ma soddisfacente. Lo staff faceva il suo lavoro.",F&B,positive,1,ambiguous
-0a8381be-c85a-4a46-90e0-f4a0fbdd3933,Personale maleducato,"Staff impreparato, Natalia in particolare.",Reception,negative,0,simple
-d664d264-4c6e-47ff-b9de-7a3a486822b9,Attesa infinita,"Accoglienza mediocre. Un peccato, rovinava l'esperienza.",Reception,negative,0,ambiguous
-7daa39f0-c0b6-4ce2-9e53-790aa34b6cf6,Servizio impeccabile,"Il minibar aveva i soliti prodotti. Camera un po' scaduto, però Dino alla reception diplomatico. Promossi!",Reception,positive,1,mixed
-9549c931-e9af-499d-bf67-1eec3da70577,Qualità eccellente,"Non sapevo cosa aspettarmi. Personale eccezionale, specialmente Giuliana. Lo consiglio.",Reception,positive,1,detailed
-e623a689-5d59-4d2a-8eea-04e70ab54bde,Qualche giorno qui,Di lussuosa la minibar non aveva nulla.,Housekeeping,negative,0,negation
-1a7f195b-7355-4b9d-8fd6-f47ef52d4af2,Ambiente perfetto,"Abbiamo mangiato qualcosa al ristorante. Ok la scrivania poteva sembrare con polvere a primo impatto, ma poi più che sufficiente.",Housekeeping,positive,1,ambiguous
-17a0df49-0d01-480f-989a-40c0e87d1c78,Consigli utili,"Accoglienza discreto. Niente effetto wow, ma professionali.",Reception,positive,1,ambiguous
-a748dbcf-ac61-4e63-8dde-29a6baa4b71a,Soggiorno breve,Ho prenotato tramite Booking. Stanza confortevole. Staff paziente. Cena biologico. Top!,Housekeeping,positive,1,multi_aspect
-1337739e-8d4f-4d27-ac7f-0b793d67cde9,Camera orribile,Al bar niente di speciale. Viaggio in famiglia. Stanza orrenda. Staff presuntuoso. Cena marcio. Disastro.,Housekeeping,negative,0,multi_aspect
-204e178c-10d0-4d11-a5f9-34bf9bb96155,Luci e ombre,Sulla carta la stanza doveva essere pulitissima. Invece mediocre. Accoglienza standard.,Housekeeping,negative,0,ambiguous
-cea60f4c-39e5-4ff0-92f8-37d447503f1d,Ristorante top,"Acqua sopra la media. Niente di straordinario, ma soddisfacente.",F&B,positive,1,ambiguous
-2cd94cbb-c19a-458c-835b-1c8c0a4c9f7f,Seconda visita,"La ristorante non all'altezza. Per il prezzo pagato, deludente. Il personale delle pulizie era nella norma.",F&B,negative,0,ambiguous
-a6a27967-a79b-44b6-9a50-9fed1d4a3d81,Cordialità unica,Il portineria era alla mano.,Reception,positive,1,simple
-e1b294de-4767-476c-962f-8a24ef43613c,Servizio impeccabile,"Il personale era non male. Non eccezionale, ma disponibile.",Reception,positive,1,ambiguous
-ae4c84ff-a8c0-4f05-8478-f6f1b88ec318,La mia esperienza,"Camera nella media per la categoria. Ok la stanza era non all'altezza, ma il servizio meticoloso compensa.",Reception,positive,1,mixed
-350843f0-8de0-4fc2-83e1-5a85d46ef104,Personale maleducato,"Il bagno funzionava, niente di più. Ho prenotato tramite Booking. Tutto pessimo: camera con polvere, reception mancante, ristorante rancido.",Reception,negative,0,multi_aspect
-328067a1-4187-422b-a57d-5e521a5165ca,Qualche giorno qui,Trasferta di lavoro. Ho trovato la pulizia con odori strani. Inaccettabile. Rapporto qualità-prezzo discreto.,Housekeeping,negative,0,detailed
-dc96925e-ccf3-4171-96dc-8907ba6c34ab,Staff scortese,Prima volta in questa struttura. Patrizio al prenotazione si è dimostrato saccente. Comunque torneremo.,Reception,negative,0,detailed
-92ca525a-6de5-4332-9364-f3d05024bdc6,Weekend al mare,"Il concierge ci ha dato qualche indicazione. Pessima cibo, nauseante.",F&B,negative,0,simple
-5cb5e69c-5dc7-43e6-a529-64ffc74cc890,Niente di speciale,Hotel consigliato da amici. Il reception era indifferente. Lo consiglio.,Reception,negative,0,detailed
-b7f28572-3def-4849-9336-4f7e83efa9f3,Team impreparato,Vacanza romantica. Stanza obsoleta. Staff antipatico. Cena risicato. Disastro.,Reception,negative,0,multi_aspect
-6aedfdc7-a3e0-4309-b5a1-b94967884209,Piatti deliziosi,Finalmente una frutta superbo.,F&B,positive,1,simple
-bc55300b-06a2-41af-9d0a-f7f7f5e4a471,Cucina pessima,Abbiamo soggiornato per il weekend. Stanza senza finestre. Staff maleducato. Cena scotto. Disastro.,F&B,negative,0,multi_aspect
-20a04502-6e06-4097-a5e9-79778d7248e2,Colazione ottima,"Dopo un viaggio da Badile, Ho apprezzato la menu: innovativo.",F&B,positive,1,detailed
-fa53e34d-e6d5-401d-8b62-1d415e09a9ee,Luci e ombre,Alla reception tutto regolare. Non mi aspettavo una cuscini così piena di insetti.,Housekeeping,negative,0,simple
-e776b886-d534-4e1d-bf29-84f5bec39a37,Hotel nella media,"Ok la stanza era acido, ma il servizio alla mano compensa.",Reception,positive,1,mixed
-32fa2de8-ce7a-47f6-b982-0cff4f77a665,Camera da sogno,"Dopo un viaggio da Condofuri, Stanza impeccabile. Staff pronto. Cena stellato. Top! Nessun problema al check-out.",Housekeeping,positive,1,multi_aspect
-7a9e8eef-ffa3-41be-8f92-40e107f97d05,Reception assente,Abbiamo mangiato qualcosa al ristorante. Scordatevi accoglienza affidabile. Disastro.,Reception,negative,0,negation
-f84f16b3-a79f-4faf-9ef5-768968f45bce,Menu squisito,"Check-in nella norma. Ho trovato la buffet discreto, più di quello che mi aspettavo.",F&B,positive,1,ambiguous
-e1a47e10-2d53-4dd0-8f8e-bc5accc56569,Giudizio personale,Room service potrebbe fare di meglio. Mi aspettavo qualcosa di più.,F&B,negative,0,ambiguous
-f9e8a369-2999-4735-9d56-cc943c9ad14c,Gastronomia top,"La formaggio era sopra la media. Non gourmet, ma buona.",F&B,positive,1,ambiguous
-be2d740a-1e9b-43bc-90c7-c006314d3441,Soggiorno breve,"Prima volta in questa struttura. Tutto perfetto: camera tecnologica, reception reattivo, ristorante profumato. Lenzuola cambiate regolarmente.",F&B,positive,1,multi_aspect
-889b78d5-dbfd-497e-aca2-b148da330aa1,Esperienza altalenante,Prima volta in questa struttura. Il concierge era svogliato. Rapporto qualità-prezzo discreto.,Reception,negative,0,detailed
-688c7015-aab9-4e49-8f2d-479681d2c7de,Ci sono stato,"Bello l'hotel, irresistibile, ma il servizio distratto è inaccettabile. Il minibar aveva i soliti prodotti.",Reception,negative,0,mixed
-4ef492c1-aac9-4316-86e5-27537c93f6cc,Accoglienza top,"La menu era non male. Non gourmet, ma buona.",F&B,positive,1,ambiguous
-7914c120-c8dc-419f-be35-11287900f7f9,Nota dolente,"Buffet nella norma. Accoglienza nella media alta. Niente effetto wow, ma professionali.",Reception,positive,1,ambiguous
-b92da22b-21df-406f-8a0b-3c3336d8393a,Gastronomia top,"La salumi non era orribile. Anzi, deliziosa! Il concierge ci ha dato qualche indicazione.",F&B,positive,1,negation
-80962718-2051-4cef-897a-1e10f6febc0e,Accoglienza top,"Niente da segnalare sulla manutenzione. Viaggio in famiglia. Tutto perfetto: camera con vista, reception discreto, ristorante innovativo.",Reception,positive,1,multi_aspect
-587ef344-6f3f-420c-98b8-e4cc1bc044fc,Colazione scarsa,Ho prenotato tramite Booking. La cappuccino era unto. Potrebbe migliorare. Accoglienza standard.,F&B,negative,0,detailed
-d0e6e660-7c69-4ee1-bb5e-4bcf15ed6269,Soggiorno ok,"Nonostante la colazione soffocante, il personale gentilissimo ha fatto la differenza.",Reception,positive,1,mixed
-06f028ff-a9ba-4a27-907b-fe36978648f8,Ottima manutenzione,Abbiamo scelto questo hotel per la posizione. La minibar era moderna. Voto: 2/10. La colazione era quella classica da hotel.,Housekeeping,positive,1,detailed
-bfa016c2-c09c-4506-88f1-096d9c4ffb46,Cena fantastica,"Alla reception tutto regolare. Ho trovato la servizio in camera discreto, più di quello che mi aspettavo.",F&B,positive,1,ambiguous
-f4188f3f-8a14-4e62-a95b-4715c333e861,Camera deludente,Soggiorno di 6 notti. Stanza rovinata. Staff lento. Cena unto. Disastro.,Housekeeping,negative,0,multi_aspect
-bf3c5140-7f54-4511-81fa-964e1eb74b56,Pulizia perfetta,Finalmente una manutenzione elegante. Accoglienza standard.,Housekeeping,positive,1,simple
-e059a0ee-9132-463e-b162-87e4e9c349e0,Camera deludente,"Colazione incantevole, peccato per lo staff presuntuoso. La stanza era quella che ci si aspetta.",Reception,negative,0,mixed
-c8120a8e-7830-4930-9327-f1bc2784378f,Recensione hotel,Lenzuola cambiate regolarmente. Scordatevi una pane invitante. Deludente.,F&B,negative,0,negation
-cd29a36f-2222-42e1-b4da-aebf1f115b76,Soggiorno dicembre,"Pessima bar, scialbo.",F&B,negative,0,simple
-b24cc64f-be3e-4e57-b30a-9e32aba4fc03,Camera fantastica,La colazione era quella classica da hotel. Non posso dire che la ordine fosse polverosa. Tutt'altro!,Housekeeping,positive,1,negation
-19e45c6a-c9c2-4e69-982c-75654bb907ec,Cordialità unica,"Ho prenotato tramite Booking. Camera ben riscaldata, personale eccellente, colazione eccellente. Torneremo!",Reception,positive,1,multi_aspect
-dc5c0eed-8da0-465b-b898-97b9405cacec,Hotel centrale,"Accoglienza standard. La room service era sopra la media. Non gourmet, ma buona.",F&B,positive,1,ambiguous
-6699cd99-a847-4ce7-90fa-6b5724ac2130,Cena pessima,Bar insufficiente. Mi aspettavo qualcosa di più.,F&B,negative,0,ambiguous
-57eb89b1-d65e-49dd-a62d-2d06cf9b8558,Poteva andare meglio,"Abbiamo mangiato qualcosa al ristorante. Lo staff insufficiente, purtroppo non all'altezza delle aspettative.",Reception,negative,0,ambiguous
-30e912f2-f2b4-4abf-8441-aefd0299436a,Seconda visita,Siamo arrivati di sabato verso le 20. Stanza buia. Staff irritante. Cena vecchio. Disastro.,Reception,negative,0,multi_aspect
-39feb99c-3127-4148-bc7c-404ec422d03e,La mia esperienza,"Purtroppo la terrazza era sotto la media, un peccato.",F&B,negative,0,ambiguous
-61607459-85c7-404b-8693-da1139c6a1ca,Colazione misera,La sala colazione era porzioni minuscole.,F&B,negative,0,simple
-ed6522b4-b5a5-48e6-b639-1f0428524385,Piatti orribili,Trasferta di lavoro. Evitate la terrazza: stantio. Lo consiglio.,F&B,negative,0,detailed
-ca9e4a62-fae3-414b-a3b4-42bd46494296,Buffet povero,Non aspettatevi personale entusiasta. Pessimi.,Reception,negative,0,negation
-04cc3ede-6fac-4673-8ad4-5230bdf66ba5,Pulizia scarsa,"La letto sembrava ventilata dalle foto, in realtà non proprio il massimo.",Housekeeping,negative,0,ambiguous
-d865d69a-74f3-4103-8006-6ff2b0b862ef,Poteva andare meglio,"Avevo paura fosse deprimente, ma la lavandino era perfetta.",Housekeeping,positive,1,negation
-0758e201-561e-46d1-a105-716bab0e664e,Team impreparato,Prima volta in questa struttura. Cristina al reclami si è dimostrato scortese. Potrebbe migliorare.,Reception,negative,0,detailed
-6f4cc69a-4b22-4308-9c8e-aee95715bd6f,Trasferta di lavoro,"Camera un po' precotto, però Eva alla reception straordinario. Promossi!",Reception,positive,1,mixed
-e68933a9-c9e4-4e8c-a5c6-1c45c63d04ee,Prima volta qui,Hotel consigliato da amici. Ho trovato la scrivania con vista e ben curata. Esperienza da ripetere.,Housekeeping,positive,1,detailed
-a181c85e-ca0a-46ac-8d67-d38e990f0c5b,Camera da evitare,"Mi aspettavo una scrivania accogliente, ma era sotto la media.",Housekeeping,negative,0,ambiguous
-a99f1318-49c8-443f-bed7-0ed7b194990b,Qualche giorno qui,Abbiamo scelto questo hotel per la posizione. La stanza era ben illuminata. Rapporto qualità-prezzo discreto.,Housekeeping,positive,1,detailed
-8cbfedb0-f264-4ccc-b9ac-1b1ea8e56e0c,Pranzo da dimenticare,"La antipasti era limitato. Esperienza da ripetere. Il bagno funzionava, niente di più.",F&B,negative,0,detailed
-71b701aa-f836-4571-bcce-c76cb836c448,Staff incompetente,"Colazione da leccarsi i baffi, peccato per lo staff disinteressato.",Reception,negative,0,mixed
-fd034ada-c952-4185-81e0-3a5e8b48f496,Piatti deliziosi,"Nonostante la colazione schifoso, il personale simpatico ha fatto la differenza.",Reception,positive,1,mixed
-147f6570-1a43-4b54-923a-e9934b3446bc,Soggiorno dicembre,Hotel consigliato da amici. Stanza curata. Staff attento. Cena magnifico. Top! Buffet nella norma.,Reception,positive,1,multi_aspect
-276aa6ce-d507-45d9-a5d0-4d531e1242e3,Vacanza a metà,Nessuno pigro alla reception. Complimenti!,Reception,positive,1,negation
-f6ca6b8b-a4b1-4991-b542-46464d37a539,Recensione hotel,"Al bar niente di speciale. Temevo receptionist non professionale, invece super disponibili.",Reception,positive,1,negation
+2a25a888-0f02-4ad0-a706-7ef466aa9385,Recensione hotel,Non aspettatevi servizio in camera invitante. Pessimo.,F&B,negative,0,negation
+e14eb70d-b380-473a-989d-9d4ae15ca666,Personale gentilissimo,Nessuno incompetente alla reception. Complimenti!,Reception,positive,1,negation
+c2b6d2c5-fa5d-4100-91b7-e948d0e6e660,Servizio impeccabile,Abbiamo scelto questo hotel per la posizione. L'ingresso era attento. Potrebbe migliorare.,Reception,positive,1,detailed
+431d029f-ac1e-46d8-bfbf-397bac3e7b0d,Vacanza a metà,Sulla carta il cappuccino doveva essere completo. Invece lascia a desiderare.,F&B,negative,0,ambiguous
+12a4def0-c4bb-47a9-9988-68dd9c7c7377,Weekend al mare,Scordatevi servizio in camera sfizioso. Deludente.,F&B,negative,0,negation
+980402a2-b07a-4066-b354-35ea68949b8d,Team straordinario,Ho trovato il portiere attento e ben curato. Colazione continentale standard.,Reception,positive,1,simple
+7e7e7419-a0c1-4035-85d9-5f51f387e1bd,Manutenzione assente,"Il cappuccino era equilibrato, ma lo specchio rovinato ha rovinato tutto. Check-in nella norma.",Housekeeping,negative,0,mixed
+b7c93acf-e059-40ee-9132-b63ef16287e4,Ci sono stato,"Il ristorante era sapido, ma la portineria brusca ha rovinato tutto.",Reception,negative,0,mixed
+1d7c0098-4a1d-4b32-aaed-fdc7a3e05309,Pulizia inesistente,"Lo staff faceva il suo lavoro. Soggiorno di 6 notti. Camera sciatta, personale presuntuoso, colazione scotta. Mai più!",Housekeeping,negative,0,multi_aspect
+b3f6fe0d-4860-4b32-b4fb-0eb949c13de7,Ci sono stato,Niente pulizia fatiscente come temevo. Ottima! La colazione era quella classica da hotel.,Housekeeping,positive,1,negation
+5ffa46ef-14e4-480c-be99-36a362dbc850,Ci sono stato,Camera nella media per la categoria. Trasferta di lavoro. Stanza opprimente. Staff negligente. Cena insapore. Disastro.,Reception,negative,0,multi_aspect
+b0cc1b3b-9793-49b4-9374-814632c5bd89,Vacanza a metà,"Bello: doccia ordinata, ma la hall assente è inaccettabile.",Reception,negative,0,mixed
+42999aa4-0cdf-442b-ae85-cb217631de9d,Personale sgarbato,"Il bagno funzionava, niente di più. Ristorante curato, peccato per la prenotazione nervosa.",Reception,negative,0,mixed
+d50755d9-a5d0-4d53-9e12-42e3f27292b6,Reception disorganizzata,"Il personale delle pulizie era nella norma. Vacanza romantica. Tutto pessimo: camera orrenda, reception antipatico, ristorante dura.",Reception,negative,0,multi_aspect
+b4d7e28e-271e-4ee2-b1a6-b1f1620e99d3,Seconda visita,"Il caffè era decente. Prenotato 27 giorni prima. Tutto pessimo: camera minuscola, reception maleducato, ristorante dura.",Housekeeping,negative,0,multi_aspect
+71348c2a-780b-4657-917b-355b70944bdb,La mia esperienza,Il caffè era sfizioso.,F&B,positive,1,simple
+292bd156-db94-4570-9ac7-0ec0ab8ddeb4,Camera fantastica,"Prima volta in questa struttura. Camera silenziosa, personale straordinario, colzaione gustosa. Torneremo!",Housekeeping,positive,1,multi_aspect
+dea4ae17-54fd-4ad3-9716-108ef72169bb,Pulizia scarsa,Ho prenotato tramite Booking. Purtroppo la pulizia era umida. Vedremo la prossima volta.,Housekeeping,negative,0,detailed
+6b44fa8d-d5f2-4073-b414-02b1e4429ebb,Niente di speciale,Hotel consigliato da amici. Il cibo superava le aspettative: caldo! Nel complesso ok.,F&B,positive,1,detailed
+f29a6339-577b-455a-b6d5-5494f37fd50d,Hotel in centro,"Abbiamo soggiornato per il weekend. Camera silenziosa, personale puntuale, colazione squisita. Torneremo!",Reception,positive,1,multi_aspect
+f6478986-a391-4c99-8c95-5f6a966b1964,Attesa infinita,"La stanza era quella che ci si aspetta. Accoglienza mediocre. Un peccato, rovinava l'esperienza.",Reception,negative,0,ambiguous
+989240ac-e689-43a9-89e4-8e8c25c61c45,Ambiente trascurato,"Accoglienza standard. Ho prenotato tramite Booking. Camera angusta, personale scostante, colazione mediocre. Mai più!",Housekeeping,negative,0,multi_aspect
+39681c81-7b70-43b8-a81f-dec3279c658a,Recensione hotel,Aria condizionata funzionante. Il room service superava le aspettative: sfizioso!,F&B,positive,1,simple
+98c7472a-864e-4a13-829c-fc0cfa02eaec,Reception assente,"Bello: lavandino accogliente, ma lo staff freddo è inaccettabile. La colazione era quella classica da hotel.",Reception,negative,0,mixed
+260a5962-dd81-47f5-bd59-11c6a8f1e091,Soggiorno dicembre,Nessuno presuntuoso alla reception. Complimenti!,Reception,positive,1,negation
+750565f5-9f70-4368-8b3c-f8caa3925731,Pro e contro,"Bello: ordine splendido, ma il ristorante nauseante è inaccettabile.",F&B,negative,0,mixed
+a2bc372f-7412-4293-8729-4739614ff3d7,Servizio impeccabile,"Lenzuola cambiate regolarmente. Non sapevo cosa aspettarmi. Check-in paziente, niente da dire. Rapporto qualità-prezzo discreto.",Reception,positive,1,detailed
+8bcf53a1-bc10-4a52-bf5d-2fdf89c8d2ab,Ambiente trascurato,"Il servizio in camera non era certo genuino. Delusione totale. Il bagno funzionava, niente di più.",F&B,negative,0,negation
+f9e8a369-2999-4735-9d56-cc943c9ad14c,Qualche giorno qui,"L'arredamento era accettabile. Non perfetto, ma ci siamo trovati bene.",Housekeeping,positive,1,ambiguous
+e506f670-7092-447d-be49-69ec6667d3bb,Hotel nella media,Abbiamo scelto questo hotel per la posizione. Ho trovato l'armadio solare e ben curato. Forse ci torniamo.,Housekeeping,positive,1,detailed
+1b19d8b8-d830-4081-afcc-57dd168fae12,Hotel nella media,"Avevo paura fosse industriale, ma il servizio in camera era perfetto.",F&B,positive,1,negation
+59fefbbc-71a3-4ad2-b094-6d2a2aa93b43,Camera impeccabile,Il minibar era perfetto.,Housekeeping,positive,1,simple
+12e89d10-2871-4733-8bed-db12ad77e82f,Piatti orribili,Non aspettatevi cappuccino sostanzioso. Pessimo.,F&B,negative,0,negation
+d21c82f8-cada-4f80-a9e7-82d4fd08b32c,Gastronomia pessima,Il servizio in camera non era certo fantastico. Delusione totale.,F&B,negative,0,negation
+524f93ff-3030-4633-a6de-d1d8925817b7,Soggiorno dicembre,"Ho prenotato tramite Booking. Tutto pessimo: camera orrenda, reception approssimativo, ristorante gommosa. Check-in nella norma.",F&B,negative,0,multi_aspect
+f91e1d4c-1ff4-4b78-8946-3e85759cde66,Team straordinario,"Soggiorno di 6 notti. Camera incantevole, personale cortese, colazione profumata. Torneremo!",Reception,positive,1,multi_aspect
+a0d572c8-a837-4e68-bba2-05ca3dba6da8,Ristorante deludente,Lo staff faceva il suo lavoro. Soggiorno di 2 notti. Purtroppo la doccia era cupa. Non lo consiglio.,Housekeeping,negative,0,detailed
+f836f571-3cce-476c-b836-c448ad261ec5,Luci e ombre,"Specchio un po' datato, però il bar ricercato. Promossi!",F&B,positive,1,mixed
+0b36e356-339b-47a8-8b1f-0d7b0977c513,Prima volta qui,Il receptionist non era certo preparato. Maleducato.,Reception,negative,0,negation
+722764e6-8c41-461b-a827-a1b9d4a02e53,Pranzo da dimenticare,Personale presente ma niente di memorabile. Trasferta di lavoro. Stanza fredda. Staff altezzoso. Cena bruciata. Disastro.,F&B,negative,0,multi_aspect
+03c72ba8-d605-4770-8a63-f881ffd0f9d5,Colazione misera,La colazione era pesante.,F&B,negative,0,simple
+122c9a56-01d7-4256-b860-2ab696a402f2,Team straordinario,Il check-out superava le aspettative: veloce!,Reception,positive,1,simple
+3b4206c5-085b-45fb-8a8f-f810784c2f29,Team impreparato,Purtroppo l'ordine era vecchio.,Housekeeping,negative,0,simple
+c9535b63-ba81-4dd9-987e-f3446f3f920c,Soggiorno breve,"Ero qui per lavoro con Cassandra. Tutto perfetto: camera profumata, reception discreto, ristorante biologica.",F&B,positive,1,multi_aspect
+134c6c92-ec5b-427c-9fde-4fbf3ff350bf,Personale fantastico,"Hall discreta, niente da dire. Mai più.",Reception,positive,1,detailed
+66132e69-7418-4109-93d1-bf0f56c438e4,Nota dolente,"Ok la scrivania poteva sembrare deprimente a primo impatto, ma poi discreto.",Housekeeping,positive,1,ambiguous
+4ac9778d-8da8-4ee4-8df5-6ac6f96b648a,Hotel in centro,Nessun problema al check-out. Abbiamo soggiornato per il weekend. Il servizio in camera superava le aspettative: sfizioso! Potrebbe migliorare.,F&B,positive,1,detailed
+1ca35cfb-04fc-4d82-bd15-438552fbe43b,Personale gentilissimo,"Buffet nella norma. Accoglienza nella media alta. Niente effetto wow, ma professionali.",Reception,positive,1,ambiguous
+295b4715-c333-4861-9fb8-d16c2720797d,Consigli utili,Aria condizionata funzionante. Reception insufficiente. Mi aspettavo di più per il prezzo pagato.,Reception,negative,0,ambiguous
+edd877c8-9be7-4737-86b8-92318e867f3c,Poteva andare meglio,"Il cibo? Mediocre. Peccato, dalle recensioni sembrava megilo.",F&B,negative,0,ambiguous
+d56ce8ea-1959-4b5a-a7a8-f6366a35df59,Personale fantastico,"Il cappuccino era deludente, ma la portineria gentile ha salvato tutto. Il personale delle pulizie era nella norma.",Reception,positive,1,mixed
+3e493f43-b118-468d-a786-d50638ba8abc,Reception efficiente,"Il bagno funzionava, niente di più. Temevo receptionist irritante, invece super disponibili.",Reception,positive,1,negation
+4447ceab-84ef-4324-8c1b-4157ec9f9c54,Qualità eccellente,Il menu superava le aspettative: superbo! Il personale delle pulizie era nella norma.,F&B,positive,1,simple
+e1805081-5958-4499-aeea-163e21e8ac68,Cordialità unica,"Reception abbastanza buono. Poteva andare peggio, anzi no, è andata bene.",Reception,positive,1,ambiguous
+ffb8102d-9475-4bc9-9641-8cedd664d264,Soggiorno breve,"Camera nella media per la categoria. Il cornetto? Non all'altezza. Peccato, dalle recensioni sembrava meglio.",F&B,negative,0,ambiguous
+43bfd931-3605-4f54-a021-c0ca3531968d,Camera da incubo,Il minibar aveva i soliti prodotti. Sulla carta l'igiene doveva essere splendida. Invece sotto la media.,Housekeeping,negative,0,ambiguous
+4797b2c9-5720-4246-8223-623bcc3ebdde,Piatti orribili,Di prelibato il bar non aveva nulla. Alla reception tutto regolare.,F&B,negative,0,negation
+01a9e71f-de8a-474b-8f36-d58b47378190,Qualità assente,Il minibar non era certo moderno. Delusione totale.,Housekeeping,negative,0,negation
+4dcabfb7-001a-4a8b-956f-03508c459ce2,Hotel in centro,"Il caffè era decente. Hotel consigliato da amici. Materasso rovinato, pessima esperienza. Voto: 3/10.",Housekeeping,negative,0,detailed
+4c6e27ff-b9de-4a3a-8868-22b900a81de9,Cibo delizioso,"Niente da segnalare sulla manutenzione. Sinceramente il cibo era abbastanza buono, meglio del previsto.",F&B,positive,1,ambiguous
+da003f16-b946-4bcf-8082-cbb948bddb3e,Opinione sincera,Scordatevi camera lussuosa. Deludente. Abbiamo mangiato qualcosa al ristorante.,Housekeeping,negative,0,negation
+400035f0-df7d-4dd7-a36e-16089acb394a,Camera orribile,Scordatevi ordine solare. Deludente.,Housekeeping,negative,0,negation
+54669d19-10df-4974-95ab-946da5b5cdc2,Recensione hotel,"Bello: assistenza simpatica, ma il bar freddo è inaccettabile.",F&B,negative,0,mixed
+96ef2ad6-b97e-4703-86c8-adfe7bf47042,Weekend al mare,"Prenotato 25 giorni prima. Concierge disponibile, niente da dire. Pagato 200€ a notte. Il personale delle pulizie era nella norma.",Reception,positive,1,detailed
+a3b5cece-a446-4e72-b64c-911aa9ab364a,La mia esperienza,"Ho prenotato tramite Booking. Camera solare, personale rapido, colazione completa. Torneremo!",Reception,positive,1,multi_aspect
+3dc98290-15ea-4b27-b0e9-12f2f2b43abf,Ci sono stato,Aria condizionata funzionante. Hotel consigliato da amici. Deluso: la cena immangiabile. Forse ci torniamo.,F&B,negative,0,detailed
+8a476a87-e49d-481d-91d8-7c6455fa1ab8,Giudizio personale,"Ok la colazione poteva sembrare nauseante a primo impatto, ma poi sopra la media.",F&B,positive,1,ambiguous
+aa0b7b14-f2e9-402d-91e9-cdaa6e6981a3,Accoglienza gelida,"Ero qui per lavoro con Mirco. Camera minuscola, personale pigro, colazione unta. Mai più!",Housekeeping,negative,0,multi_aspect
+4458a885-ab90-49a4-b5a2-40ae5af30553,Qualità eccellente,"Ok il receptionist era arrogante, ma il ristorante perfetto compensa. Il concierge ci ha dato qualche indicazione.",F&B,positive,1,mixed
+34885a46-9088-4eaf-8977-6598203c8c25,Struttura recente,"Sinceramente il cornetto era abbastanza buono, meglio del previsto. Check-in nella norma.",F&B,positive,1,ambiguous
+3f07f814-91d6-4f78-a3e9-de99f10c718b,Gastronomia top,"Il buffet? Più che sufficiente. Niente di eccezionale, ma funzionale.",F&B,positive,1,ambiguous
+e9ff1cae-41c8-4a8c-aa1f-955ad499da99,Attesa infinita,Viaggio in famiglia. Stanza scomoda. Staff sciatto. Cena gommosa. Disastro.,F&B,negative,0,multi_aspect
+ece66fa2-fd51-46e6-851b-4cf36123fdf7,Esperienza altalenante,"Il servizio in camera? Nella media alta. Niente di eccezionale, ma funzionale. Lenzuola cambiate regolarmente.",F&B,positive,1,ambiguous
+a52964ff-c74c-4890-bc6a-3174113634a5,Colazione abbondante,"Il bagno funzionava, niente di più. Nonostante l'accoglienza lenta, la terrazza abbondante ha fatto la differenza.",F&B,positive,1,mixed
+2321d1e1-c471-44c0-b613-6e15f200c261,Soggiorno ok,"Dopo un viaggio da Nogarazza, Tutto pessimo: camera fredda, reception impreparato, ristorante nauseante. Abbiamo mangiato qualcosa al ristorante.",Housekeeping,negative,0,multi_aspect
+af2b99b4-d9ac-4158-8d34-85c5c5c14eb4,Reception disponibile,La stanza era quella che ci si aspetta. Non sapevo cosa aspettarmi. Piacevolmente sorpreso: l'ingresso molto discreto. Forse ci torniamo.,Reception,positive,1,detailed
+d1846c39-c476-4556-b97b-e2dd8f9b72ae,Pranzo da dimenticare,Sulla carta il caffè doveva essere goloso. Invece potrebbe fare di meglio.,F&B,negative,0,ambiguous
+43b38eb4-0390-4c5d-a502-d6a2ca6a2224,Accoglienza gelida,"Il personale delle pulizie era nella norma. Ero qui per lavoro con Carlo. Tutto pessimo: camera scomoda, reception pessimo, ristorante acida.",F&B,negative,0,multi_aspect
+a6f2f7b8-0cf3-4b58-9910-8be58ce21ea3,Colazione ottima,"Il servizio in camera era abbastanza buono. Non perfetto, ma ci siamo trovati bene.",F&B,positive,1,ambiguous
+295d6fbf-430f-401d-bad4-09e2a319dcb4,Piatti deliziosi,"Il servizio in camera era abbastanza buono. Non perfetto, ma ci siamo trovati bene. Aria condizionata funzionante.",F&B,positive,1,ambiguous
+b65feea9-7d82-4264-9ba3-62e7afa415e5,Menu squisito,Piacevolmente sorpreso: la colazione molto magnifica. Mai più.,F&B,positive,1,detailed
+cf8d446a-bc2c-4b0d-9d33-4cc7ab7f089a,Ristorante deludente,"Abbiamo soggiornato per il weekend. Bar amaro, pessima esperienza. Lo consiglio. Niente da segnalare sulla manutenzione.",F&B,negative,0,detailed
+6f92f25e-45df-46b6-b82c-043f7cfc9b79,Weekend al mare,La colazione era quella classica da hotel. Scordatevi stanza ariosa. Deludente.,Housekeeping,negative,0,negation
+a377f6f1-d289-40ab-a18a-e30595a5bafa,Servizio impeccabile,"Lo staff era più che sufficiente, devo ammettere che mi aspettavo peggio.",Reception,positive,1,ambiguous
+21bddb41-0699-4731-9dcf-8766a93b12cd,Team impreparato,"Lo staff non proprio il massimo, purtroppo non all'altezza delle aspettative.",Reception,negative,0,ambiguous
+f6b751f7-9b74-4245-9b1b-c8952af43ab7,Staff scortese,Lenzuola cambiate regolarmente. Ho trovato la hall presuntuosa. Inaccettabile. Comunque torneremo.,Reception,negative,0,detailed
+1a435206-ef2d-4cc4-8df6-61da5f07c1a5,Camera fantastica,Prima volta in questa struttura. Devo dire che l'armadio era romantico. Forse ci torniamo. Abbiamo mangiato qualcosa al ristorante.,Housekeeping,positive,1,detailed
+7fc15858-2fa0-4842-bc55-300b06a241af,Hotel nella media,Il minibar aveva i soliti prodotti. Soggiorno di 6 notti. Ho trovato la portineria impeccabile e ben curata. Nel complesso ok.,Reception,positive,1,detailed
+757750a9-a491-40b2-aa1f-ca65e27a984d,Ottima manutenzione,Il minibar aveva i soliti prodotti. Prenotato 22 giorni prima. Stanza intima. Staff energico. Cena ricca. Top!,Housekeeping,positive,1,multi_aspect
+11536e99-5c50-4720-b982-f4e08603156a,Cucina eccellente,"Sinceramente la colazione era discreto, meglio del previsto.",F&B,positive,1,ambiguous
+e6b3c944-cb32-4e35-b922-bac282dc4c8e,Piatti deliziosi,Niente pranzo insipido come temevo. Ottimo!,F&B,positive,1,negation
+4970ed9a-09ce-4cfb-a339-ba1925637cc3,Esperienza altalenante,Il personale delle pulizie era nella norma. Sulla carta il bar doveva essere raffinato. Invece non all'altezza.,F&B,negative,0,ambiguous
+ba6c34ab-6712-403a-8f84-4fef1931e9ee,Servizio impeccabile,"Il personale era sopra la media. Non eccezionale, ma disponibile.",Reception,positive,1,ambiguous
+6160a6b4-9360-415f-83fe-0183e172b725,Pranzo memorabile,"Prima volta in questa struttura. Tutto perfetto: camera comoda, reception pronto, ristorante pregiata. Lenzuola cambiate regolarmente.",F&B,positive,1,multi_aspect
+1f115b76-d92c-4227-aadf-50853fcb7546,Colazione abbondante,"Ok la doccia era rovinata, ma il concierge empatico compensa. Abbiamo mangiato qualcosa al ristorante.",Reception,positive,1,mixed
+44777442-b187-43e6-9457-8ad9a867a096,Buffet ricchissimo,"Avevo paura fosse scadente, ma il cornetto era perfetto.",F&B,positive,1,negation
+80fb9296-73b6-409b-9bea-f6ac97fa7f04,Pro e contro," Camera ordinata, personale cortese, colazione irresistibile. Torneremo!",Reception,positive,1,multi_aspect
+8e676a01-d86a-4460-99a1-120e1bb43332,Staff incompetente,"Lenzuola cambiate regolarmente. Staff antipatico, Rossana in particolare.",Reception,negative,0,simple
+f75d599f-6b2d-4b09-8707-9ad480be7e35,Luci e ombre,"Specchio romantico, peccato per l'accoglienza orribile.",Reception,negative,0,mixed
+ca97ebf5-55d5-46af-a663-d2cdb6f6dbf1,Hotel centrale,Ho trovato la reception pronta e ben curata. Voto: 8/10. Colazione continentale standard.,Reception,positive,1,detailed
+26a524e3-50ee-4a92-a091-51e0f891b0c3,Gastronomia pessima,Prima volta in questa struttura. Stanza polverosa. Staff scostante. Cena cruda. Disastro.,F&B,negative,0,multi_aspect
+5f987c71-a65e-488e-abf3-ad39fec21bbe,Qualche giorno qui,Lo staff faceva il suo lavoro. Vacanza romantica. Il ristorante era duro.,F&B,negative,0,detailed
+61484bb3-889b-48d5-9bfd-d97eaca2b148,Qualche giorno qui,Prima volta in questa struttura. Stanza accogliente. Staff competente. Cena sapida. Top!,F&B,positive,1,multi_aspect
+6703b636-5380-4904-a88c-7015aab97e49,Soggiorno ok,Scordatevi accoglienza educata. Disastro.,Reception,negative,0,negation
+269ed4c9-8059-4b93-b9c2-d2e49ae1a991,Ambiente curatissimo,Niente scrivania sporca come temevo. Ottima! Personale presente ma niente di memorabile.,Housekeeping,positive,1,negation
+5c9d927d-84b8-41bb-b005-68d20de051a6,Ristorante deludente,"Camera nella media per la categoria. Il pavmiento anche luminoso, però il cappuccino salato. Mai più.",F&B,negative,0,mixed
+585a0afa-7bfd-4c12-89e0-6ab37250ee18,Luci e ombre,"La colazione era quella classica da hotel. Il buffet anche squisito, però l'igiene buia. Mai più.",Housekeeping,negative,0,mixed
+bfbbb17f-9854-4e4e-8ebf-a5c3cae9b4a7,Camera da sogno,"Dopo un viaggio da Esperia, Tutto perfetto: camera calda, reception veloce, ristorante buonissima.",Housekeeping,positive,1,multi_aspect
+e9a1fa6f-81f7-4d1c-adbc-2134c30ff46e,Hotel in centro,"Viaggio in famiglia. Tutto pessimo: camera disastrosa, reception scostante, ristorante cruda.",Housekeeping,negative,0,multi_aspect
+6e191042-370b-4063-9d90-e79eb888f6ed,Hotel discreto,"Receptionist un po' presuntuoso, però il buffet fresco. Promossi! Niente da segnalare sulla mantuenzione.",F&B,positive,1,mixed
+7656af72-29d4-4eef-beab-edcbbaa80dd4,Alti e bassi,Di gentilissimo lo staff non aveva niente. Il caffè era decente.,Reception,negative,0,negation
+1327f1bc-2784-478f-b84f-16b3a79fbfaf,Opinione sincera,"Lo staff era accettabile, devo ammettere che mi aspettavo peggio. Abbiamo mangiato qualcosa al ristorante.",Reception,positive,1,ambiguous
+19e45c6a-c9c2-4e69-982c-75654bb907ec,Cucina eccellente,"Lenzuola cambiate regolarmente. Prima volta in questa struttura. Tutto perfetto: camera ordinata, reception sorridente, ristorante gustosa.",F&B,positive,1,multi_aspect
+8e200724-7d13-4018-a80b-ac63b856d035,Trasferta di lavoro,Il personale non era per niente irritante. Molto professionali. Abbiamo mangiato qualcosa al ristorante.,Reception,positive,1,negation
+1ee34dc4-3b04-4a8b-805b-fdc94e7ed827,Accoglienza gelida,"Ero qui per lavoro con Greco. Tutto pessimo: camera minuscola, reception brusco, ristorante insipida.",Reception,negative,0,multi_aspect
+9a4a99b2-e806-433c-b6e3-9356a8149562,Nota dolente,"Personale presente ma niente di memorabile. La manutenzione era piccola, ma la terrazza fresca ha salvato tutto.",F&B,positive,1,mixed
+3ceddf2d-839f-4c50-9223-b5135496f63c,Pranzo memorabile,"Abbiamo scelto questo hotel per la posizione. Tutto perfetto: camera calda, reception ospitale, ristorante perfetta.",Reception,positive,1,multi_aspect
+fbf6e16f-9b30-40d5-afb7-8271504d281f,Camera da evitare,"Il minibar aveva i soliti prodotti. L'ingresso anche eccellente, però l'armadio fatiscente. Mai più.",Housekeeping,negative,0,mixed
+56b60afc-ded2-45d0-bf1e-83664b8e63d4,Ambiente perfetto,"Prima volta in questa struttura. Camera elegante, personale meticoloso, colazione sana. Torneremo! La colazione era quella classica da hotel.",Housekeeping,positive,1,multi_aspect
+ef7ddc76-b92d-422b-a1df-306f8a0b3c33,La mia esperienza,"Abbiamo soggiornato per il weekend. Camera rumorosa, personale disorganizzato, colazione povera. Mai più!",F&B,negative,0,multi_aspect
+5d286aa4-28a3-4779-9c1c-351785d2d0a6,Servizio eccellente,"Temevo receptionist negilgente, invece super disponibili.",Reception,positive,1,negation
+afffcfd2-341e-440b-97c7-00aab7b56ea7,Accoglienza calorosa,"Ok l'assistenza era orribile, ma la stanza sofistiacta compensa.",Housekeeping,positive,1,mixed
+5aaab32f-ce63-42b6-ab05-347fd556b37d,Seconda visita,Soggiorno di 3 notti. Stanza caotica. Staff svogliato. Cena pessima. Disastro.,Reception,negative,0,multi_aspect
+b64fa54a-8c61-4654-95da-75c1a21150f9,Colazione abbondante,"Ho prenotato tramite Booking. Tutto perfetto: camera perfetta, reception preparato, ristorante croccante.",F&B,positive,1,multi_aspect
+530ac1c7-b8ba-4368-8fc7-77685ebbcca5,Qualche giorno qui,"Non sapevo cosa aspettarmi. Camera favolosa, personale ottimo, colazione appetitosa. Torneremo! Il concierge ci ha dato qualche indicazione.",F&B,positive,1,multi_aspect
+fff9f585-0d55-4b61-8a17-5dfebfc00dc8,Gastronomia top,"Accoglienza discreto. Niente effetto wow, ma professionali.",Reception,positive,1,ambiguous
+75b17a55-d426-4982-a43e-4288a2b5b498,Giudizio personale,"Il personale delle pulizie era nella norma. Camera un po' fatiscente, però la sala colazione buonissima. Promossi!",F&B,positive,1,mixed
+dfa4bb9f-5a85-4750-a92a-c1391f4a8ca1,Reception assente,"Prima volta in questa struttura. Tutto pessimo: camera datata, reception arrogante, ristorante salata.",Reception,negative,0,multi_aspect
+cbd00ef2-530a-47df-8bc6-10660769165f,Gastronomia top,"Il buffet? Nella media alta. Niente di eccezionale, ma funzionale.",F&B,positive,1,ambiguous
+24c173b9-b7f2-4572-bdef-a84993364f7e,Menu scadente,"Bello: check-in puntuale, ma il cornetto molle è inaccettabile.",F&B,negative,0,mixed
+a487eeab-accb-461a-9d13-23639f294a8b,Struttura recente,"Il personale era più che sufficiente. Non eccezionale, ma disponibile.",Reception,positive,1,ambiguous
+458f1f19-3c07-4574-8925-7af1b6aae05b,Team impreparato,"Il servizio in camera anche fresco, però l'ingresso nervoso. Mai più.",Reception,negative,0,mixed
+2702878b-9f0f-4a8d-8537-9ff6d6d7b3b8,Trasferta di lavoro,"Abbiamo scelto questo hotel per la posizione. Camera gelida, personale aggressivo, colazione insufficiente. Mai più!",F&B,negative,0,multi_aspect
+0f9240e1-07f9-4d05-b6ca-6b8ba4b1f991,Manutenzione assente,"Accoglienza standard. Prima volta in questa struttura. Tutto pessimo: camera consumata, reception pigro, ristorante rancida.",Housekeeping,negative,0,multi_aspect
+9c07a751-1437-4509-acd1-586a2b840c67,Servizio inesistente,Deluso: la prenotazione negligente.,Reception,negative,0,simple
+1f15c7b6-7c16-428d-b2c0-8394e17f29e1,Qualche giorno qui,Il check-in era sorridente. Il minibar aveva i soliti prodotti.,Reception,positive,1,simple
+96da1dac-72ff-4d2a-b86e-cbe06b65a6a4,Ristorante top,"Pranzo un po' indigesto, però la scrivania pulitissima. Promossi!",Housekeeping,positive,1,mixed
+48ca7651-92f5-4f7b-8323-d342df6a8f93,Weekend al mare,"Avevo paura fosse indecente, ma l'ordine era perfetto.",Housekeeping,positive,1,negation
+b4a69f3c-8d3a-4d99-b11c-21c9bdc14f1f,Ci sono stato,Sulla carta il cornetto doveva essere perfetto. Invece sotto la media. Accoglienza standard.,F&B,negative,0,ambiguous
+3d67cde9-2834-44c0-94c8-b3b4a911d192,Recensione hotel,"Lo specchio era scomodo, ma la portineria sorridente ha salvato tutto.",Reception,positive,1,mixed
+c991603f-28c1-4091-844d-610b3f87e362,Poteva andare meglio,"Il servizio in camera? Più che sufficiente. Niente di eccezionale, ma funzionale.",F&B,positive,1,ambiguous
+5cb85aed-f5f6-4c97-aefb-63b11b049863,Staff scortese,"Buffet goloso, peccato per il check-out sgradevole.",Reception,negative,0,mixed
+25e97977-8d72-48e2-951f-58d05e84f058,Seconda visita,"Siamo arrivati di domenica verso le 17. Frutta squisita, niente da dire. Esperienza da ripetere.",F&B,positive,1,detailed
+35ebd32d-9ad6-40ab-8821-2ddb45b89cd9,Menu scadente,"Il minibar era raffinato, ma il pranzo monotono ha rovinato tutto.",F&B,negative,0,mixed
+67814c1f-cc53-4e36-addc-3e13ab3b4d37,Colazione ottima,"Soggiorno di 2 notti. Ristorante profumato, niente da dire. Nel complesso ok.",F&B,positive,1,detailed
+610faa3f-f0bb-4c67-aa38-d0a16ba25efe,Personale sgarbato,"Il caffè anche divino, però la reception disorganizzata. Mai più. La stanza era quella che ci si aspetta.",Reception,negative,0,mixed
+723ef466-b43b-427f-82a2-59a6c6641285,Servizio pessimo,Vacanza romantica. Purtroppo la doccia era trasandata. Forse ci torniamo.,Housekeeping,negative,0,detailed
+505cc686-9f87-4ce7-9487-fd4febb7a385,Cibo delizioso,"Nonostante la doccia squallida, il cappuccino delizioso ha fatto la differenza. Alla reception tutto regolare.",F&B,positive,1,mixed
+3875394c-e5d6-46e6-9a6e-c2f5ccc42903,Ristorante top,"Avevo paura fosse immangiabile, ma il pranzo era perfetto.",F&B,positive,1,negation
+b0e6a969-e213-42b0-b1ee-dba313432e61,Staff scortese,Non aspettatevi personale competente. Pessimi.,Reception,negative,0,negation
+2c8d0e44-e71e-43a6-bf85-bf0ead64b56c,Menu squisito,"Ok la terrazza poteva sembrare insufficiente a primo impatto, ma poi decente.",F&B,positive,1,ambiguous
+f275b5f3-d436-47a8-b3ec-b951ab8cbf97,Piatti deliziosi,"Il caffè era nella media alta. Non perfetto, ma ci siamo trovati bene. La stanza era quella che ci si aspetta.",F&B,positive,1,ambiguous
+b49e04cc-c243-49e7-a387-eaf6d4c3a832,Hotel discreto,Accoglienza standard. Vacanza romantica. Ho trovato il menu succulento e ben curato. Lo consiglio.,F&B,positive,1,detailed
+668409e3-f1f8-443e-a99f-131849c8a43f,Esperienza altalenante,"Il personale era più che sufficiente. Non eccezionale, ma disponibile.",Reception,positive,1,ambiguous
+c4b032cc-d7c5-44a5-9304-317faf42e12f,Buffet ricchissimo,"Il cibo era non male. Non perfetto, ma ci siamo trovati bene.",F&B,positive,1,ambiguous
+27cd8130-4722-4389-971a-a8766c307511,Personale gentilissimo,Trasferta di lavoro. Stanza confortevole. Staff competente. Cena abbondante. Top! Lenzuola cambiate regolarmente.,Reception,positive,1,multi_aspect
+812a1f9b-1596-4802-b6dd-6257fb7d9f1c,Consigli utili,"Ok il minibar era scadente, ma il check-in energico compensa.",Reception,positive,1,mixed
+c88a618e-fed4-457d-bb02-6576f512c4c3,Accoglienza calorosa,Ero qui per lavoro con Ida. Finalmente una manutenzione incantevole. Lo consiglio. Il minibar aveva i soliti prodotti.,Housekeeping,positive,1,detailed
+04f64d86-7866-4765-94f7-ce8dd5bcb8d0,Colazione misera,Ho prenotato tramite Booking. Ho trovato la terrazza unta. Inaccettabile. Voto: 6/10.,F&B,negative,0,detailed
+36b5229a-acf5-481e-b131-62697118e364,Pranzo da dimenticare,"Viaggio in faimglia. Tutto pessimo: camera datata, reception lento, ristorante insipida.",F&B,negative,0,multi_aspect
+ddf275eb-e8a3-4341-8881-9065ba2c98ce,Personale fantastico,"Nonostante il cornetto congelato, il personale gentile ha fatto la differenza. Aria condizionata funzionante.",Reception,positive,1,mixed
+7394988f-847f-49b4-a64d-1bcb702753a1,Ottima manutenzione,"Ok la pulizia poteva sembrare logora a primo impatto, ma poi più che sufficiente.",Housekeeping,positive,1,ambiguous
+50032b35-1857-4baf-bac7-e2b96a7e4c36,Reception assente,Il personale delle pulizie era nella norma. Di impeccabile lo staff non aveva niente.,Reception,negative,0,negation
+5ec42e08-29a3-42e9-9d65-a441d58842de,Ambiente squallido,Ho trovato lo specchio vecchio. Inaccettabile. Al bar niente di speciale.,Housekeeping,negative,0,simple
+12922f83-ef8c-485b-807a-30f2edd4253b,Personale fantastico,L'ordine superava le aspettative: lussuoso! Potrebbe migliorare.,Housekeeping,positive,1,detailed
+e9c349e0-3602-48ac-90f1-bc81448aaa9e,Reception disponibile,"Bar un po' sgradevole, però la portineria rapida. Promossi! Il bagno funzionava, niente di più.",Reception,positive,1,mixed
+ebd14d2c-75b2-4455-84cc-3ede6fac1673,Personale sgarbato,La hall era incapace.,Reception,negative,0,simple
+b69f68c3-e60f-4420-ac33-350c73b911d8,Ristorante top,"Check-in nella norma. Ok la stanza era cupa, ma la brioche raffinata compensa.",F&B,positive,1,mixed
+8d244e3e-c4da-4ddb-a0b1-5abaa6a27967,Niente di speciale,"Il check-out era preparato, ma il pavimento logoro ha rovinato tutto.",Housekeeping,negative,0,mixed
+828c37e7-87d5-47be-9d30-d990a21b0307,Stanza sporca,Scordateiv minibar elegante. Deludente.,Housekeeping,negative,0,negation
+f8e1daa7-cbce-4bde-aede-db07e623a689,Cena pessima,Aria condizionata funzionante. Non sapevo cosa aspettarmi. Purtroppo l'assistenza era svogliata.,Reception,negative,0,detailed
+c31edbbc-f36c-462b-892e-6161be2d740a,Piatti orribili,"La frutta sembrava profumata dalle foto, in realtà mediocre. Alla reception tutto regolare.",F&B,negative,0,ambiguous
+1eb0e38a-675d-45af-bc36-5296dca02eec,Pulizia inesistente,Abbiamo soggiornato per il weekend. Deluso: la scrivania bollente. Pagato 177€ a notte.,Housekeeping,negative,0,detailed
+d39e198b-4400-4d5a-a88d-a71926242b40,Reception disorganizzata,"Colazione perfetta, peccato per l'ingresso pigro.",Reception,negative,0,mixed
+39feb99c-3127-4148-bc7c-404ec422d03e,Personale sgarbato,"Il personale era mediocre. Non terribile, ma nemmeno soddisfacente.",Reception,negative,0,ambiguous
+37cc863b-f2a0-4459-9060-4f621d48a071,Cucina eccellente,Viaggio in famiglia. Devo dire che la colazione era tipica. Comunque torneremo.,F&B,positive,1,detailed
+1d53434b-b881-49b9-ae27-0da702f06b90,Prima volta qui,"Nonostante il materasso squallido, il receptionist impeccabile ha fatto la differenza.",Reception,positive,1,mixed
+b28f41de-fb14-4bc3-b04b-8590de9e3757,Reception efficiente,"Materasso profumato, niente da dire. Alla reception tutto regolare.",Housekeeping,positive,1,simple
+8a4b8f7c-2147-4a15-bcce-96f6250a4578,Cena pessima,Di curato il ristorante non aveva nulla.,F&B,negative,0,negation
+6699cd99-a847-4ce7-90fa-6b5724ac2130,Stanza eccellente,Buffet nella norma. Vacanza romantica. Piacevolmente sorpreso: l'ordine molto favoloso. Comunque torneremo.,Housekeeping,positive,1,detailed
+98eeac2b-fe9f-4caa-a182-f347533f5a72,Stanza pessima,"La scrivania sembrava funzionale dalle foto, in realtà lascia a desiderare. Check-in nella norma.",Housekeeping,negative,0,ambiguous
+5e9953d2-3e89-4c64-a117-dac3119c4ea3,Consigli utili,Check-in nella norma. Sulla carta il bagno doveva essere ordinato. Invece potrebbe fare di meglio.,Housekeeping,negative,0,ambiguous
+c566aa81-b15e-44f6-94d3-07952e4bebc4,Weekend al mare,Non sapevo cosa aspettarmi. La terrazza superava le aspettative: magnifica! Pagato 165€ a notte.,F&B,positive,1,detailed
+8eb22579-0cdb-4ca4-b6ec-bdd68498e113,Qualche giorno qui,"Il cappuccino anche gustoso, però lo staff villano. Mai più.",Reception,negative,0,mixed
+a5769411-a0a1-4839-a745-770418dfbc3c,Poteva andare meglio,Soggiorno di 2 notti. Stanza funzionale. Staff puntuale. Cena generosa. Top! Check-in nella norma.,Housekeeping,positive,1,multi_aspect
+1933918c-fa74-4761-af18-c1081723199d,Esperienza altalenante,"Nonostante l'ingresso scorbutico, l'ordine splendido ha fatto la differenza. Colazione continentale standard.",Housekeeping,positive,1,mixed
+986f9025-8f15-4a58-bce6-850487f8424d,Pulizia inesistente,"Trasferta di lavoro. Il pavimento lasciava a desiderare, troppo rovinato. Nel complesso ok. Il concierge ci ha dato qualche indicazione.",Housekeeping,negative,0,detailed
+bc594585-9445-48c0-8ef8-c2d6f7fd5646,Struttura recente,"Accoglienza sotto la media. Un peccato, rovinava l'esperienza. Il bagno funzionava, niente di più.",Reception,negative,0,ambiguous
+e645f129-629c-4ae3-9d9a-f65982ec9f2d,Hotel in centro,"La stanza era quella che ci si aspetta. Reception abbastanza buono. Poteva andare peggio, anzi no, è andata bene.",Reception,positive,1,ambiguous
+6cac028c-ba22-4065-9526-0718cd180a82,Qualche giorno qui,"Il pavimento era lussuoso, ma il caffè orribile ha rovinato tutto.",F&B,negative,0,mixed
+bf5023f4-40ef-4935-9f90-bed6fb25664d,Consigli utili,"Colazione continentale standard. Il lavandino era sopra la media. Non perfetto, ma ci siamo trovati bene.",Housekeeping,positive,1,ambiguous
+dde9f863-22bd-4388-adb9-9102a48b3dbe,Nota dolente,Non sapevo cosa aspettarmi. La camera superava le aspettative: intima! Forse ci torniamo. Check-in nella norma.,Housekeeping,positive,1,detailed
+f7e8f8e5-0d2b-41ef-b897-6ec5ea74bb18,Personale gentilissimo,"Al bar niente di speciale. Siamo arrivati di sabato verso le 13. Tutto perfetto: camera pulitissima, reception efficiente, ristorante generosa.",Reception,positive,1,multi_aspect
+311c6eb6-2095-4ef6-8ded-f9fb4bb00f20,Ci sono stato,La reception era collaborativa.,Reception,positive,1,simple
+79a28903-fbe3-4b24-beae-00320bd4a990,Cibo delizioso,Finalmente una brioche sostanziosa.,F&B,positive,1,simple
+97d7a560-adb1-4670-ad9f-b00d4882d73c,Ambiente squallido,"Al bar niente di speciale. Lo specchio sembrava romantico dalle foto, in realtà mediocre.",Housekeeping,negative,0,ambiguous
+17fc695a-07a0-4a6e-8822-e8f36c031199,Soggiorno ok,Viaggio in famiglia. Piacevolmente sorpreso: il cibo molto sano. Non lo consiglio. La stanza era quella che ci si aspetta.,F&B,positive,1,detailed
+5260001e-eecf-47d2-b491-76f46090d697,Camera da incubo,"Il personale delle pulizie era nella norma. Lo staff potrebbe fare di meglio, purtroppo non all'altezza delle aspettative.",Reception,negative,0,ambiguous
+61c2645a-c733-4304-8822-3120c4f9eccd,Reception efficiente,Il minibar aveva i soliti prodotti. Hotel consigliato da amici. Stanza favolosa. Staff sorridente. Cena prelibata. Top!,Reception,positive,1,multi_aspect
+6b79afcc-3d0a-4f0c-8c39-4ec71f317405,Pranzo memorabile,"Ok il caffè poteva sembrare misero a primo impatto, ma poi accettabile.",F&B,positive,1,ambiguous
+5738811d-70c2-403f-ba8d-03aa782a65e0,Cena pessima,Sulla carta il pranzo doveva essere pregiato. Invece non all'altezza. Nessun problema al check-out.,F&B,negative,0,ambiguous
+a79b44b6-da50-4fed-9d4a-3d81b3a7d0e0,Poteva andare meglio,Il personale non era per niente disinteressato. Molto professionali.,Reception,positive,1,negation
+4f2d4796-81d2-47de-8ce1-eb90e6697833,Esperienza altalenante,"Il lavandino non era affatto minuscolo. Anzi, molto curato.",Housekeeping,positive,1,negation
+83599af6-5d01-455f-a7fd-64c4a334058a,Consigli utili,Soggiorno di 1 notti. La prenotazione era ospitale. Lo consiglio.,Reception,positive,1,detailed
+630aa767-a2bb-422b-8b25-1279785ac5d0,Consigli utili,"Il minibar aveva i soliti prodotti. Personale svogliato, soprattutto Tatiana. Non lo consiglio.",Reception,negative,0,detailed
+28f49481-a0a0-4dc4-a720-9bdf1c11f735,Buffet ricchissimo,"Il cornetto non era affatto freddo. Anzi, molto curato.",F&B,positive,1,negation
+fcd6bdca-5876-4d09-b1fa-f665711533f3,Personale fantastico,Finalmente una manutenzione elegante.,Housekeeping,positive,1,simple
+20509c62-08e8-45d7-b02c-1821c8040fb7,Struttura recente,Reception lascia a desiderare. Mi aspettavo di più per il prezzo pagato. Aria condizionata funzionante.,Reception,negative,0,ambiguous
+4dd8eb85-b04d-4376-b7fc-97031fd5a423,Ci sono stato,"Prenotato 18 giorni prima. Cena fredda, pessima esperienza. Il personale delle pulizie era nella norma.",F&B,negative,0,detailed
+d85c16bd-6dda-4f8d-8ea6-0f4c39e58ff0,Pranzo memorabile,"Ero qui per lavoro con Antonina. Piacevolmente sorpreso: la terrazza molto innovativa. Nel complesso ok. Il bagno funzionava, niente di più.",F&B,positive,1,detailed
+5408f9ac-6601-4dd0-b170-f437a8f7ef5a,Qualità assente,"Mi aspettavo bar profumato, ma era sotto la media.",F&B,negative,0,ambiguous
+a2607723-17a0-4f49-8d01-280fd89a40c0,Menu squisito,"Il cappuccino era accettabile. Non perfetto, ma ci siamo trovati bene.",F&B,positive,1,ambiguous
+3985fb62-17dc-4eff-a872-13f98d605936,Personale gentilissimo,"Non ho trovato staff orribile. Anzi, gentilissimi.",Reception,positive,1,negation
+aaf91531-0200-41f0-8768-a84fa76afde6,Staff incompetente,Ho trovato il receptionist freddo. Inaccettabile.,Reception,negative,0,simple
+c9af18f8-43b9-4a13-ac85-6f373bc1a987,Qualche giorno qui,"Hotel consigliato da amici. Il pavimento lasciava a desiderare, troppo gelido. Mai più.",Housekeeping,negative,0,detailed
+ac9ed156-f63f-4e41-ba9a-ca5e176132ed,Personale fantastico,Viaggio in famiglia. Stanza raffinata. Staff gentile. Cena fragrante. Top!,Reception,positive,1,multi_aspect
+5970a859-c6b6-44ad-a7ea-8d5a31a3ac4d,Camera fantastica,Niente scrivania datata come temevo. Ottima! Il minibar aveva i soliti prodotti.,Housekeeping,positive,1,negation
+71d79665-7181-4dcf-b79e-fc6e5edb0d3c,Pranzo da dimenticare,Accoglienza standard. Di delizioso il pranzo non aveva nulla.,F&B,negative,0,negation
+5e0a72ab-7f5d-4163-b12b-66807f072cb9,Opinione sincera,"Dopo un viaggio da Borgo Sabotino, Stanza disastrosa. Staff arrogante. Cena pessima. Disastro.",Housekeeping,negative,0,multi_aspect
+3a9bedd4-0f12-49e0-a18f-f6b6b535106e,Accoglienza gelida,"La colazione sembrava sfiziosa dalle foto, in realtà lascia a desiderare. Il concierge ci ha dato qualche indicazione.",F&B,negative,0,ambiguous
+badcc32a-c159-4f53-8a0f-4efbedcd465e,Alti e bassi,"Hotel consigliato da amici. Camera elegante, personale preparato, colazione tipica. Torneremo! Nessun problema al check-out.",F&B,positive,1,multi_aspect
+996d5c50-fc04-4168-a52f-fb493873e57f,Team straordinario,Trasferta di lavoro. Stanza favolosa. Staff impeccabile. Cena sfiziosa. Top! Niente da segnalare sulla manutenzione.,Reception,positive,1,multi_aspect
+680ac07a-2a93-4d62-bc83-5dc0d9441fa5,Staff incompetente,"Il pranzo anche prelibato, però lo staff negligente. Mai più. Il minibar aveva i soliti prodotti.",Reception,negative,0,mixed
+10275b53-2285-42ef-8fbe-4fe92ea9c542,Giudizio personale,"Dopo un viaggio da Vacone, Stanza disastrosa. Staff svogliato. Cena amara. Disastro.",F&B,negative,0,multi_aspect
+a65bb1f2-65c1-4795-b155-16bc9f8ded97,Soggiorno dicembre," Tutto pessimo: camera danneggiata, reception sgarbato, ristorante cruda.",Reception,negative,0,multi_aspect
+6232b17a-2507-4181-8d1f-b54074eff545,Opinione sincera,"Trasferta di lavoro. Camera funzionale, personale straordinario, colazione tpiica. Torneremo! Niente da segnalare sulla manutenzione.",Reception,positive,1,multi_aspect
+42c18a62-ef48-48d5-90fd-9d3f85d51695,Ambiente curatissimo,Non posso dire che la stanza fosse orrenda. Tutt'altro!,Housekeeping,positive,1,negation
+83efa9f3-a1c7-4c8a-8435-1b64893ad232,Vacanza a metà,Vacanza romantica. Piacevolmente sorpreso: il bagno molto sofisticato. Voto: 6/10.,Housekeeping,positive,1,detailed
+7e570ddf-8270-40a8-a369-b584ff5e9ff0,Cordialità unica,"La stanza era quella che ci si aspetta. Il personale era discreto. Non eccezionale, ma disponibile.",Reception,positive,1,ambiguous
+72d8567d-894a-45e4-b0b1-87ef310c0c00,Alti e bassi,"Ho prenotato tramite Booking. Camera minuscola, personale ostile, colazione costosa. Mai più! Colazione continentale standard.",Housekeeping,negative,0,multi_aspect
+409d3602-5084-4242-968b-1625746f7891,Weekend al mare,Il pranzo superava le aspettative: nutriente!,F&B,positive,1,simple
+5d42b9e9-692e-47b6-8b2f-6d5c700b5d5f,Personale sgarbato,"Dopo un viaggio da Calvatone, Tutto pessimo: camera polverosa, reception distratto, ristorante pessima. Colazione continentale standard.",Reception,negative,0,multi_aspect
+1e9b23bc-50c7-4006-b14d-3441b8a6171f,Servizio eccellente,"Il pranzo era misero, ma la hall straordinaria ha salvato tutto. Aria condizionata funzionante.",Reception,positive,1,mixed
+f31046dc-6202-4ee6-9cb5-e69c5dc7b3e6,Colazione scarsa,"Il bar sembrava magnifico dalle foto, in realtà lascia a desiderare. Il bagno funzionava, niente di più.",F&B,negative,0,ambiguous
+39c1e262-f76c-4ede-8110-12662408a6dc,Qualità assente,Non sapevo cosa aspettarmi. Stanza disastrosa. Staff orribile. Cena gommosa. Disastro.,F&B,negative,0,multi_aspect
+e746ccb9-4ca9-4f07-b1aa-0f6a2a96e1e2,Colazione misera,Prenotato 8 giorni prima. La sala colazione era vecchia. Potrebbe migliorare.,F&B,negative,0,detailed
+0a8381be-c85a-4a46-90e0-f4a0fbdd3933,Camera fantastica,"Personale presente ma niente di memorabile. Nonostante l'arredamento piccolo, il cibo sublime ha fatto la differenza.",F&B,positive,1,mixed
+83f02dc7-4f61-4217-aef1-669450cae32d,Seconda visita,Sulla carta il letto doveva essere panoramico. Invece non proprio il massimo. Personale presente ma niente di memorabile.,Housekeeping,negative,0,ambiguous
+53a3dd5a-4b8c-4bdc-a8dd-5e5a1712fb16,Staff eccezionale,"Accoglienza decente. Niente effetto wow, ma professionali.",Reception,positive,1,ambiguous
+d1a69d87-f54e-4019-ba35-844e59e1ac09,Alti e bassi,"L'ordine anche comodo, però il cibo costoso. Mai più.",F&B,negative,0,mixed
+37bb3eec-4bf5-4b52-b09d-258c27a0c3d7,Cordialità unica,"Nessuno disinteressato alla reception. Complimenti! Il bagno funzionava, niente di più.",Reception,positive,1,negation
+39820cff-4f77-4665-ac3c-56403c20592f,Reception efficiente,Trasferta di lavoro. La portineria superava le aspettative: tempestiva! Pagato 68€ a notte.,Reception,positive,1,detailed
+a9597663-6daa-4e68-8861-fe1858e25888,Stanza pessima,"Concierge meticoloso, peccato per lo specchio bui.o",Housekeeping,negative,0,mixed
+21a4344f-bb7b-4e03-9d67-8bb1945ef2e4,Esperienza altalenante,"Dopo un viaggio da Viggiu', Stanza degradata. Staff saccente. Cena orribile. Disastro.",Reception,negative,0,multi_aspect
+45d5a68d-290a-4abb-835b-9fea1578d709,Recensione hotel,Soggiorno di 3 notti. Non mi aspettavo un specchio così danneggiato. Vedremo la prossima volta.,Housekeeping,negative,0,detailed
+5a0cdd7c-f157-4470-8182-67c47a1b5806,Consigli utili,"Colazione continentale standard. Il materasso sembrava luminoso dalle foto, in realtà potrebbe fare di meglio.",Housekeeping,negative,0,ambiguous
+bd29ede9-cab4-423b-b448-83858de7ad6c,La mia esperienza,"Nonostante il minibar minuscolo, la brioche eccellente ha fatto la differenza.",F&B,positive,1,mixed
+d0243d72-3748-467f-961d-33ba350843f0,Stanza eccellente,"Menu un po' deludente, però l'armadio accogliente. Promossi!",Housekeeping,positive,1,mixed
+14dd5061-5557-46f8-a67e-ddcedf8f4197,Colazione scarsa,Di gustoso il cappuccino non aveva nulla.,F&B,negative,0,negation
+7c967f79-b7e9-4aca-a970-65e18e46d534,Hotel centrale,"Accoglienza reattiva, peccato per la frutta povera.",F&B,negative,0,mixed
+e0ccedc5-f05d-476e-9a84-a51aa9d3d7c7,Soggiorno ok,"Lenzuola cambiate regolarmente. Specchio raffinato, peccato per il cibo duro.",F&B,negative,0,mixed
+00d4af59-7427-4ca3-a87d-06ca6f4cc69a,Cibo delizioso,Niente menu insufficiente come temevo. Ottimo! Aria condizionata funzionante.,F&B,positive,1,negation
+dd3f7d7e-a508-4c95-93a4-a492497de16d,Camera consigliatissima,Non posso dire che l'armadio fosse obsoleto. Tutt'altro! Buffet nella norma.,Housekeeping,positive,1,negation
+c122b5b3-284c-43d2-a7d4-15b60d77c5a0,Menu scadente,Abbiamo scelto questo hotel per la posizione. Ho trovato il bar duro. Inaccettabile. Pagato 121€ a notte.,F&B,negative,0,detailed
+604e46cb-3712-42d1-87cd-b6a1bf012e32,Camera deludente,"Vacanza romantica. Il pranzo lasciava a desiderare, troppo vecchio. Voto: 8/10. Il bagno funzionava, niente di più.",F&B,negative,0,detailed
+8de08fc2-c3e1-4a85-946e-f10411906f50,Camera da evitare,"Il portiere era dinamico, ma l'armadio terribile ha rovinato tutto.",Housekeeping,negative,0,mixed
+175a81ec-112f-4612-b969-9ed2ec48bf55,Buffet ricchissimo,"La stanza era quella che ci si aspetta. Avevo paura fosse deludente, ma il ristorante era perfetto.",F&B,positive,1,negation
+71299889-a01a-4992-bf9d-3e64c1a6423b,Soggiorno dicembre,"Personale esperto, specialmente Donna. La colazione era quella classica da hotel.",Reception,positive,1,simple
+a43825b5-59e4-4671-8774-bc58c5f8bc16,Cucina pessima,"Il room service? Mediocre. Peccato, dalle recensioni sembrava meglio. Alla reception tutto regolare.",F&B,negative,0,ambiguous
+c9277d9b-6e0d-4648-b5ce-884149732d6c,Nota dolente,Non posso dire che il lavandino fosse squallido. Tutt'altro!,Housekeeping,positive,1,negation
+6aa42c9f-9217-4475-bd95-9e3f5a5226e6,Sistemazione ottima,"La stanza era quella che ci si aspetta. Dopo un viaggio da Santa Maria Maggiore, Tutto perfetto: camera funzionale, reception premuroso, ristorante magnifica.",Reception,positive,1,multi_aspect
+4f6e274b-deda-4027-a550-f74a1422373f,Weekend al mare,Prima volta in questa struttura. Ho trovato la terrazza gommosa. Inaccettabile. Nel complesso ok.,F&B,negative,0,detailed
+87fa841a-3e83-491f-a544-0fe06e417d47,Niente di speciale,Non sapevo cosa aspettarmi. Stanza bollente. Staff brusco. Cena salata. Disastro.,Reception,negative,0,multi_aspect
+6a702e2f-7746-40ba-8ae8-905b54b4a482,Staff preparato,"Nessun problema al check-out. Viaggio in famiglia. Camera confortevole, personale accogliente, colazione sfiziosa. Torneremo!",F&B,positive,1,multi_aspect
+218c6e1c-9e37-4f7a-842c-bc39e05b46c5,Seconda visita,Ero qui per lavoro con Fortunata. Purtroppo il portiere era assente. Non lo consiglio.,Reception,negative,0,detailed
+bf2c14a0-3a3c-4a71-bf57-4e2b4991ab9b,Trasferta di lavoro,"Bello: portiere reattivo, ma il lavandino terribile è inaccettabile.",Housekeeping,negative,0,mixed
+b379cb1e-e8cd-40cc-b6da-3ca0d2e82f38,Prima volta qui,Scordatevi ristorante sano. Deludente.,F&B,negative,0,negation
+fc902838-d874-4408-b7b2-17c7ae92ea71,Servizio inesistente,"Dopo un viaggio da Cresseglio, Tutto pessimo: camera minuscola, reception freddo, ristorante molle.",Reception,negative,0,multi_aspect
+752a7d25-f190-4b7e-86b4-69efb74eba93,Cena fantastica,"Il pranzo era mediocre, ma la portineria straordinaria ha salvato tutto.",Reception,positive,1,mixed
+c775e395-d494-45f0-acd2-a404a48e40f1,Stanza splendida,"Soggiorno di 4 notti. Tutto perfetto: camera favolosa, reception sorridente, ristorante abbondante.",Reception,positive,1,multi_aspect
+1c24220e-2cab-47e7-8c6b-66e5402adf9c,Struttura recente,"Avevo paura fosse nauseante, ma la colazione era perfetta.",F&B,positive,1,negation
+79eb4168-1045-46e5-bee3-eb791d181ee9,Nota dolente,Ho trovato il buffet industriale. Inaccettabile. Pagato 215€ a notte.,F&B,negative,0,detailed
+fbc9f87a-f668-4617-94a1-875d2db69edb,Gastronomia pessima,"L'igiene? Mediocre. Peccato, dalle recensioni sembrava meglio.",Housekeeping,negative,0,ambiguous
+0b19f88e-9d77-445e-b206-c26938b77c07,Team impreparato,"Il check-out era cordiale, ma il cibo indigesto ha rovinato tutto.",F&B,negative,0,mixed
+e2aa7a5d-278e-400d-ba02-66efbe055787,Ambiente squallido,"Il pavimento lasciava a desiderare, troppo terribile. Forse ci torniamo.",Housekeeping,negative,0,detailed
+f8b38a8b-e05f-48bc-8a16-a06cc958e75e,Prima volta qui,Finalmente un check-out premuroso.,Reception,positive,1,simple
+aca5e2fd-b966-442a-ad23-8d36dc322c97,Pulizia perfetta,"Avevo paura fosse stantio, ma il pranzo era perfetto.",F&B,positive,1,negation
+9e574f7a-a0ee-49ae-9453-dd324b0dbb41,Piatti orribili,"Dopo un viaggio da Ambivere, Purtroppo il room service era scotto. Mai più. Lenzuola cambiate regolarmente.",F&B,negative,0,detailed
+a5cb63a2-398d-4ca6-8b68-70b51d61fac3,Cucina eccellente,"Dopo un viaggio da Puia, Tutto perfetto: camera accogliente, reception accogliente, ristorante invitante. Personale presente ma niente di memorabile.",F&B,positive,1,multi_aspect
+f2f9e5fa-9016-4161-8fa7-01cd2631d00b,Alti e bassi,"Trasferta di lavoro. Letto caldo, niente da dire. Rapporto qualità-prezzo discreto.",Housekeeping,positive,1,detailed
+b70b3420-f104-4785-a58b-252360141de9,Consigli utili,"Sinceramente la frutta era decente, meglio del previsto.",F&B,positive,1,ambiguous
+597e6845-e277-48c5-b37d-1fb6d11376e0,Struttura recente,"Il cappuccino lasciava a desiderare, troppo dur.o",F&B,negative,0,simple
+a49b1cd9-9082-489b-a1cd-e87fec955f87,Opinione sincera,Prenotato 19 giorni prima. Piacevolmente sorpreso: l'ordine molto solare. Mai più.,Housekeeping,positive,1,detailed
+15b02530-f020-4992-b576-255e98549f22,Servizio pessimo,"Hotel consigliato da amici. Tutto pessimo: camera trascurata, reception altezzoso, ristorante scialba.",Reception,negative,0,multi_aspect
+38d77b9a-e916-4a57-b248-23ab177a8a5f,Team straordinario,"Siamo arrivati di domenica verso le 23. Personale reattivo, specialmente Raffaello. Rapporto qualità-prezzo discreto.",Reception,positive,1,detailed
+46fde062-a33d-47af-9701-410d3f4b1a70,Stanza sporca,"Abbiamo scelto questo hotel per la posizione. Camera terribile, personale maleducato, colazione insapore. Mai più!",Housekeeping,negative,0,multi_aspect
+93cd59bf-5c94-4cf0-9c98-d2c1e2acf72f,Staff preparato,Non posso dire che il letto fosse logoro. Tutt'altro! Nessun problema al check-out.,Housekeeping,positive,1,negation
+0b2c782a-6928-4e92-868a-152fdb23aa8c,Soggiorno dicembre,Il caffè era decente. Prenotato 29 giorni prima. Stanza degradata. Stfaf svogliato. Cena precotta. Disastro.,Housekeeping,negative,0,multi_aspect
+43ef2016-2c9b-462e-840a-3aae52e2afd9,Buffet ricchissimo,"Soggiorno di 5 notti. Camera curata, personale premuroso, colazione abbondante. Torneremo!",F&B,positive,1,multi_aspect
+d9f195d0-1482-4f53-8201-0c62f5f59b22,Stanza splendida,Buffet nella norma. Viaggio in famiglia. Stanza sofisticata. Staff disponibile. Cena abbondante. Top!,Housekeeping,positive,1,multi_aspect
+6a5d932b-45ff-4c83-b495-db4e82456fb4,Camera orribile,"Cibo pregiato, peccato per l'arredamento maleodorante. Il minibar aveva i soliti prodotti.",Housekeeping,negative,0,mixed
+504867ba-bf7b-439b-8f9a-ea4b8acd4e10,Personale gentilissimo,"Il personale era accettabile. Non eccezionale, ma disponibile.",Reception,positive,1,ambiguous
+0dde29a6-baa4-471a-9d24-67ac778eedb3,Pro e contro,"Dopo un viaggio da Cervino, Piacevolmente sorpreso: l'ordine molto moderno. Non lo consiglio.",Housekeeping,positive,1,detailed
+1c6345ab-6e0e-41e8-985d-3f861d2324e6,Giudizio personale,Niente room service rancido come temevo. Ottimo!,F&B,positive,1,negation
+43e42caf-8181-48cc-b691-47eb89a2688b,Soggiorno breve,"Il bagno funzionava, niente di più. Viaggio in famiglia. Camera scadente, personale frettoloso, colazione misera. Mai più!",Reception,negative,0,multi_aspect
+683514f2-ceb8-4f9d-b914-c120c8dcd19f,Esperienza altalenante,"Al bar niente di speciale. Vacanza romantica. Camera solare, personale eccellente, colazione curata. Torneremo!",Housekeeping,positive,1,multi_aspect
+32ebd689-9be5-48c7-81f6-31d4a39231a7,Vacanza a metà,Prima volta in questa struttura. Stanza fresca. Staff affidabile. Cena irresistibile. Top!,Housekeeping,positive,1,multi_aspect
+714c7df4-e434-4d51-8158-1092f335cba3,Reception disponibile,Devo dire che l'accogleinza era reattiva.,Reception,positive,1,simple
+333ee344-7dbf-4bc1-bfa6-23d0ea9e5c8d,Trasferta di lavoro,Niente da segnalare sulla manutenzione. Hotel consigliato da amici. Stanza pulitissima. Staff rispettoso. Cena tipica. Top!,Reception,positive,1,multi_aspect
+6cedd15d-5800-4c02-87ea-7ff58db06746,Staff scortese,Abbiamo soggiornato per il weekend. Stanza rovinata. Staff aggressivo. Cena pesante. Disastro. Lenzuola cambiate regolarmente.,Reception,negative,0,multi_aspect
+632dbb5e-486b-46bf-aafd-e7d95f733a3e,Accoglienza pessima,"Accoglienza non proprio il massimo. Un peccato, rovinava l'esperienza. Niente da segnalare sulla manutenzione.",Reception,negative,0,ambiguous
+4d183eba-3cd5-4d7f-89c1-0669c6b33fe6,Stanza sporca,"Prima volta in questa struttura. Tutto pessimo: camera stretta, reception irritante, ristorante immangiabile. Colazione continentale standard.",Reception,negative,0,multi_aspect
+8b040f49-d0be-43ee-bd37-253965f202f9,Personale gentilissimo,"Reception abbastanza buono. Poteva andare peggio, anzi no, è andata bene.",Reception,positive,1,ambiguous
+217d65a0-c568-41cd-9563-f61600e85ece,Pranzo da dimenticare, Stanza caotica. Staff presuntuoso. Cena mediocre. Disastro.,Reception,negative,0,multi_aspect
+405cacec-8774-49a9-b7d2-1e02ff01cf99,Ottima manutenzione,Abbiamo mangiato qualcosa al ristorante. Devo dire che l'armadio era favoloso. Mai più.,Housekeeping,positive,1,detailed
+3ed8c56c-da09-4fa0-9282-8d8044b591f7,Qualche giorno qui,Sulla carta la stanza doveva essere pulitissima. Invece mediocre. La colazione era quella classica da hotel.,Housekeeping,negative,0,ambiguous
+1dde7969-6886-43db-a634-8e784d5c55c7,Ristorante top,Devo dire che il pranzo era irresistibile.,F&B,positive,1,simple
+dc8aee30-be60-43f7-a8be-9288e5af6e39,Cordialità unica,"Il bagno funzionava, niente di più. La manutenzione era piccola, ma lo staff amichevole ha salvato tutto.",Reception,positive,1,mixed
+bc3536df-94f7-4dba-8581-1d2d1a89b71e,Colazione abbondante,Finalmente una sala colazione sostanziosa.,F&B,positive,1,simple
+def57689-68f4-4bce-a4e7-5e8eb8f21423,Ci sono stato,"Ho prenotato tramite Booking. Tutto pessimo: camera trascurata, reception approssimativo, ristorante molle.",Housekeeping,negative,0,multi_aspect
+a4bbf962-606e-4e1c-8f15-84494f40c22f,Poteva andare meglio,"Materasso un po' fatiscente, però il room service nutriente. Promossi!",F&B,positive,1,mixed
+db20a56e-dc81-4fe7-8eda-8bbb71710434,Soggiorno breve,Deluso: il materasso stretto.,Housekeeping,negative,0,simple
+7ecddbaf-26f0-4fcf-bb16-e5dba6eab79e,Colazione abbondante,Il room service superava le aspettative: fantastico!,F&B,positive,1,simple
+ca3dd859-c5ce-499c-86b8-265911df12d7,Pulizia scarsa,Purtroppo la camera era trascurata. Comunque torneremo.,Housekeeping,negative,0,detailed
+49bc473f-ed7b-4656-a18a-15368c99a894,Ristorante deludente,"Trasferta di lavoro. Tutto pessimo: camera scadente, reception nervoso, ristorante immangiabile. Il personale delle pulizie era nella norma.",F&B,negative,0,multi_aspect
+57eb89b1-d65e-49dd-a62d-2d06cf9b8558,Prima volta qui,Hotel consigliato da amici. Deluso: il cibo deludente. Vedremo la prossima volta.,F&B,negative,0,detailed
+f54ad0a2-e874-46d7-ad66-a1bd93676a02,Trasferta di lavoro, Stanza trascurata. Staff orribile. Cena acida. Disastro. Aria condizionata funzionante.,Reception,negative,0,multi_aspect
+533420e6-d9d8-4b8d-be8a-dee70758e201,Stanza pessima,"Prenotato 19 giorni prima. Camera buia, personale ostile, colazione povera. Mai più!",Housekeeping,negative,0,multi_aspect
+98ae4334-6c12-4ce8-ae34-0454cac5b68c,Pro e contro,"La sala colazione lasciava a desiderare, troppo sgradevole.",F&B,negative,0,simple
+956269f0-e5d7-4875-adad-d6c795a76d79,Ambiente curatissimo,"Sinceramente la scrivania era decente, meglio del previsto.",Housekeeping,positive,1,ambiguous
+664fa663-7e8f-4095-a24c-69b6b24445a7,Menu squisito,"Soggiorno di 4 notti. Tutto perfetto: camera splendida, reception accogliente, ristorante irresistibile. Il bagno funzionava, niente di più.",F&B,positive,1,multi_aspect
+9b37a22b-6a8a-416f-83b2-90d08edddfcd,Alti e bassi,"Ho prenotato tramite Booking. Tutto pessimo: camera trasandata, reception inefficiente, ristorante cruda.",Reception,negative,0,multi_aspect
+ef2ae713-5702-4049-aa39-aaa6dabac50d,Reception disponibile,"La frutta non era affatto molle. Anzi, molto curata. Alla reception tutto regolare.",F&B,positive,1,negation
+a2086977-a9f2-4336-83f4-a9a948a639d0,Opinione sincera,Ero qui per lavoro con Flora. Calcedonio si è dimostrato sgradevole. Comunque torneremo. Camera nella media per la categoria.,Reception,negative,0,detailed
+cbd58bf6-1efd-46e9-8e37-14af99b49350,Hotel centrale,"Ingresso ospitale, peccato per lo specchio sporco.",Housekeeping,negative,0,mixed
+06e745f9-88bc-439c-9f4c-3b79fb10987f,Camera deludente,Lo staff faceva il suo lavoro. Vacanza romantica. Stanza umida. Staff ostile. Cena limitata. Disastro.,F&B,negative,0,multi_aspect
+f7860b50-11c5-4ef0-9d46-3c09475287aa,Alti e bassi,Niente cena scialba come temevo. Ottima!,F&B,positive,1,negation
+bc8f7d29-2dea-4493-8658-663a698c206f,Hotel centrale,Nessuno svogliato alla reception. Complimenti!,Reception,positive,1,negation
+5a31b4cc-cd4b-49a9-9b68-9c883ae909fe,Camera consigliatissima,Non posso dire che il ristorante fosse riscaldato. Tutt'altro!,F&B,positive,1,negation
+c5c5b37a-f85e-46a1-9dad-09b252c21221,Personale maleducato,"Lo staff non soddisfacente, purtroppo non all'altezza delle aspettative.",Reception,negative,0,ambiguous
+a56c0941-fbf2-4050-a748-dbcfac619e63,Ambiente trascurato,"Mi aspettavo scrivania elegante, ma era mediocre.",Housekeeping,negative,0,ambiguous
+118405ad-9e11-42cd-8930-aef68a80068d,Seconda visita,Abbiamo soggiornato per il weekend. Stanza deprimente. Staff sgradevole. Cena riscaldata. Disastro.,Housekeeping,negative,0,multi_aspect
+328067a1-4187-422b-a57d-5e521a5165ca,Hotel nella media,"Il concierge ci ha dato qualche indicazione. Brioche sostanziosa, peccato per lo specchio sciatto.",Housekeeping,negative,0,mixed
+73b0a091-7634-4169-8f76-e38812fe28bf,Opinione sincera,"Viaggio in famiglia. Camera maestosa, personale cordiale, colazione fragrante. Torneremo!",F&B,positive,1,multi_aspect
+9364f3d0-5024-4dc6-9cb3-3df313eecdc6,Camera fantastica,"Colazione continentale standard. Avevo paura fosse obsoleto, ma l'arredamento era perfetto.",Housekeeping,positive,1,negation
+ee0caeb5-ecfe-4b99-a790-cebdbfddc3d9,Reception assente,"Siamo arrivati di martedì verso le 17. Camera orrenda, personale altezzoso, colazione industriale. Mai più!",Reception,negative,0,multi_aspect
+49a23a89-e6b5-492c-b71a-d655cdfc6ee0,Camera da sogno,Ero qui per lavoro con Vittoria. Il pavimento superava le aspettative: eccellente! Al bar niente di speciale.,Housekeeping,positive,1,detailed
+f143262f-dc5c-4eed-8da0-365bf89897b9,Personale sgarbato,"Cornetto curato, peccato per il personale frettoloso. Colazione continentale standard.",Reception,negative,0,mixed
+75a66981-4104-48b5-a34d-b7c5760debbb,Camera da evitare,"Il cornetto anche goloso, però la scrivania soffocante. Mai più.",Housekeeping,negative,0,mixed
+3c7c1d85-25cf-4041-90a6-43fea53bc024,Alti e bassi,"Il bar non era affatto secco. Anzi, molto curato.",F&B,positive,1,negation
+ee87905e-4ca4-45ea-8dfa-6a56d12dbc9a,Giudizio personale,"La brioche? Accettabile. Niente di eccezionale, ma funzionale. La stanza era quella che ci si aspetta.",F&B,positive,1,ambiguous
+eaafe543-2434-4678-a9e2-7ba9952e6abb,Reception disponibile,"Colazione continentale standard. Reception nella media alta. Poteva andare peggio, anzi no, è andata bene.",Reception,positive,1,ambiguous
+cb08587d-1963-426d-ae21-8b099afd4015,Staff incompetente,Non aspettatevi personale impeccabile. Pessimi.,Reception,negative,0,negation
+20b71785-d02c-40c1-9417-0a17caaa5bbe,Gastronomia pessima,"Il buffet anche ricercato, però lo specchio angusto. Mai più.",Housekeeping,negative,0,mixed
+18e19331-1dba-4267-be1c-a5a1fef518a6,Servizio inesistente,"Ho prenotato tramite Booking. Tutto pessimo: camera fredda, reception aggressivo, ristorante povera.",Reception,negative,0,multi_aspect
+5b62a8df-493e-404d-b0ec-2796a59b457f,Buffet povero,"Viaggio in famiglia. Tutto pessimo: camera datata, reception inefficiente, ristorante dura. Il minibar aveva i soliti prodotti.",Reception,negative,0,multi_aspect
+97ac6aa8-bb24-48a3-9363-57b66f81cf4f,Nota dolente,Hotel consigliato da amici. Il minibar era arioso. Lo consiglio. Buffet nella norma.,Housekeeping,positive,1,detailed
+79e13cea-b0cb-461f-bd85-de89c2171429,Servizio inesistente,"Bello: frutta curata, ma la reception presuntuosa è inaccettabile.",Reception,negative,0,mixed
+1fdd980a-45f1-4619-94f9-0429a7de02cc,Pranzo da dimenticare,Accoglienza standard. Non aspettatevi cornetto sfizioso. Pessimo.,F&B,negative,0,negation
+bf3c4c06-4343-48bc-89fa-6a688fb5d27b,Staff scortese,"Il personale delle pulizie era nella norma. Dopo un viaggio da Zangarona Di Lamezia Terme, Lucrezia si è dimostrato scorbutico. Voto: 3/10.",Reception,negative,0,detailed
+a6846099-f729-4951-8591-31d2bbda0242,Stanza sporca,Siamo arrivati di domenica verso le 23. Stanza sporca. Staff sbrigativo. Cena costosa. Disastro. Abbiamo mangiato qualcoas al ristorante.,Housekeeping,negative,0,multi_aspect
+816bcb9f-7426-4193-8b7e-6b3c87d292a6,Stanza splendida,"Nonostante la reception arrogante, lo specchio solare ha fatto la differenza.",Housekeeping,positive,1,mixed
+8b1e3b9d-c34b-4fbb-8d4a-75b8551ac8ea,La mia esperienza,Lo specchio superava le aspettative: profumato! Nessun problema al check-out.,Housekeeping,positive,1,simple
+ff50bde4-3825-47b8-9cab-cc97663f1c97,Camera orribile,"La pulizia? Non proprio il massimo. Peccato, dalle recensioni sembrava meglio.",Housekeeping,negative,0,ambiguous
+a3b442bd-4649-4296-af58-42c3ff86cc31,Camera da evitare,"Non sapevo cosa aspettarmi. Tutto pessimo: camera scadente, reception approssimativo, ristorante stantia.",F&B,negative,0,multi_aspect
+be3e6e57-f30a-4e32-aba4-fc035efa9c5b,Reception disponibile,"Ho prenotato tramite Booking. Personale ospitale, specialmente Rodolfo. Esperienza da ripetere.",Reception,positive,1,detailed
+ec24a3c5-c754-408f-b418-8f3f8a14be62,Servizio impeccabile,Check-in nella norma. La scrivania superava le aspettative: rifinita!,Housekeeping,positive,1,simple
+69efafb1-3a7e-4e14-a359-eee173991a47,Colazione misera,"La frutta? Non all'altezza. Peccato, dalle recensioni sembrava meglio.",F&B,negative,0,ambiguous
+e1a47e10-2d53-4dd0-8f8e-bc5accc56569,Manutenzione assente,"Il cappuccino anche innovativo, però il check-in lento. Mai più. Il minibar aveva i soliti prodotti.",Reception,negative,0,mixed
+6553867d-a881-4fd3-947d-577bfa5a91ca,Trasferta di lavoro,Reception non all'altezza. Mi aspettavo di più per il prezzo pagato. Niente da segnalare sulla manutenzione.,Reception,negative,0,ambiguous
+ebc2026f-af34-4f65-a193-c4b23c19e71d,Esperienza altalenante,"Avevo paura fosse industriale, ma la colazione era perfetta.",F&B,positive,1,negation
+15eacbcf-ab10-41ce-aa14-3cd82ff3cde4,Soggiorno ok,"Accoglienza non soddisfacente. Un peccato, rovinava l'esperienza.",Reception,negative,0,ambiguous
+0f5ae9d3-8e6e-4003-a14f-3f12cfd01cbd,Personale gentilissimo,"Ok la frutta era salata, ma la hall meticolosa compensa. Il caffè era decente.",Reception,positive,1,mixed
+28f4e3ce-aded-4a80-bff9-507dcd14a03e,Consigli utili,"Accoglienza sotto la media. Un peccato, rovinava l'esperienza.",Reception,negative,0,ambiguous
+f5c9b047-9c10-4572-8f6b-40d09efba58b,Accoglienza pessima,Prenotato 27 giorni prima. Non mi aspettavo una assistenza così incompetente. Pagato 150€ a notte.,Reception,negative,0,detailed
+2d5972c6-134a-4a2f-a7cf-705cc257cf73,Nota dolente," Tutto perfetto: camera spaziosa, reception ottimo, ristorante biologica. Lo staff faceva il suo lavoro.",Housekeeping,positive,1,multi_aspect
+6d15f16f-b7b8-41a5-9a45-693d7227890e,Cibo immangiabile,"Dopo un viaggio da Longano, Camera trascurata, personale sbrigativo, colazione deludente. Mai più!",F&B,negative,0,multi_aspect
+62f5df2b-adaa-44ca-8ed6-ad5e18318aa3,Nota dolente,Devo dire che il minibar era confortevol.e,Housekeeping,positive,1,simple
+c7fee39f-1190-4938-a66f-d7f739669fa7,Poteva andare meglio,"Personale inefficiente, soprattutto Maurizio. Il caffè era decente.",Reception,negative,0,simple
+4140752c-aa44-4259-9001-8b7b6d4067f4,Camera consigliatissima,Niente letto maleodorante come temevo. Ottimo!,Housekeeping,positive,1,negation
+72bb912d-7da6-4785-b63b-4dc3a559e463,Buffet ricchissimo,"Nonostante il pavimento sciatto, il check-out ospitale ha fatto la differenza.",Reception,positive,1,mixed
+4b22d308-1c8e-4ee9-9715-bd6fa4161293,Pulizia inesistente,"Niente da segnalare sulla manutenzione. Ero qui per lavoro con Marissa. Camera terribile, personale superficiale, colazione immangiabile. Mai più!",F&B,negative,0,multi_aspect
+b0b63bcf-0860-4833-879d-0cdaf396ea37,Reception disponibile,"La scrivania era cupa, ma l'accoglienza simpatica ha salvato tutto.",Reception,positive,1,mixed
+1a3d1fa7-bc89-40a9-a3b8-c1e9392456de,Pulizia scarsa,"Abbiamo soggiornato per il weekend. Tutto pessimo: camera caotica, reception irritante, ristorante gommosa.",F&B,negative,0,multi_aspect
+1f45dbfd-f7dc-47e0-b097-4b2b46a02a9b,Cibo immangiabile,"Viaggio in famiglia. Staff assente, Paride in particolare. Comunque torneremo.",Reception,negative,0,detailed
+1eb74b56-53ff-43a2-8a19-35014169b9fc,Personale fantastico,Piacevolmente sorpreso: il portiere molto competente.,Reception,positive,1,simple
+88575117-6155-4667-a112-507c2cfa55b0,Menu squisito,Niente buffet molle come temevo. Ottimo!,F&B,positive,1,negation
+f065c817-687a-4850-9d9b-62317d45d8ef,Gastronomia pessima,"Il caffè? Non all'altezza. Peccato, dalle recensioni sembrava meglio. Camera nella media per la categoria.",F&B,negative,0,ambiguous
+c01f36bf-3e6d-458b-b367-c28de1b294de,Poteva andare meglio,"Dopo un viaggio da Santa Eufemia Lamezia, Camera solare, personale sorridente, colazione eccellente. Torneremo!",F&B,positive,1,multi_aspect
+e87d1c78-e7c4-41c7-8049-7b717d106c60,Personale sgarbato,"Dopo un viaggio da St. Georgen, Camera rovinata, personale indifferente, colazione scadente. Mai più!",Reception,negative,0,multi_aspect
+5c62b3a2-3a3c-463e-8bd6-cee631b1b099,Nota dolente,"Soggiorno di 5 notti. Pulizia ordinata, niente da dire. Voto: 6/10.",Housekeeping,positive,1,detailed
+5ca260c9-eb76-47c9-b08a-4895d4ffa666,Hotel centrale,Scodratevi accoglienza calorosa. Disastro.,Reception,negative,0,negation
+c8fe3ccd-c8b8-49c6-ad30-49cf43e458fc,Menu scadente,"Lo staff potrebbe fare di meglio, purtroppo non all'altezza delle aspettative.",Reception,negative,0,ambiguous
+a2814044-6f96-4882-95d8-2980ff37d19c,Soggiorno breve,"Niente da segnalare sulla manutenzione. Abbiamo soggiornato per il weekend. Camera romantica, personale dinamico, colazione leggera. Torneremo!",F&B,positive,1,multi_aspect
+12f5131a-da52-42ee-a2bf-18f51f652a87,Colazione misera,"Mi aspettavo room service eccellente, ma era insufficiente. Il personale delle pulizie era nella norma.",F&B,negative,0,ambiguous
+4a15544d-c5e7-4e8a-ba57-8a8ea9488d99,Team impreparato,"Soggiorno di 6 notti. Tutto pessimo: camera datata, reception brusco, ristorante riscaldata.",Reception,negative,0,multi_aspect
+b88ec318-c16d-43ed-ad81-f8bd402913ec,Camera da incubo,"Vacanza romantica. Tutto pessimo: camera fredda, reception sgradevole, ristorante scotta.",Housekeeping,negative,0,multi_aspect
+6e3f683a-bf3c-4140-bf54-a51101fa964e,Menu scadente,Vergognoso: brioche povera.,F&B,negative,0,simple
+1b4da0fe-7bb3-4605-9a74-3152627b41a1,Reception disorganizzata,"Colazione sublime, peccato per la portineria orribile. Aria condizionata funzionante.",Reception,negative,0,mixed
+d248a9a7-ac1a-4554-83c7-5611ffe3fa49,Hotel centrale,Alessandro era professionale.,Reception,positive,1,simple
+36760ce5-81e5-49f6-93f2-77cc1a85910d,Manutenzione assente,"Siamo arrivati di giovedì verso le 17. Camera maleodorante, personale sgradevole, colazione pessima. Mai più!",Housekeeping,negative,0,multi_aspect
+abf3e3fc-2181-4d25-a552-38a643ff5011,Qualche giorno qui,Colazione continentale standard. Viaggio in famiglia. Stanza fatiscente. Staff arrogante. Cena insapore. Disastro.,Reception,negative,0,multi_aspect
+6b8e869f-d538-4b0e-b4f3-193c0ff0a55c,Buffet povero,Scordatevi caffè ottimo. Deludente. Camera nella media per la categoria.,F&B,negative,0,negation
+25f934bf-9bb9-4155-9275-eb9414aeaf5c,Hotel nella media,Ho prenotato tramite Booking. Vergognoso: cappuccino bruciato. Nel complesso ok.,F&B,negative,0,detailed
+a181c85e-ca0a-46ac-8d67-d38e990f0c5b,Consigli utili,Ho prenotato tramite Booking. Ho trovaot lo specchio elegante e ben curato. Comunque torneremo.,Housekeeping,positive,1,detailed
+9a8dca03-580d-4b71-98f5-64135be6128e,Camera deludente,Scordatevi arredamento rifinito. Deludente.,Housekeeping,negative,0,negation
+8cbfedb0-f264-4ccc-b9ac-1b1ea8e56e0c,Pulizia inesistente,"Abbiamo soggiornato per il weekend. Camera umida, personale lento, colazione insipida. Mai più!",Housekeeping,negative,0,multi_aspect
+fbe94499-dbc0-40fd-86fb-7bf300b9d4a3,Poteva andare meglio,Colazione continentael standard. Nessuno villano alla reception. Complimenti!,Reception,positive,1,negation
+0b5cea6a-4135-4e8c-b0a9-00ad939b462d,Alti e bassi,"Personale presente ma niente di memorabile. La pulizia? Mediocre. Peccato, dalle recensioni sembrava meglio.",Housekeeping,negative,0,ambiguous
+0b599562-2227-419f-951f-f086c1b5b5ca,Servizio inesistente,"Bello: frutta eccellente, ma il concierge ostile è inaccettabile.",Reception,negative,0,mixed
+ad973b67-9b89-45cb-9942-644c248d31ec,Poteva andare meglio,Finalmente una prenotazione discreta.,Reception,positive,1,simple
+dd59ba71-36b8-4481-bb3a-4e3e7c52fa17,Buffet ricchissimo,"Ok la manutenzione era orrenda, ma la brioche buonissima compensa.",F&B,positive,1,mixed
+75d66ed4-eb1f-49f2-910b-d1d033173470,Soggiorno dicembre,"Abbiamo mangiato qualcosa al ristorante. Soggiorno di 4 notti. Tutto perfetto: camera luminosa, reception tempestivo, ristorante fantastica.",Housekeeping,positive,1,multi_aspect
+b540b30e-039f-4a25-8d61-68bd2defe193,Ambiente squallido,Alla reception tutto regolare. Scordatevi armadio perfetto. Deludente.,Housekeeping,negative,0,negation
+6c8c3b6a-a974-4079-b16f-da0a45a88829,Accoglienza pessima,"Il personale delle pulizie era nella norma. Il servizio in camera era appetitoso, ma il portiere frettoloso ha rovinato tutto.",Reception,negative,0,mixed
+147f6570-1a43-4b54-923a-e9934b3446bc,Cucina eccellente,Vacanza romantica. Stanza moderna. Staff amichevole. Cena calda. Top! Camera nella media per la categoria.,Reception,positive,1,multi_aspect
+562b0f79-c374-49ee-b50b-ea63371ecd7b,Vacanza a metà,"Mi aspettavo terrazza ricercata, ma era potrebbe fare di meglio. Lo staff faceva il suo lavoro.",F&B,negative,0,ambiguous
+bdf66ba5-dc9c-46de-a5a6-74c212738a23,Ottima manutenzione,"Il lavandino era più che sufficiente. Non perfetto, ma ci siamo trovati bene.",Housekeeping,positive,1,ambiguous
+3b70b3a1-24a3-4cf2-9549-c931e9af299d,Esperienza altalenante,Il caffè era decente. Vacanza romantica. Lo specchio superava le aspettative: raffinato! Non lo consiglio.,Housekeeping,positive,1,detailed
+99546eb4-0025-4ad1-ab22-63dd87c5421e,Soggiorno breve,"Accoglienza non all'altezza. Un peccato, rovinava l'esperienza.",Reception,negative,0,ambiguous
+afd5dea5-89d7-4d6c-8e77-7f00ecf27e76,Gastronomia top,Il personale delle pulizie era nella norma. Ero qui per lavoro con Umberto. Stanza profumata. Staff accogliente. Cena generosa. Top!,F&B,positive,1,multi_aspect
+4ab7706e-b773-40ca-aec2-59dc7f95897c,Reception efficiente,Devo dire che l'accoglienza era empatica.,Reception,positive,1,simple
+1497d658-7010-4719-be69-5d0d8a3c3b5e,Ristorante top,"Camera nella media per la categoria. Abbiamo scelto questo hotel per la posizione. Tutto perfetto: camera pulitissima, reception rispettoso, ristorante golosa.",F&B,positive,1,multi_aspect
+8dcdcd03-969b-4662-8562-8059568cc69b,Pranzo da dimenticare,"Trasferta di lavoro. Camera sciatta, personale negligente, colazione amara. Mai più!",Reception,negative,0,multi_aspect
+5f65c8ce-bd21-4c11-be9d-61ee18b87245,Cena pessima,"Dopo un viaggio da Pescocanale Di Capistrello, Non mi aspettavo un menu così povero. Non lo consiglio. Il bagno funzionava, niente di più.",F&B,negative,0,detailed
+949077c2-7674-456f-a26d-719d81cf3252,Esperienza altalenante,Abbiamo soggiornato per il weekend. Carolina si è dimostrato frettoloso. Comunque torneremo.,Reception,negative,0,detailed
+86295b5d-707d-4251-bdb1-429e7010ed13,Qualche giorno qui,"Viaggio in famiglia. Il check-in lasciava a desiderare, troppo incompetente. Nel complesso ok.",Reception,negative,0,detailed
+69ca97d2-7644-44fd-8ae7-69edde8ede0b,Ci sono stato,Ho prenotato tramite Booking. Stanza perfetta. Staff reattivo. Cena sublime. Top!,Housekeeping,positive,1,multi_aspect
+54aebd1b-8ce6-424d-bef5-9fe6ff233d5f,Struttura recente,"Accoglienza nella media alta. Niente effetto wow, ma professionali.",Reception,positive,1,ambiguous
+70b7e868-d854-40f0-9fca-f0b719b17e80,Colazione ottima,Ho trovato la frutta irresistibile e ben curata.,F&B,positive,1,simple
+e893be3d-7354-4a6f-a160-745985c7504b,Cucina eccellente,Ho trovato la sala colazione calda e ben curata. Pagato 223€ a notte.,F&B,positive,1,detailed
+88bd6407-2bcf-4e01-a28d-efe39bf00273,Ristorante top,"Il ristorante non era affatto crudo. Anzi, molto curato.",F&B,positive,1,negation
+d20f87d0-4465-4d6b-81fb-18b3c9a7d91f,Weekend al mare,Alla reception tutto regolare. La brioche non era certo eccellente. Delusione totale.,F&B,negative,0,negation
+82af085c-138d-494c-ab0a-beddc77444cb,Qualche giorno qui,Soggiorno di 6 notti. Ho trovato il servizio in camera buonissimo e ben curato. Potrebbe migliorare. La stanza era quella che ci si aspetta.,F&B,positive,1,detailed
+6a07f213-7129-4ec7-9b69-554d7c54535f,Hotel nella media,"Temevo receptionist nervoso, invece super disponibili.",Reception,positive,1,negation
+7ed70ed7-b194-490b-a961-929e546e035a,Seconda visita,"Accoglienza non all'altezza. Un peccato, rovinava l'esperienza.",Reception,negative,0,ambiguous
+3838b326-8e94-4239-b02b-61c4a3d70628,Niente di speciale,"Il pranzo era prelibato, ma la manutenzione maleodorante ha rovinato tutto.",Housekeeping,negative,0,mixed
+66b2bc5b-50c1-47fc-8e17-7b4e0837b8a3,Cibo immangiabile,Abbiamo scelto questo hotel per la posizione. Il cornetto era scadente. Rapporto qualità-prezzo discreto.,F&B,negative,0,detailed
+1d34d08e-7a4c-45d4-9c99-e04cf0e98b3b,Accoglienza calorosa,"Dopo un viaggio da Cuffiano, Camera spaziosa, personale competente, colazione curata. Torneremo! Al bar niente di speciale.",Reception,positive,1,multi_aspect
+8b8148f6-b38a-488c-a65e-d389b74d0fb1,Attesa infinita,"Dopo un viaggio da Rocche Di Civitella, Gaetano si è dimostrato scostante. Esperienza da ripetere. La colazione era quella classica da hotel.",Reception,negative,0,detailed
+059dd55d-4b94-4e30-b303-f438fe2110d0,Personale fantastico,"Trasferta di lavoro. Personale eccellente, specialmente Laureano. Potrebbe migliorare. Camera nella media per la categoria.",Reception,positive,1,detailed
+7a0ecfea-958c-49ba-8cd6-20c20ea2622b,Giudizio personale,"Il servizio in camera sembrava goloso dalle foto, in realtà non all'altezza. Alla reception tutto regolare.",F&B,negative,0,ambiguous
+0da23e5c-6a36-4f18-86d3-db93ee33688d,Ambiente perfetto,Non posso dire che il minibar fosse angusto. Tutt'altro!,Housekeeping,positive,1,negation
+060edf5b-3911-4497-ba43-b2badf0f06cb,Reception disponibile,"Temevo receptionist assente, invece super disponibili. Lenzuola cambiate regolarmente.",Reception,positive,1,negation
+cc8218da-c696-45e6-8944-051be726be23,Camera deludente,Non mi aspettavo una pulizia così gelida. Buffet nella norma.,Housekeeping,negative,0,simple
+2812859a-1337-439e-8d4f-5d272c7f0b79,Ambiente trascurato,La pulizia non era certo silenziosa. Delusione totale.,Housekeeping,negative,0,negation
+e1301617-c2df-4335-9666-6f9f53ac2ab9,Pro e contro,"Vacanza romantica. Camera rinnovata, personale paziente, colazione superba. Torneremo!",F&B,positive,1,multi_aspect
+d5c0244d-3735-462d-8184-3b0304dd7054,Hotel nella media,Non sapevo cosa aspettarmi. Ho trovato il bar indigesto. Inaccettabile. Potrebbe migliorare. Nessun problema al check-out.,F&B,negative,0,detailed
+b841d0a0-1fe7-41d6-9917-8793a9d3c2e6,Hotel nella media,Sulla carta il room service doveva essere comlpeto. Invece non all'altezza.,F&B,negative,0,ambiguous
+832920b7-c143-4426-b72f-871a45ee432d,Reception disorganizzata,Di fantastico lo staff non aveva niente.,Reception,negative,0,negation
+c342bd2b-f295-456e-9967-5f06bd767e35,Hotel centrale,Niente caffè misero come temevo. Ottimo!,F&B,positive,1,negation
+14e286e5-ac89-46bc-8cbd-3c039e2aa4ac,Giudizio personale,"Non ho trovato staff indifferente. Aniz, gentilissimi.",Reception,positive,1,negation
+18c26797-6142-4a7d-97be-31111a2a73ed,Nota dolente,"La manutenzione era abbastanza buono. Non perfetta, ma ci siamo trovati bene.",Housekeeping,positive,1,ambiguous
+e2add909-c521-4f2d-9c45-d539c03f3538,Giudizio personale,Viaggio in famiglia. Deluso: il materasso polveroso. Voto: 6/10. Al bar niente di speciale.,Housekeeping,negative,0,detailed
+84dad06a-7872-4deb-acd9-4cbbc19ad58c,Gastronomia pessima,Soggiorno di 2 notti. Vergognoso: cibo insapore. Comunque torneremo. Niente da segnalare sulla manutenzione.,F&B,negative,0,detailed
+5ca0c428-822c-4d32-ac64-5c15aba301cb,Qualche giorno qui,"Buffet nella norma. Non sapevo cosa aspettarmi. La manutenzione lasciava a desiderare, troppo soffocante. Pagato 70€ a notte.",Housekeeping,negative,0,detailed
+0964fbbf-8cd3-41b0-82b0-1cfdd045dd1c,Cena pessima,"La sala colazione sembrava biologica dalle foto, in realtà insufficiente.",F&B,negative,0,ambiguous
+336749b5-2cf6-4f75-aa5e-6920bf5ae7e6,Luci e ombre,"Il pavimento lasciava a desiderare, troppo danneggiato.",Housekeeping,negative,0,simple
+4a552ea0-8acb-4e09-8ccc-9cea109fd8ee,Stanza splendida,"Abbiamo soggiornato per il weekend. Camera romantica, personale discreto, colazione tradizionale. Torneremo!",Housekeeping,positive,1,multi_aspect
+cd1f5318-331f-43fb-911f-c8c0297ca4ff,Piatti deliziosi,"Sinceramente la cena era sopra la media, meglio del previsto.",F&B,positive,1,ambiguous
+03802b70-8d03-491e-8f8d-5238288b78b5,Hotel discreto,Prima volta in questa struttura. Vergognoso: scrivania cupa. Comunque torneremo.,Housekeeping,negative,0,detailed
+62d60e93-6198-4d54-8fb8-7e6fe9d68f23,Camera consigliatissima,Prenotato 23 giorni prima. Finalmente un lavandino romantico. Mai più.,Housekeeping,positive,1,detailed
+f2771f63-ada5-4417-9e2a-d32d31ab0b56,Ci sono stato,Il personale delle pulizie era nella norma. Ho prenotato tramite Booking. Deluso: il bar insapore. Comunque torneremo.,F&B,negative,0,detailed
+1a432f0a-7daa-49f0-80b6-fce2de53790a,Servizio pessimo,"Colazione continentale standard. Dopo un viaggio da Schindilifa', Camera fatiscente, personale negligente, colazione unta. Mai più!",Reception,negative,0,multi_aspect
+913e4de2-e0c5-4cb8-bda9-c2a90ed42f1a,Weekend al mare,"Soggiorno di 2 notti. Tutto pessimo: camera angusta, reception villano, ristorante molle. Alla reception tutto regolare.",F&B,negative,0,multi_aspect
+42deffcc-f86c-4ca2-a085-96db1d870966,Ambiente perfetto,Nessun problema al check-out. Trasferta di lavoro. La manutenzione superava le aspettative: luminosa! Voto: 2/10.,Housekeeping,positive,1,detailed
+f7315749-4f39-49a8-bd3a-258288b4f474,Consigli utili,"Sinceramente l'armadio era più che sufficiente, meglio del previsto.",Housekeeping,positive,1,ambiguous
+cae28e66-ae8a-4813-90e0-a95b697c3923,Colazione abbondante,La brioche superava le aspettative: irresistibile!,F&B,positive,1,simple
+e776b886-d534-4e1d-bf29-84f5bec39a37,Colazione ottima,"Prenotato 29 giorni prima. Camera intima, personale straordinario, colazione ottima. Torneremo!",F&B,positive,1,multi_aspect
+0aba590e-e2c3-48aa-b310-7475ca862225,Ottima manutenzione,"Il cappuccino era indigesto, ma la camera funzionale ha salvato tutto. Accoglienza standard.",Housekeeping,positive,1,mixed
+a2a9d4d8-102e-4de5-a5cc-8bf738ab854c,Hotel centrale,"Abbiamo soggiornato per il weekend. Camera silenziosa, personale premuroso, colazione innovativa. Torneremo!",Reception,positive,1,multi_aspect
+fd235def-3e5a-47e3-9560-db22c96b5edb,Manutenzione assente,"Buffet nella norma. Abbiamo soggiornato per il weekend. Tutto pessimo: camera disastrosa, reception disinteressato, ristorante costosa.",Housekeeping,negative,0,multi_aspect
+d4ea120a-5e65-4654-8e90-58b609a0a0f6,Team impreparato,Il receptionist non era certo dinamico. Maleducato.,Reception,negative,0,negation
+46510367-cbdc-4318-8d85-a3d2a1a27485,Stanza pessima,"Mi aspettavo letto ampio, ma era mediocre. Nessun problema al check-out.",Housekeeping,negative,0,ambiguous
+90b2b633-956b-4c0c-a849-9b926b5252e3,Reception assente,Prima volta in questa struttura. Deluso: l'assistenza antipatica. Non lo consiglio.,Reception,negative,0,detailed
+5e5ba13d-746c-4b77-9fa3-82e8895ccd99,Servizio eccellente,Il personale non era per niente lento. Molto porfessionali.,Reception,positive,1,negation
+13d5f2f7-709b-4d97-864c-04af3d3f3799,Menu squisito,"Hotel consigliato da amici. Tutto perfetto: camera comoda, reception preparato, ristorante innovativa.",F&B,positive,1,multi_aspect
+ba2c0f19-f0b2-45d1-8c7e-6f422646eaf9,Hotel centrale,"Abbiamo mangiato qualcosa al ristorante. Ok il ristorante era crudo, ma l'arredamento pulitissimo compensa.",Housekeeping,positive,1,mixed
+cb9bc326-d20e-4c17-8e20-fd1a598336e3,Ci sono stato,La cena non era certo completa. Delusione totale. Il concierge ci ha dato qualche indicazione.,F&B,negative,0,negation
+4fa03f26-f6f7-40cc-a9ec-8e49d1bdb8c0,Opinione sincera,"Soggiorno di 4 notti. Manutenzione lussuosa, niente da dire. Pagato 105€ a notte.",Housekeeping,positive,1,detailed
+75c8e90d-9e3d-450d-b296-d9f0cd2372c2,La mia esperienza,Siamo arirvati di domenica verso le 12. Il minibar superava le aspettative: raffinato! Potrebbe migliorare.,Housekeeping,positive,1,detailed
+fbddcf7c-9c96-49ec-8d71-c366b41b3143,Reception efficiente,"Viaggio in famiglia. Assistenza efficiente, niente da dire. Non lo consiglio.",Reception,positive,1,detailed
+7de31a51-6694-4343-90ba-58e3d2762bdc,Cucina pessima,"Minibar luminoso, peccato per la brioche pessima.",F&B,negative,0,mixed
+5f3c44dc-5ef7-47b8-b2e6-195f732e2016,Piatti deliziosi,Prenotato 6 giorni prima. Piacevolmente sorpreso: il ristorante molto sostanzioso. La stanza era quella che ci si aspetta.,F&B,positive,1,detailed
+785299f4-175b-498d-b814-01027de1bdfe,Team impreparato,"La colazione era quella classica da hotel. L'ingresso lasciava a desiderare, troppo incapace.",Reception,negative,0,simple
+3be79df4-72ec-416e-88a7-23e9bfa016c2,Ambiente squallido,"Ho prenotato tramite Booking. Camera rumorosa, personale irritante, colazioen scotta. Mai più!",F&B,negative,0,multi_aspect
+a8b317fa-18d0-452b-9825-bc5430beb45f,Attesa infinita,"Il cappuccino sembrava sapido dalle foto, in realtà insufficiente.",F&B,negative,0,ambiguous
+65e58f34-5df0-4e8c-878a-aed9233ffc82,Hotel discreto,Accoglienza standard. Trasferta di lavoro. Purtroppo il letto era stretto. Lo consiglio.,Housekeeping,negative,0,detailed
+b227462c-f53d-4330-8dda-24ba2d06e8cf,Colazione ottima,Lo staff faceva il suo lavoro. Hotel consigliato da amici. Il pranzo era fresco. Lo consiglio.,F&B,positive,1,detailed
+dc713d96-0c0f-4195-817a-f08a1745d6d8,Seconda visita,Il minibar aveva i soliti prodotti. La scrivania non era certo spaziosa. Delusione totale.,Housekeeping,negative,0,negation
+ffd6f232-32ff-4294-8d57-d880d865d69a,Staff eccezionale,Colazione continentale standard. Abbiamo soggiornato per il weekend. Stanza rilassante. Staff qualificato. Cena fragrante. Top!,Housekeeping,positive,1,multi_aspect
+afd380c4-2713-482c-b41e-a3ac5fd23109,Cena pessima,"Bello: ordine impeccabile, ma il bar deludente è inaccettabile. Aria condizionata funzionante.",F&B,negative,0,mixed
+12476f57-a5e5-45ab-aefc-fad8efc89849,Poteva andare meglio,Al bar niente di speciale. Ho trovato il servizio clienti superficiale. Inaccettabile.,Reception,negative,0,simple
+c0e9ab30-ed26-42e9-97e0-11b7f8102383,Alti e bassi,"Sinceramente la pulizia era abbastanza buono, meglio del previsto. Il caffè era decente.",Housekeeping,positive,1,ambiguous
+c1156d6d-0a4e-4b70-a6d9-64a3f510ab53,Team straordinario,"Lo staff era non male, devo ammettere che mi aspettavo peggio.",Reception,positive,1,ambiguous
+1a50aec3-aabc-45fa-bfe1-2e47ae9bec36,Ristorante top,"Nessun problema al check-out. Dopo un viaggio da Salara, Ho trovato il room service perfetto e ben curato. Rapporto qualità-prezzo discreto.",F&B,positive,1,detailed
+0640be0f-25b8-4d4b-b2fa-2de8ce7ae7f6,Prima volta qui,"Il pavimento sembrava favoloso dalle foto, in realtà lascia a desiderare.",Housekeeping,negative,0,ambiguous
+7d7ddbed-d284-476c-ab88-f83dd97dc9cd,Pulizia top,Hotel consigliato da amici. Finalmente un specchio intimo. Rapporto qualità-prezzo discreto.,Housekeeping,positive,1,detailed
+8b621d41-5e09-49ee-af88-bdecfb1e143b,Ristorante top,"Abbiamo soggiornato per il weekend. Tutto perfetto: camera lussuosa, reception tempestivo, ristorante croccante. Lo staff faceva il suo lavoro.",Housekeeping,positive,1,multi_aspect
+1ca3c448-0279-46a6-8f97-97b06d7ce3c9,Consigli utili,"Avevo paura fosse salato, ma il room service era perfetto.",F&B,positive,1,negation
+56febfb9-ebe9-4207-8f19-9ec0c32d4526,Hotel centrale,Abbiamo soggiornato per il weekend. Ho trovato il menu acido. Inaccettabile. Potrebbe migliorare.,F&B,negative,0,detailed
+964db03f-9340-4fad-9c4a-d56bd6016237,Qualità assente,Non aspettatevi caffè invitante. Pessimo. Personale presente ma niente di memorabile.,F&B,negative,0,negation
+63f2ae24-fc3d-4348-808d-4127610461e3,Reception disponibile,"Avevo paura fosse polverosa, ma la pulizia era perfetta.",Housekeeping,positive,1,negation
+5ad5cf06-364d-4c87-bcd0-129d2e8d0e87,Staff preparato,"Reception discreto. Poteva andare peggio, anzi no, è andata bene.",Reception,positive,1,ambiguous
+4b5305e5-17d2-482e-846a-0df5cafda613,Attesa infinita,"Bello: minibar funzionale, ma il receptionist disorganizzato è inaccettabile. La colazione era quella classica da hotel.",Reception,negative,0,mixed
+27cb6f2a-8da0-4097-be0f-051b1b66b5a9,Ambiente curatissimo,"Ho preontato tramite Booking. Camera raffinata, personale straordinario, colazione appetitosa. Torneremo!",Housekeeping,positive,1,multi_aspect
+6e996e3e-e3b1-47fc-8a34-50fc9918ee46,Luci e ombre,"La colazione era quella classica da hotel. Portiere paziente, peccato per la pulizia scomoda.",Housekeeping,negative,0,mixed
+78b2b549-3bdb-409e-acc2-16a01bbc91f7,Team impreparato,Niccolò si è dimostrato frettoloso. Il personale delle pulizie era nella norma.,Reception,negative,0,simple
+dda4f4a7-0c3c-4284-87e5-3bbbdcb51c53,Struttura recente,"Frutta un po' nauseante, però l'arredamento intimo. Promossi!",Housekeeping,positive,1,mixed
+df465290-61ee-411a-9bac-27a7b386f7a4,Poteva andare meglio,"La colazione era quella classica da hotel. Il caffè era caldo, ma l'assistenza antipatica ha rovinato tutto.",Reception,negative,0,mixed
