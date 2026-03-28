@@ -1,5 +1,4 @@
 import "@mantine/core/styles.css";
-import { useState } from "react";
 import {
   MantineProvider,
   AppShell,
