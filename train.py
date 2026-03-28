@@ -33,7 +33,7 @@ def evaluate_model(model, X_test, y_test):
     return {'accuracy': accuracy, 'f1_macro': f1, 'predictions': preds}
 
 
-# Title weight multiplier - titles are repeated to give them more weight
+# Title weight multiplier (titles are repeated to increase their influence)
 TITLE_WEIGHT = 2
 
 
@@ -41,7 +41,7 @@ def train_model():
     # 1. Load and preprocess data
     df = pd.read_csv(BASE_DIR / 'dataset_recensioni.csv')
     
-    # Weight titles by repeating them (simple but effective)
+    # Weight titles by repeating them
     df['full_text'] = df.apply(lambda row: (row['title'] + ' ') * TITLE_WEIGHT + row['body'], axis=1)
     
     dept_map = {'Housekeeping': 0, 'Reception': 1, 'F&B': 2}
@@ -104,14 +104,14 @@ def train_model():
     dept_cm = confusion_matrix(yd_test, best_dept_result['predictions'])
     sent_cm = confusion_matrix(ys_test, best_sent_result['predictions'])
 
-    # 8. Get feature importance (only if best sentiment model is Logistic Regression)
+    # 8. Extract feature importance (available for Logistic Regression via coefficients)
     feature_names = vectorizer.get_feature_names_out()
     top_pos_words = []
     top_neg_words = []
 
     if best_sent_name == 'Logistic Regression':
         lr_sent = sent_models[best_sent_name]
-        # Logistic Regression provides linear coefficients usable for feature importance
+        # Extract linear coefficients as feature importance indicators
         sent_coefs = lr_sent.coef_[0]
 
         top_pos_idx = np.argsort(sent_coefs)[-10:][::-1]
@@ -154,7 +154,7 @@ def train_model():
         }
     }
 
-    # 10. Save everything
+    # 10. Persist trained models and dashboard data
     joblib.dump(dept_models[best_dept_name], BASE_DIR / 'dept_model.pkl')
     joblib.dump(sent_models[best_sent_name], BASE_DIR / 'sent_model.pkl')
     joblib.dump(dept_models, BASE_DIR / 'all_dept_models.pkl')

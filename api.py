@@ -26,7 +26,7 @@ DEPT_LABELS = ['Housekeeping', 'Reception', 'F&B']
 SENT_LABELS = ['Negative', 'Positive']
 
 
-# Title weight multiplier - must match train.py
+# Title weight multiplier (must match train.py)
 TITLE_WEIGHT = 2
 
 
@@ -97,13 +97,13 @@ def predict_review(request: ReviewRequest):
     """Predict department and sentiment for a review using all trained models"""
     X = prepare_text(request.title, request.body)
     
-    # Get predictions from all department models
+    # Predict using all department models
     dept_predictions = []
     for model_name, model in dept_models.items():
         pred_idx = int(model.predict(X)[0])
         pred_label = DEPT_LABELS[pred_idx]
         
-        # Get confidence if model supports predict_proba
+        # Retrieve confidence score if the model supports probability estimation
         confidence = None
         if hasattr(model, 'predict_proba'):
             proba = model.predict_proba(X)[0]
@@ -115,13 +115,13 @@ def predict_review(request: ReviewRequest):
             confidence=confidence
         ))
     
-    # Get predictions from all sentiment models
+    # Predict using all sentiment models
     sent_predictions = []
     for model_name, model in sent_models.items():
         pred_idx = int(model.predict(X)[0])
         pred_label = SENT_LABELS[pred_idx]
         
-        # Get confidence if model supports predict_proba
+        # Retrieve confidence score if the model supports probability estimation
         confidence = None
         if hasattr(model, 'predict_proba'):
             proba = model.predict_proba(X)[0]
@@ -190,7 +190,7 @@ def get_department_word_contributions(X) -> list[DepartmentWordImpact]:
     for idx in non_zero_indices:
         word = feature_names[idx]
         tfidf_value = X[0, idx]
-        # For multi-class, find the class with the highest impact for this word
+        # Select the class with the strongest absolute impact for this word
         class_impacts = [
             (DEPT_LABELS[c], float(tfidf_value * lr_model.coef_[c][idx]))
             for c in range(len(DEPT_LABELS))

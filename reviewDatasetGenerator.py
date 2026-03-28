@@ -130,7 +130,7 @@ VOCAB = {
 # =============================================================================
 
 def get_random_intro():
-    """Generate a random contextual introduction (adds noise/entropy)."""
+    """Generate a random contextual introduction to add variability."""
     templates = [
         f"Siamo arrivati di {fake.day_of_week()} verso le {random.randint(8, 23)}.",
         f"Dopo un viaggio da {fake.city()},",
@@ -152,7 +152,7 @@ def get_random_intro():
 
 
 def get_random_outro():
-    """Generate a random closing statement (adds noise/entropy)."""
+    """Generate a random closing statement to add variability."""
     templates = [
         f"Comunque torneremo.",
         "Vedremo la prossima volta.",
@@ -273,7 +273,7 @@ def build_fb_review(sentiment):
 # =============================================================================
 
 def build_simple_review(sentiment):
-    """Simple, direct reviews (baseline difficulty)."""
+    """Generate a simple, direct review (baseline difficulty)."""
     dept = random.choice(["Housekeeping", "Reception", "F&B"])
     
     if dept == "Housekeeping":
@@ -287,7 +287,7 @@ def build_simple_review(sentiment):
 
 
 def build_detailed_review(sentiment):
-    """Detailed reviews with intro/outro noise (medium difficulty)."""
+    """Generate a detailed review with contextual intro/outro (medium difficulty)."""
     dept = random.choice(["Housekeeping", "Reception", "F&B"])
     intro = get_random_intro()
     outro = get_random_outro()
@@ -306,7 +306,7 @@ def build_detailed_review(sentiment):
 
 
 def build_negation_review(sentiment):
-    """Reviews using negation - challenging for simple models."""
+    """Generate reviews using negation patterns, challenging for simple models."""
     if sentiment == 1:  # Positive expressed through negation of negative
         dept = random.choice(["Housekeeping", "Reception", "F&B"])
         if dept == "Housekeeping":
@@ -371,7 +371,7 @@ def build_negation_review(sentiment):
 
 
 def build_mixed_review(sentiment):
-    """Mixed sentiment reviews - final sentiment wins (high difficulty)."""
+    """Generate mixed-sentiment reviews where the final sentiment prevails (high difficulty)."""
     name = fake.first_name()
     
     if sentiment == 1:  # Positive wins
@@ -385,7 +385,7 @@ def build_mixed_review(sentiment):
             f"Ok la stanza era {neg_part}, ma il servizio {pos_part} compensa.",
         ]
         body = random.choice(templates)
-        dept = "Reception"  # Staff saves the day
+        dept = "Reception"  # Classified as Reception since staff determines the outcome
         
     else:  # Negative wins
         # Start positive, end negative
@@ -398,13 +398,13 @@ def build_mixed_review(sentiment):
             f"Bello l'hotel, {pos_part}, ma il servizio {neg_part} è inaccettabile.",
         ]
         body = random.choice(templates)
-        dept = "Reception"  # Staff ruins it
+        dept = "Reception"  # Classified as Reception since staff determines the outcome
     
     return body, dept
 
 
 def build_multi_aspect_review(sentiment):
-    """Reviews covering multiple aspects (realistic, high difficulty)."""
+    """Generate reviews covering multiple hotel aspects (realistic, high difficulty)."""
     intro = get_random_intro()
     
     if sentiment == 1:  # Overall positive
@@ -427,7 +427,7 @@ def build_multi_aspect_review(sentiment):
         ]
     
     body = random.choice(templates)
-    # For multi-aspect, assign department based on which aspect is mentioned first/most
+    # Assign a random department since all three aspects are mentioned equally
     dept = random.choice(["Housekeeping", "Reception", "F&B"])
     
     return body, dept
@@ -501,8 +501,8 @@ def build_review(target):
     Returns:
         dict with review data
     """
-    # Choose strategy with weighted probabilities
-    # More weight on challenging strategies for better training
+    # Select generation strategy with weighted probabilities
+    # Higher weight on complex strategies to improve model robustness
     strategy = random.choices(
         ["simple", "detailed", "negation", "mixed", "multi_aspect"],
         weights=[0.2, 0.3, 0.2, 0.15, 0.15],
@@ -539,7 +539,7 @@ def build_review(target):
 # =============================================================================
 
 if __name__ == "__main__":
-    print(f"🔄 Generating {NUM_SAMPLES} high-entropy Italian hotel reviews...")
+    print(f"Generating {NUM_SAMPLES} synthetic Italian hotel reviews...")
     
     # Generate balanced dataset
     data = []
@@ -553,7 +553,7 @@ if __name__ == "__main__":
     df = pd.DataFrame(data)
     
     # Validation
-    print("\n📊 Dataset Statistics:")
+    print("\nDataset Statistics:")
     print(f"   Total samples: {len(df)}")
     print(f"   Unique reviews: {df['body'].nunique()} ({df['body'].nunique()/len(df):.1%})")
     print(f"\n   Sentiment distribution:")
@@ -566,15 +566,15 @@ if __name__ == "__main__":
     # Check uniqueness
     unique_pct = df['body'].nunique() / len(df)
     if unique_pct < 0.95:
-        print("\n⚠️  WARNING: Too many duplicates! Consider expanding vocabulary.")
+        print("\nWARNING: Too many duplicates. Consider expanding vocabulary.")
     
     # Save
     df.to_csv("dataset_recensioni.csv", index=False)
-    print("\n✅ Dataset saved to 'dataset_recensioni.csv'")
+    print("\nDataset saved to 'dataset_recensioni.csv'")
     
     # Preview challenging examples
-    print("\n📝 Sample negation reviews (challenging for models):")
+    print("\nSample negation reviews (challenging for models):")
     print(df[df['strategy'] == 'negation'][['body', 'target']].head(3).to_string())
     
-    print("\n📝 Sample mixed reviews (challenging for models):")
+    print("\nSample mixed reviews (challenging for models):")
     print(df[df['strategy'] == 'mixed'][['body', 'target']].head(3).to_string())
