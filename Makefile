@@ -1,4 +1,4 @@
-.PHONY: dev api frontend install train
+.PHONY: dev api frontend install train build
 
 dev:
 	@echo "Starting API and frontend..."
@@ -16,3 +16,6 @@ install:
 
 train:
 	python train.py
+
+build:
+	cd frontend && npm run build
