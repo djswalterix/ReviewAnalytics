@@ -1,6 +1,7 @@
 from pathlib import Path
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel, Field
 from typing import Optional, List
 import joblib
 import json
@@ -12,6 +13,13 @@ app = FastAPI(
     title="Review Analytics API",
     description="API for hotel review classification (Department & Sentiment)",
     version="1.0.0"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Load models and vectorizer at startup
@@ -78,8 +86,12 @@ class PredictResponse(BaseModel):
     review: str
     department: List[PredictionResult]
     sentiment: List[PredictionResult]
-    sentiment_word_contributions: List[WordImpact]
-    department_word_contributions: List[DepartmentWordImpact]
+    sentiment_word_contributions: List[WordImpact] = Field(
+        description="Per-word sentiment impact extracted from the Logistic Regression model only"
+    )
+    department_word_contributions: List[DepartmentWordImpact] = Field(
+        description="Per-word department impact extracted from the Logistic Regression model only"
+    )
 
 
 @app.get("/dashboard")
