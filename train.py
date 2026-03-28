@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from pathlib import Path
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
@@ -10,11 +11,12 @@ import joblib
 import json
 from datetime import datetime
 
+BASE_DIR = Path(__file__).parent
 SEED = 42
 np.random.seed(SEED)
 
 
-def load_stop_words(filepath='stop_words.txt'):
+def load_stop_words(filepath=BASE_DIR / 'stop_words.txt'):
     """Load stop words from a text file, ignoring comments and empty lines"""
     with open(filepath, 'r', encoding='utf-8') as f:
         return [line.strip() for line in f if line.strip() and not line.startswith('#')]
@@ -25,8 +27,10 @@ def evaluate_model(model, X_test, y_test):
     preds = model.predict(X_test)
     accuracy = accuracy_score(y_test, preds)
     num_classes = len(np.unique(y_test))
-    f1_macro = f1_score(y_test, preds, average='binary') if num_classes == 2 else f1_score(y_test, preds, average='macro')
-    return {'accuracy': accuracy, 'f1_macro': f1_macro, 'predictions': preds}
+    # Use binary F1 for 2-class problems (sentiment), macro F1 for multi-class (department)
+    average = 'binary' if num_classes == 2 else 'macro'
+    f1 = f1_score(y_test, preds, average=average)
+    return {'accuracy': accuracy, 'f1_macro': f1, 'predictions': preds}
 
 
 # Title weight multiplier - titles are repeated to give them more weight
@@ -35,7 +39,7 @@ TITLE_WEIGHT = 2
 
 def train_model():
     # 1. Load and preprocess data
-    df = pd.read_csv('dataset_recensioni.csv')
+    df = pd.read_csv(BASE_DIR / 'dataset_recensioni.csv')
     
     # Weight titles by repeating them (simple but effective)
     df['full_text'] = df.apply(lambda row: (row['title'] + ' ') * TITLE_WEIGHT + row['body'], axis=1)
@@ -60,7 +64,7 @@ def train_model():
     )
     X_train = vectorizer.fit_transform(X_text_train)
     X_test = vectorizer.transform(X_text_test)
-    joblib.dump(vectorizer, 'vectorizer.pkl')
+    joblib.dump(vectorizer, BASE_DIR / 'vectorizer.pkl')
 
     # 4. Define models
     dept_models = {
@@ -151,15 +155,15 @@ def train_model():
     }
 
     # 10. Save everything
-    joblib.dump(dept_models[best_dept_name], 'dept_model.pkl')
-    joblib.dump(sent_models[best_sent_name], 'sent_model.pkl')
-    joblib.dump(dept_models, 'all_dept_models.pkl')
-    joblib.dump(sent_models, 'all_sent_models.pkl')
+    joblib.dump(dept_models[best_dept_name], BASE_DIR / 'dept_model.pkl')
+    joblib.dump(sent_models[best_sent_name], BASE_DIR / 'sent_model.pkl')
+    joblib.dump(dept_models, BASE_DIR / 'all_dept_models.pkl')
+    joblib.dump(sent_models, BASE_DIR / 'all_sent_models.pkl')
     
-    with open('dashboard_data.json', 'w', encoding='utf-8') as f:
+    with open(BASE_DIR / 'dashboard_data.json', 'w', encoding='utf-8') as f:
         json.dump(dashboard_data, f, indent=2, ensure_ascii=False)
 
-    print("✅ Training complete!")
+    print("Training complete!")
     print(f"   Best Department Model: {best_dept_name} (F1: {best_dept_result['f1_macro']:.4f})")
     print(f"   Best Sentiment Model: {best_sent_name} (F1: {best_sent_result['f1_macro']:.4f})")
     print("   Dashboard data saved to 'dashboard_data.json'")

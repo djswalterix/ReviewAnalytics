@@ -77,11 +77,11 @@
     "positive": [
       {
         "word": "top",
-        "coefficient": 2.6326994812832507
+        "coefficient": 2.63269948128325
       },
       {
         "word": "eccellente",
-        "coefficient": 2.619696794105564
+        "coefficient": 2.6196967941055633
       },
       {
         "word": "ottima",
@@ -89,53 +89,53 @@
       },
       {
         "word": "eccezionale",
-        "coefficient": 1.4278469502985298
+        "coefficient": 1.427846950298529
       },
       {
         "word": "impeccabile",
-        "coefficient": 1.3794778292298848
+        "coefficient": 1.3794778292298846
       },
       {
         "word": "fantastico",
-        "coefficient": 1.3111806829017343
+        "coefficient": 1.3111806829017345
       },
       {
         "word": "efficiente",
-        "coefficient": 1.220080630287261
+        "coefficient": 1.2200806302872609
       },
       {
         "word": "preparato",
-        "coefficient": 1.1341956076788131
+        "coefficient": 1.1341956076788124
       },
       {
         "word": "consigliatissima",
-        "coefficient": 1.121415794435099
+        "coefficient": 1.1214157944351
       },
       {
         "word": "fantastica",
-        "coefficient": 1.114852547719565
+        "coefficient": 1.1148525477195654
       }
     ],
     "negative": [
       {
         "word": "pessima",
-        "coefficient": -2.9056686703553143
+        "coefficient": -2.9056686703553165
       },
       {
         "word": "assente",
-        "coefficient": -2.184876685510002
+        "coefficient": -2.1848766855100026
       },
       {
         "word": "deludente",
-        "coefficient": -1.7626430572930263
+        "coefficient": -1.7626430572930258
       },
       {
         "word": "pessimo",
-        "coefficient": -1.7375108020271433
+        "coefficient": -1.7375108020271446
       },
       {
         "word": "inesistente",
-        "coefficient": -1.5714591754771494
+        "coefficient": -1.5714591754771505
       },
       {
         "word": "gelida",
@@ -143,11 +143,11 @@
       },
       {
         "word": "scarsa",
-        "coefficient": -1.1638995652359256
+        "coefficient": -1.1638995652359259
       },
       {
         "word": "scortese",
-        "coefficient": -1.154260508660063
+        "coefficient": -1.1542605086600632
       },
       {
         "word": "maleducato",
@@ -155,13 +155,13 @@
       },
       {
         "word": "sgarbato",
-        "coefficient": -1.0928360289013737
+        "coefficient": -1.0928360289013739
       }
     ]
   },
   "model_info": {
     "best_department_model": "Logistic Regression",
     "best_sentiment_model": "Logistic Regression",
-    "training_date": "2026-02-02 22:36:30"
+    "training_date": "2026-03-28 10:57:52"
   }
 }
