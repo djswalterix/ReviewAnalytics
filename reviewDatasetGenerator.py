@@ -269,6 +269,54 @@ def build_fb_review(sentiment):
 
 
 # =============================================================================
+# CROSS-DEPARTMENT NOISE - Realistic tangential mentions
+# =============================================================================
+
+CROSS_DEPT_NOISE = {
+    "Housekeeping": [
+        "Il personale delle pulizie era nella norma.",
+        "Niente da segnalare sulla manutenzione.",
+        "Camera nella media per la categoria.",
+        "Il bagno funzionava, niente di più.",
+        "Lenzuola cambiate regolarmente.",
+        "Aria condizionata funzionante.",
+        "La stanza era quella che ci si aspetta.",
+    ],
+    "Reception": [
+        "Check-in nella norma.",
+        "Alla reception tutto regolare.",
+        "Personale presente ma niente di memorabile.",
+        "Il concierge ci ha dato qualche indicazione.",
+        "Nessun problema al check-out.",
+        "Lo staff faceva il suo lavoro.",
+        "Accoglienza standard.",
+    ],
+    "F&B": [
+        "La colazione era quella classica da hotel.",
+        "Al bar niente di speciale.",
+        "Il caffè era decente.",
+        "Buffet nella norma.",
+        "Abbiamo mangiato qualcosa al ristorante.",
+        "Colazione continentale standard.",
+        "Il minibar aveva i soliti prodotti.",
+    ],
+}
+
+
+def add_cross_dept_noise(body: str, main_dept: str) -> str:
+    """With 40% probability, append a neutral sentence about another department."""
+    if random.random() < 0.4:
+        other_depts = [d for d in CROSS_DEPT_NOISE if d != main_dept]
+        noise_dept = random.choice(other_depts)
+        noise = random.choice(CROSS_DEPT_NOISE[noise_dept])
+        if random.random() < 0.5:
+            return f"{noise} {body}"
+        else:
+            return f"{body} {noise}"
+    return body
+
+
+# =============================================================================
 # REVIEW STRATEGIES - Different complexity levels for model training
 # =============================================================================
 
@@ -433,6 +481,84 @@ def build_multi_aspect_review(sentiment):
     return body, dept
 
 
+def build_ambiguous_review(sentiment):
+    """Generate subtly positive/negative reviews with hedging language (hardest).
+    
+    Uses qualifiers like 'abbastanza', 'non male', 'discreto' that make
+    sentiment harder to detect.
+    """
+    dept = random.choice(["Housekeeping", "Reception", "F&B"])
+    
+    hedges_pos = [
+        "non male", "abbastanza buono", "discreto", "nella media alta",
+        "sopra la media", "decente", "accettabile", "più che sufficiente",
+    ]
+    hedges_neg = [
+        "non all'altezza", "sotto la media", "non proprio il massimo",
+        "lascia a desiderare", "potrebbe fare di meglio", "non soddisfacente",
+        "mediocre", "insufficiente",
+    ]
+    
+    if dept == "Housekeeping":
+        noun = random.choice(VOCAB["nouns_housekeeping"])
+        if sentiment == 1:
+            hedge = random.choice(hedges_pos)
+            contrast_adj = random.choice(VOCAB["neg_room"])
+            templates = [
+                f"La {noun} era {hedge}. Non perfetta, ma ci siamo trovati bene.",
+                f"Ok la {noun} poteva sembrare {contrast_adj} a primo impatto, ma poi {hedge}.",
+                f"La {noun}? {hedge.capitalize()}. Niente di eccezionale, ma funzionale.",
+                f"Sinceramente la {noun} era {hedge}, meglio del previsto.",
+            ]
+        else:
+            hedge = random.choice(hedges_neg)
+            contrast_adj = random.choice(VOCAB["pos_room"])
+            templates = [
+                f"La {noun} sembrava {contrast_adj} dalle foto, in realtà {hedge}.",
+                f"Mi aspettavo una {noun} {contrast_adj}, ma era {hedge}.",
+                f"La {noun}? {hedge.capitalize()}. Peccato, dalle recensioni sembrava meglio.",
+                f"Sulla carta la {noun} doveva essere {contrast_adj}. Invece {hedge}.",
+            ]
+    elif dept == "Reception":
+        if sentiment == 1:
+            hedge = random.choice(hedges_pos)
+            templates = [
+                f"Il personale era {hedge}. Non eccezionale, ma disponibile.",
+                f"Reception {hedge}. Poteva andare peggio, anzi no, è andata bene.",
+                f"Lo staff era {hedge}, devo ammettere che mi aspettavo peggio.",
+                f"Accoglienza {hedge}. Niente effetto wow, ma professionali.",
+            ]
+        else:
+            hedge = random.choice(hedges_neg)
+            templates = [
+                f"Il personale era {hedge}. Non terribile, ma nemmeno soddisfacente.",
+                f"Reception {hedge}. Mi aspettavo di più per il prezzo pagato.",
+                f"Lo staff {hedge}, purtroppo non all'altezza delle aspettative.",
+                f"Accoglienza {hedge}. Un peccato, rovinava l'esperienza.",
+            ]
+    else:  # F&B
+        noun = random.choice(VOCAB["nouns_fb"])
+        if sentiment == 1:
+            hedge = random.choice(hedges_pos)
+            templates = [
+                f"La {noun} era {hedge}. Non gourmet, ma buona.",
+                f"{noun.capitalize()} {hedge}. Niente di straordinario, ma soddisfacente.",
+                f"Ho trovato la {noun} {hedge}, più di quello che mi aspettavo.",
+                f"La {noun} era {hedge}. Per essere un hotel, promossa.",
+            ]
+        else:
+            hedge = random.choice(hedges_neg)
+            templates = [
+                f"La {noun} era {hedge}. Non immangiabile, ma neanche buona.",
+                f"{noun.capitalize()} {hedge}. Mi aspettavo qualcosa di più.",
+                f"Purtroppo la {noun} era {hedge}, un peccato.",
+                f"La {noun} {hedge}. Per il prezzo pagato, deludente.",
+            ]
+    
+    body = random.choice(templates)
+    return body, dept
+
+
 # =============================================================================
 # TITLE GENERATION - Meaningful titles that reflect content
 # =============================================================================
@@ -477,14 +603,38 @@ TITLES = {
             "Cena pessima", "Colazione misera", "Menu scadente",
             "Piatti orribili", "Qualità assente", "Gastronomia pessima"
         ]
-    }
+    },
+    'generic': [
+        "Hotel nella media", "Esperienza altalenante", "Poteva andare meglio",
+        "Niente di speciale", "Soggiorno ok", "Recensione hotel",
+        "La mia esperienza", "Vacanza a metà", "Hotel discreto",
+        "Ci sono stato", "Weekend al mare", "Trasferta di lavoro",
+        "Soggiorno breve", "Qualche giorno qui", "Hotel in centro",
+        "Prima volta qui", "Seconda visita", "Consigli utili",
+        "Pro e contro", "Opinione sincera", "Giudizio personale",
+        "Nota dolente", "Alti e bassi", "Luci e ombre",
+        "Hotel centrale", "Struttura recente", f"Soggiorno {fake.month_name()}",
+    ]
 }
 
 
 def generate_title(sentiment: int, department: str) -> str:
-    """Generate a meaningful title based on sentiment and department."""
-    sentiment_key = 'positive' if sentiment == 1 else 'negative'
-    return random.choice(TITLES[sentiment_key][department])
+    """Generate a title with realistic noise.
+    
+    40% generic (no dept/sentiment leak), 10% wrong department,
+    50% matching department+sentiment.
+    """
+    r = random.random()
+    if r < 0.4:
+        return random.choice(TITLES['generic'])
+    elif r < 0.5:
+        # Wrong department title to add noise
+        wrong_dept = random.choice([d for d in ["Housekeeping", "Reception", "F&B"] if d != department])
+        sentiment_key = 'positive' if sentiment == 1 else 'negative'
+        return random.choice(TITLES[sentiment_key][wrong_dept])
+    else:
+        sentiment_key = 'positive' if sentiment == 1 else 'negative'
+        return random.choice(TITLES[sentiment_key][department])
 
 
 # =============================================================================
@@ -504,8 +654,8 @@ def build_review(target):
     # Select generation strategy with weighted probabilities
     # Higher weight on complex strategies to improve model robustness
     strategy = random.choices(
-        ["simple", "detailed", "negation", "mixed", "multi_aspect"],
-        weights=[0.2, 0.3, 0.2, 0.15, 0.15],
+        ["simple", "detailed", "negation", "mixed", "multi_aspect", "ambiguous"],
+        weights=[0.10, 0.20, 0.15, 0.15, 0.20, 0.20],
         k=1
     )[0]
     
@@ -517,8 +667,13 @@ def build_review(target):
         body, dept = build_negation_review(target)
     elif strategy == "mixed":
         body, dept = build_mixed_review(target)
+    elif strategy == "ambiguous":
+        body, dept = build_ambiguous_review(target)
     else:  # multi_aspect
         body, dept = build_multi_aspect_review(target)
+    
+    # Add cross-department noise to blur department boundaries
+    body = add_cross_dept_noise(body, dept)
     
     # Generate meaningful title based on sentiment and department
     title = generate_title(target, dept)
