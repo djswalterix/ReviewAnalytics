@@ -11,6 +11,8 @@ import {
   Loader,
   Alert,
   Tooltip,
+  RingProgress,
+  Divider,
 } from "@mantine/core";
 import {
   Chart as ChartJS,
@@ -60,7 +62,20 @@ export default function DashboardPage() {
 
   const chartOptions = {
     responsive: true,
-    scales: { y: { beginAtZero: true, max: 100 } },
+    scales: {
+      y: {
+        beginAtZero: true,
+        max: 100,
+        grid: { color: "rgba(0,0,0,0.04)" },
+      },
+      x: { grid: { display: false } },
+    },
+    plugins: {
+      legend: {
+        labels: { usePointStyle: true, pointStyle: "circle", padding: 16 },
+      },
+    },
+    barPercentage: 0.7,
   };
 
   const featureWords = [
@@ -70,49 +85,69 @@ export default function DashboardPage() {
 
   return (
     <Container size="lg" py={{ base: "md", md: "xl" }}>
-      <Title order={1} mb="lg" size="h2">
-        Dashboard Modelli
-      </Title>
+      <Group justify="space-between" align="flex-end" mb="xl">
+        <div>
+          <Title order={1} size="h2" style={{ letterSpacing: -0.5 }}>
+            Dashboard Modelli
+          </Title>
+          <Text size="sm" c="dimmed" mt={4}>
+            Panoramica delle performance dei modelli di classificazione
+          </Text>
+        </div>
+        <Group gap="xs">
+          <Badge color="orange" variant="light" size="lg">
+            Miglior Department: {data.model_info.best_department_model}
+          </Badge>
+          <Badge color="yellow" variant="light" size="lg">
+            Miglior Sentiment: {data.model_info.best_sentiment_model}
+          </Badge>
+        </Group>
+      </Group>
 
       <SimpleGrid cols={{ base: 2, sm: 2, md: 4 }} mb="xl">
         <MetricCard
           label="Accuratezza Department"
           value={data.metrics.department_accuracy}
+          color="#ff922b"
           tooltip="Percentuale di recensioni il cui department è stato classificato correttamente dal modello migliore"
         />
         <MetricCard
           label="Accuratezza Sentiment"
           value={data.metrics.sentiment_accuracy}
+          color="#fcc419"
           tooltip="Percentuale di recensioni il cui sentiment è stato classificato correttamente dal modello migliore"
         />
         <MetricCard
           label="F1 Department"
           value={data.metrics.department_f1}
+          color="#ff922b"
           tooltip="Media armonica di precisione e recall per la classificazione del department (bilancia falsi positivi e falsi negativi)"
         />
         <MetricCard
           label="F1 Sentiment"
           value={data.metrics.sentiment_f1}
+          color="#fcc419"
           tooltip="Media armonica di precisione e recall per la classificazione del sentiment"
         />
       </SimpleGrid>
 
-      <Group mb="xs">
-        <Badge color="blue">
-          Miglior Department: {data.model_info.best_department_model}
-        </Badge>
-        <Badge color="teal">
-          Miglior Sentiment: {data.model_info.best_sentiment_model}
-        </Badge>
-        <Badge color="gray">Addestrato: {data.model_info.training_date}</Badge>
-      </Group>
+      <Badge color="gray" variant="light" size="sm" mb="xl">
+        Addestrato: {data.model_info.training_date}
+      </Badge>
 
-      <SimpleGrid cols={{ base: 1, md: 2 }} mt="xl">
-        <Card shadow="sm" padding="md" radius="md" withBorder>
-          <Title order={3} mb="md" size="h4">
+      <Divider
+        my="lg"
+        label="Confronto Modelli"
+        labelPosition="left"
+        styles={{ label: { fontWeight: 600, fontSize: 13 } }}
+      />
+
+      <SimpleGrid cols={{ base: 1, md: 2 }} mt="md">
+        <Card shadow="sm" padding="lg" radius="md" withBorder>
+          <Title order={3} mb={4} size="h4">
             Classificazione Department
           </Title>
-          <Text size="sm" c="dimmed" mb="sm">
+          <Text size="sm" c="dimmed" mb="md">
             Confronto tra i modelli addestrati per la classificazione del
             department
           </Text>
@@ -123,12 +158,14 @@ export default function DashboardPage() {
                 {
                   label: "Accuratezza %",
                   data: deptAccuracies,
-                  backgroundColor: "rgba(34,139,230,0.7)",
+                  backgroundColor: "rgba(255,146,43,0.8)",
+                  borderRadius: 6,
                 },
                 {
                   label: "F1 %",
                   data: deptF1s,
-                  backgroundColor: "rgba(34,139,230,0.3)",
+                  backgroundColor: "rgba(255,146,43,0.3)",
+                  borderRadius: 6,
                 },
               ],
             }}
@@ -136,11 +173,11 @@ export default function DashboardPage() {
           />
         </Card>
 
-        <Card shadow="sm" padding="md" radius="md" withBorder>
-          <Title order={3} mb="md" size="h4">
+        <Card shadow="sm" padding="lg" radius="md" withBorder>
+          <Title order={3} mb={4} size="h4">
             Classificazione Sentiment
           </Title>
-          <Text size="sm" c="dimmed" mb="sm">
+          <Text size="sm" c="dimmed" mb="md">
             Confronto tra i modelli addestrati per la classificazione del
             sentiment
           </Text>
@@ -151,12 +188,14 @@ export default function DashboardPage() {
                 {
                   label: "Accuratezza %",
                   data: sentAccuracies,
-                  backgroundColor: "rgba(18,184,134,0.7)",
+                  backgroundColor: "rgba(252,196,25,0.8)",
+                  borderRadius: 6,
                 },
                 {
                   label: "F1 %",
                   data: sentF1s,
-                  backgroundColor: "rgba(18,184,134,0.3)",
+                  backgroundColor: "rgba(252,196,25,0.35)",
+                  borderRadius: 6,
                 },
               ],
             }}
@@ -165,7 +204,14 @@ export default function DashboardPage() {
         </Card>
       </SimpleGrid>
 
-      <SimpleGrid cols={{ base: 1, sm: 2 }} mt="xl">
+      <Divider
+        my="xl"
+        label="Matrici di Confusione"
+        labelPosition="left"
+        styles={{ label: { fontWeight: 600, fontSize: 13 } }}
+      />
+
+      <SimpleGrid cols={{ base: 1, sm: 2 }} mt="md">
         <ConfusionMatrixCard
           title="Matrice di Confusione — Department"
           tooltip="Matrice calcolata sul modello Logistic Regression. Le righe indicano la classe reale, le colonne la classe predetta. I valori sulla diagonale (verde) sono le predizioni corrette."
@@ -180,7 +226,14 @@ export default function DashboardPage() {
         />
       </SimpleGrid>
 
-      <Card shadow="sm" padding="md" radius="md" withBorder mt="xl">
+      <Divider
+        my="xl"
+        label="Importanza delle Parole"
+        labelPosition="left"
+        styles={{ label: { fontWeight: 600, fontSize: 13 } }}
+      />
+
+      <Card shadow="sm" padding="lg" radius="md" withBorder mt="md">
         <Group gap="xs" mb="md" align="center">
           <Title order={3} size="h4">
             Importanza delle Parole — Sentiment
@@ -210,8 +263,8 @@ export default function DashboardPage() {
                 data: featureWords.map((w) => w.coefficient),
                 backgroundColor: featureWords.map((w) =>
                   w.coefficient >= 0
-                    ? "rgba(18,184,134,0.7)"
-                    : "rgba(255,77,77,0.7)",
+                    ? "rgba(252,196,25,0.7)"
+                    : "rgba(255,146,43,0.7)",
                 ),
               },
             ],
@@ -220,6 +273,10 @@ export default function DashboardPage() {
             indexAxis: "y",
             responsive: true,
             plugins: { legend: { display: false } },
+            scales: {
+              x: { grid: { color: "rgba(0,0,0,0.04)" } },
+              y: { grid: { display: false } },
+            },
           }}
         />
       </Card>
@@ -230,12 +287,15 @@ export default function DashboardPage() {
 function MetricCard({
   label,
   value,
+  color,
   tooltip,
 }: {
   label: string;
   value: number;
+  color: string;
   tooltip: string;
 }) {
+  const pct = value * 100;
   return (
     <Tooltip label={tooltip} multiline w={260} withArrow>
       <Card
@@ -245,14 +305,27 @@ function MetricCard({
         withBorder
         style={{ cursor: "help" }}
       >
-        <Stack gap={4}>
-          <Text size="xs" c="dimmed">
-            {label}
-          </Text>
-          <Text size="lg" fw={700}>
-            {(value * 100).toFixed(1)}%
-          </Text>
-        </Stack>
+        <Group gap="md" wrap="nowrap">
+          <RingProgress
+            size={56}
+            thickness={5}
+            roundCaps
+            sections={[{ value: pct, color }]}
+            label={
+              <Text size="xs" ta="center" fw={700} style={{ fontSize: 11 }}>
+                {pct.toFixed(0)}
+              </Text>
+            }
+          />
+          <Stack gap={2}>
+            <Text size="xs" c="dimmed" lineClamp={2}>
+              {label}
+            </Text>
+            <Text size="lg" fw={700}>
+              {pct.toFixed(1)}%
+            </Text>
+          </Stack>
+        </Group>
       </Card>
     </Tooltip>
   );
@@ -270,7 +343,7 @@ function ConfusionMatrixCard({
   labels: string[];
 }) {
   return (
-    <Card shadow="sm" padding="md" radius="md" withBorder>
+    <Card shadow="sm" padding="lg" radius="md" withBorder>
       <Group gap="xs" mb="md" align="center">
         <Title order={3} size="h4">
           {title}
@@ -286,11 +359,15 @@ function ConfusionMatrixCard({
           </Badge>
         </Tooltip>
       </Group>
+      <Text size="xs" c="dimmed" mb="xs">
+        Righe = classe reale · Colonne = classe predetta
+      </Text>
       <div style={{ overflowX: "auto" }}>
         <table
           style={{
             width: "100%",
-            borderCollapse: "collapse",
+            borderCollapse: "separate",
+            borderSpacing: 3,
             textAlign: "center",
             minWidth: 200,
           }}
@@ -299,7 +376,17 @@ function ConfusionMatrixCard({
             <tr>
               <th style={{ padding: 8 }}></th>
               {labels.map((l) => (
-                <th key={l} style={{ padding: 8, fontSize: 12 }}>
+                <th
+                  key={l}
+                  style={{
+                    padding: "6px 8px",
+                    fontSize: 11,
+                    fontWeight: 600,
+                    color: "#868e96",
+                    textTransform: "uppercase",
+                    letterSpacing: 0.5,
+                  }}
+                >
                   {l}
                 </th>
               ))}
@@ -308,22 +395,34 @@ function ConfusionMatrixCard({
           <tbody>
             {matrix.map((row, i) => (
               <tr key={i}>
-                <td style={{ padding: 8, fontWeight: 600, fontSize: 12 }}>
+                <td
+                  style={{
+                    padding: "6px 8px",
+                    fontWeight: 600,
+                    fontSize: 11,
+                    color: "#868e96",
+                    textTransform: "uppercase",
+                    letterSpacing: 0.5,
+                    textAlign: "right",
+                  }}
+                >
                   {labels[i]}
                 </td>
                 {row.map((cell, j) => (
                   <td
                     key={j}
                     style={{
-                      padding: 8,
+                      padding: "10px 8px",
                       background:
                         i === j
-                          ? `rgba(18,184,134,${Math.min(cell / 60, 1)})`
+                          ? `rgba(252,196,25,${Math.max(Math.min(cell / 60, 1), 0.15)})`
                           : cell > 0
-                            ? `rgba(255,77,77,${Math.min(cell / 60, 1)})`
-                            : "transparent",
-                      borderRadius: 4,
+                            ? `rgba(255,146,43,${Math.max(Math.min(cell / 60, 1), 0.1)})`
+                            : "rgba(0,0,0,0.02)",
+                      borderRadius: 6,
                       fontWeight: i === j ? 700 : 400,
+                      fontSize: 14,
+                      transition: "transform 0.15s",
                     }}
                   >
                     {cell}

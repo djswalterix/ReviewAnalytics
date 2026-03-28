@@ -11,8 +11,9 @@ import {
   Badge,
   Group,
   Alert,
-  Table,
   Tooltip,
+  Text,
+  Progress,
 } from "@mantine/core";
 import {
   Chart as ChartJS,
@@ -61,11 +62,16 @@ export default function PredictPage() {
 
   return (
     <Container size="lg" py={{ base: "md", md: "xl" }}>
-      <Title order={1} mb="lg" size="h2">
-        Predizione Recensione
-      </Title>
+      <div>
+        <Title order={1} mb={4} size="h2" style={{ letterSpacing: -0.5 }}>
+          Predizione Recensione
+        </Title>
+        <Text size="sm" c="dimmed" mb="lg">
+          Inserisci una recensione per analizzare department e sentiment
+        </Text>
+      </div>
 
-      <Card shadow="sm" padding="md" radius="md" withBorder mb="xl">
+      <Card shadow="sm" padding="lg" radius="md" withBorder mb="xl">
         <Stack gap="md">
           <TextInput
             label="Titolo (opzionale)"
@@ -80,7 +86,13 @@ export default function PredictPage() {
             value={bodyInput}
             onChange={(e) => setBodyInput(e.currentTarget.value)}
           />
-          <Button onClick={handleSubmit} loading={loading}>
+          <Button
+            onClick={handleSubmit}
+            loading={loading}
+            size="md"
+            color="orange"
+            style={{ alignSelf: "flex-start" }}
+          >
             Analizza
           </Button>
         </Stack>
@@ -95,75 +107,93 @@ export default function PredictPage() {
       {result && (
         <>
           <SimpleGrid cols={{ base: 1, md: 2 }} mb="xl">
-            <Card shadow="sm" padding="md" radius="md" withBorder>
+            <Card shadow="sm" padding="lg" radius="md" withBorder>
               <Title order={3} mb="md" size="h4">
                 Predizioni Department
               </Title>
-              <Table highlightOnHover style={{ minWidth: 280 }}>
-                <Table.Thead>
-                  <Table.Tr>
-                    <Table.Th>Modello</Table.Th>
-                    <Table.Th>Predizione</Table.Th>
-                    <Table.Th>Confidenza</Table.Th>
-                  </Table.Tr>
-                </Table.Thead>
-                <Table.Tbody>
-                  {result.department.map((p) => (
-                    <Table.Tr key={p.model}>
-                      <Table.Td>{p.model}</Table.Td>
-                      <Table.Td>
-                        <Badge color="blue">{p.prediction}</Badge>
-                      </Table.Td>
-                      <Table.Td>
-                        {p.confidence !== null
-                          ? `${(p.confidence * 100).toFixed(1)}%`
-                          : "N/D"}
-                      </Table.Td>
-                    </Table.Tr>
-                  ))}
-                </Table.Tbody>
-              </Table>
+              <Stack gap="sm">
+                {result.department.map((p) => (
+                  <div key={p.model}>
+                    <Group justify="space-between" mb={4}>
+                      <Text size="sm" fw={500}>
+                        {p.model}
+                      </Text>
+                      <Badge color="orange" variant="light" size="sm">
+                        {p.prediction}
+                      </Badge>
+                    </Group>
+                    {p.confidence !== null ? (
+                      <Group gap="xs" align="center">
+                        <Progress
+                          value={p.confidence * 100}
+                          color="orange"
+                          size="sm"
+                          radius="xl"
+                          style={{ flex: 1 }}
+                        />
+                        <Text size="xs" c="dimmed" w={45} ta="right">
+                          {(p.confidence * 100).toFixed(1)}%
+                        </Text>
+                      </Group>
+                    ) : (
+                      <Text size="xs" c="dimmed">
+                        Confidenza N/D
+                      </Text>
+                    )}
+                  </div>
+                ))}
+              </Stack>
             </Card>
 
-            <Card shadow="sm" padding="md" radius="md" withBorder>
+            <Card shadow="sm" padding="lg" radius="md" withBorder>
               <Title order={3} mb="md" size="h4">
                 Predizioni Sentiment
               </Title>
-              <Table highlightOnHover style={{ minWidth: 280 }}>
-                <Table.Thead>
-                  <Table.Tr>
-                    <Table.Th>Modello</Table.Th>
-                    <Table.Th>Predizione</Table.Th>
-                    <Table.Th>Confidenza</Table.Th>
-                  </Table.Tr>
-                </Table.Thead>
-                <Table.Tbody>
-                  {result.sentiment.map((p) => (
-                    <Table.Tr key={p.model}>
-                      <Table.Td>{p.model}</Table.Td>
-                      <Table.Td>
-                        <Badge
-                          color={p.prediction === "Positive" ? "green" : "red"}
-                        >
-                          {p.prediction === "Positive"
-                            ? "Positivo"
-                            : "Negativo"}
-                        </Badge>
-                      </Table.Td>
-                      <Table.Td>
-                        {p.confidence !== null
-                          ? `${(p.confidence * 100).toFixed(1)}%`
-                          : "N/D"}
-                      </Table.Td>
-                    </Table.Tr>
-                  ))}
-                </Table.Tbody>
-              </Table>
+              <Stack gap="sm">
+                {result.sentiment.map((p) => (
+                  <div key={p.model}>
+                    <Group justify="space-between" mb={4}>
+                      <Text size="sm" fw={500}>
+                        {p.model}
+                      </Text>
+                      <Badge
+                        color={
+                          p.prediction === "Positive" ? "yellow" : "orange"
+                        }
+                        variant="light"
+                        size="sm"
+                      >
+                        {p.prediction === "Positive" ? "Positivo" : "Negativo"}
+                      </Badge>
+                    </Group>
+                    {p.confidence !== null ? (
+                      <Group gap="xs" align="center">
+                        <Progress
+                          value={p.confidence * 100}
+                          color={
+                            p.prediction === "Positive" ? "yellow" : "orange"
+                          }
+                          size="sm"
+                          radius="xl"
+                          style={{ flex: 1 }}
+                        />
+                        <Text size="xs" c="dimmed" w={45} ta="right">
+                          {(p.confidence * 100).toFixed(1)}%
+                        </Text>
+                      </Group>
+                    ) : (
+                      <Text size="xs" c="dimmed">
+                        Confidenza N/D
+                      </Text>
+                    )}
+                  </div>
+                ))}
+              </Stack>
             </Card>
           </SimpleGrid>
 
           {sentimentContributions.length > 0 && (
-            <Card shadow="sm" padding="md" radius="md" withBorder mb="xl">
+            <Card shadow="sm" padding="lg" radius="md" withBorder mb="xl">
               <Group gap="xs" mb="md" align="center">
                 <Title order={3} size="h4">
                   Contributo Parole — Sentiment
@@ -193,8 +223,8 @@ export default function PredictPage() {
                       data: sentimentContributions.map((w) => w.impact),
                       backgroundColor: sentimentContributions.map((w) =>
                         w.impact >= 0
-                          ? "rgba(18,184,134,0.7)"
-                          : "rgba(255,77,77,0.7)",
+                          ? "rgba(252,196,25,0.7)"
+                          : "rgba(255,146,43,0.7)",
                       ),
                     },
                   ],
@@ -209,7 +239,9 @@ export default function PredictPage() {
                         display: true,
                         text: "Impatto (Negativo ← → Positivo)",
                       },
+                      grid: { color: "rgba(0,0,0,0.04)" },
                     },
+                    y: { grid: { display: false } },
                   },
                 }}
               />
@@ -217,7 +249,7 @@ export default function PredictPage() {
           )}
 
           {departmentContributions.length > 0 && (
-            <Card shadow="sm" padding="md" radius="md" withBorder mb="xl">
+            <Card shadow="sm" padding="lg" radius="md" withBorder mb="xl">
               <Group gap="xs" mb="md" align="center">
                 <Title order={3} size="h4">
                   Contributo Parole — Department
@@ -273,7 +305,9 @@ export default function PredictPage() {
                   scales: {
                     x: {
                       title: { display: true, text: "Impatto (assoluto)" },
+                      grid: { color: "rgba(0,0,0,0.04)" },
                     },
+                    y: { grid: { display: false } },
                   },
                 }}
               />

@@ -6,6 +6,8 @@ import {
   Burger,
   Group,
   Title,
+  createTheme,
+  Text,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import {
@@ -17,6 +19,32 @@ import {
 } from "react-router-dom";
 import DashboardPage from "./pages/DashboardPage";
 import PredictPage from "./pages/PredictPage";
+
+const theme = createTheme({
+  primaryColor: "orange",
+  fontFamily:
+    "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+  headings: {
+    fontFamily:
+      "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+    fontWeight: "700",
+  },
+  defaultRadius: "md",
+  colors: {
+    orange: [
+      "#fff4e6",
+      "#ffe8cc",
+      "#ffd8a8",
+      "#ffc078",
+      "#ffa94d",
+      "#ff922b",
+      "#fd7e14",
+      "#e8590c",
+      "#d9480f",
+      "#c92a05",
+    ],
+  },
+});
 
 function Shell() {
   const navigate = useNavigate();
@@ -30,33 +58,52 @@ function Shell() {
 
   return (
     <AppShell
-      header={{ height: 56 }}
+      header={{ height: 60 }}
       navbar={{
-        width: 220,
+        width: 240,
         breakpoint: "sm",
         collapsed: { mobile: !opened },
       }}
       padding="md"
     >
-      <AppShell.Header>
+      <AppShell.Header
+        style={{
+          backgroundColor: "white",
+          borderBottom: "1px solid var(--mantine-color-gray-2)",
+        }}
+      >
         <Group h="100%" px="md">
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-          <Title order={4}>ReviewAnalytics</Title>
+          <Title order={4} style={{ letterSpacing: -0.5 }}>
+            ReviewAnalytics
+          </Title>
+          <Text size="xs" c="dimmed" ml={-4}>
+            NLP Dashboard
+          </Text>
         </Group>
       </AppShell.Header>
-      <AppShell.Navbar p="md">
+      <AppShell.Navbar
+        p="sm"
+        style={{ borderRight: "1px solid var(--mantine-color-gray-2)" }}
+      >
         <NavLink
           label="Dashboard"
           active={location.pathname === "/"}
           onClick={() => handleNav("/")}
+          color="orange"
+          variant="light"
+          style={{ borderRadius: 8, marginBottom: 4 }}
         />
         <NavLink
           label="Predizione"
           active={location.pathname === "/predict"}
           onClick={() => handleNav("/predict")}
+          color="orange"
+          variant="light"
+          style={{ borderRadius: 8 }}
         />
       </AppShell.Navbar>
-      <AppShell.Main>
+      <AppShell.Main bg="gray.0">
         <Routes>
           <Route path="/" element={<DashboardPage />} />
           <Route path="/predict" element={<PredictPage />} />
@@ -68,7 +115,7 @@ function Shell() {
 
 export default function App() {
   return (
-    <MantineProvider>
+    <MantineProvider theme={theme}>
       <BrowserRouter>
         <Shell />
       </BrowserRouter>
