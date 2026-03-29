@@ -49,8 +49,6 @@ Lista curata di stop word italiane usate dal TF-IDF Vectorizer per filtrare paro
 | `vectorizer.pkl`      | TF-IDF vectorizer addestrato                |
 | `all_dept_models.pkl` | Dizionario con i 3 modelli department       |
 | `all_sent_models.pkl` | Dizionario con i 3 modelli sentiment        |
-| `dept_model.pkl`      | Miglior modello department                  |
-| `sent_model.pkl`      | Miglior modello sentiment                   |
 | `dashboard_data.json` | Metriche, confronti e matrici di confusione |
 
 ## API (`api.py`)

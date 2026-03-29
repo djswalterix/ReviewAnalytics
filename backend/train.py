@@ -153,8 +153,6 @@ def train_model():
     }
 
     # 10. Persist trained models and dashboard data
-    joblib.dump(dept_models[best_dept_name], BASE_DIR / 'dept_model.pkl')
-    joblib.dump(sent_models[best_sent_name], BASE_DIR / 'sent_model.pkl')
     joblib.dump(dept_models, BASE_DIR / 'all_dept_models.pkl')
     joblib.dump(sent_models, BASE_DIR / 'all_sent_models.pkl')
     
