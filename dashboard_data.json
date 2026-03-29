@@ -1,9 +1,9 @@
 {
   "metrics": {
     "department_accuracy": 0.73,
-    "sentiment_accuracy": 0.91,
-    "department_f1": 0.7407037190134406,
-    "sentiment_f1": 0.9174311926605505
+    "sentiment_accuracy": 0.9,
+    "department_f1": 0.7429298864081474,
+    "sentiment_f1": 0.9056603773584906
   },
   "model_comparison": {
     "department": {
@@ -17,7 +17,7 @@
       },
       "Random Forest": {
         "accuracy": 0.73,
-        "f1": 0.7407037190134406
+        "f1": 0.7429298864081474
       }
     },
     "sentiment": {
@@ -30,8 +30,8 @@
         "f1": 0.8113207547169812
       },
       "Random Forest": {
-        "accuracy": 0.91,
-        "f1": 0.9174311926605505
+        "accuracy": 0.9,
+        "f1": 0.9056603773584906
       }
     }
   },
@@ -39,28 +39,28 @@
     "department": [
       [
         19,
-        2,
-        4
+        3,
+        3
       ],
       [
         0,
-        22,
-        7
+        26,
+        3
       ],
       [
         2,
-        12,
-        32
+        16,
+        28
       ]
     ],
     "sentiment": [
       [
-        41,
-        6
+        42,
+        5
       ],
       [
-        3,
-        50
+        5,
+        48
       ]
     ],
     "labels_dept": [
@@ -77,91 +77,91 @@
     "positive": [
       {
         "word": "top",
-        "coefficient": 1.7841138421590224
+        "coefficient": 1.7845964022243563
       },
       {
         "word": "perfetto",
-        "coefficient": 1.5183057900060126
+        "coefficient": 1.5176116273985871
       },
       {
         "word": "disponibile",
-        "coefficient": 1.3583931667776117
+        "coefficient": 1.3583824992635118
       },
       {
         "word": "ottima",
-        "coefficient": 1.3393589719902712
+        "coefficient": 1.3380218827921988
       },
       {
         "word": "dire",
-        "coefficient": 1.287553523270951
+        "coefficient": 1.2877831039402963
       },
       {
         "word": "eccellente",
-        "coefficient": 1.1990736887156883
+        "coefficient": 1.199564481871226
       },
       {
         "word": "straordinario",
-        "coefficient": 1.085958780709826
+        "coefficient": 1.0861112403398772
       },
       {
         "word": "efficiente",
-        "coefficient": 1.0285166740093714
+        "coefficient": 1.0285779069950294
       },
       {
         "word": "fantastico",
-        "coefficient": 1.0281025330497335
+        "coefficient": 1.0278920449977034
       },
       {
         "word": "torneremo",
-        "coefficient": 0.9971670920594523
+        "coefficient": 0.9979289518002515
       }
     ],
     "negative": [
       {
         "word": "pessima",
-        "coefficient": -1.770656877408196
+        "coefficient": -1.7745062619281713
       },
       {
         "word": "pessimo",
-        "coefficient": -1.6045771668285747
+        "coefficient": -1.602609092514822
       },
       {
         "word": "assente",
-        "coefficient": -1.4884770312309337
+        "coefficient": -1.488232696367612
       },
       {
         "word": "peccato",
-        "coefficient": -1.3848239859198066
+        "coefficient": -1.384800807149946
       },
       {
         "word": "deludente",
-        "coefficient": -1.3846653258651616
+        "coefficient": -1.3828408078494705
       },
       {
         "word": "sgarbato",
-        "coefficient": -1.2575134285171479
+        "coefficient": -1.2587332524512813
       },
       {
         "word": "inaccettabile",
-        "coefficient": -1.2046286391192476
+        "coefficient": -1.2046408178049393
       },
       {
         "word": "rovinato",
-        "coefficient": -1.0176337942207918
-      },
-      {
-        "word": "desiderare",
-        "coefficient": -0.9455999247148668
+        "coefficient": -1.0177588232746841
       },
       {
         "word": "disastro",
-        "coefficient": -0.9430381859488569
+        "coefficient": -0.9476388668503936
+      },
+      {
+        "word": "desiderare",
+        "coefficient": -0.945762233910425
       }
     ]
   },
   "model_info": {
     "best_department_model": "Random Forest",
     "best_sentiment_model": "Random Forest",
-    "training_date": "2026-03-29 16:16:03"
+    "training_date": "2026-03-29 16:21:12"
   }
 }
