@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import {
   Container,
   Title,
@@ -7,11 +6,9 @@ import {
   Text,
   Group,
   Badge,
-  Stack,
   Loader,
   Alert,
   Tooltip,
-  RingProgress,
   Divider,
 } from "@mantine/core";
 import {
@@ -23,20 +20,14 @@ import {
   Legend,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
-import type { DashboardData } from "../api";
-import { fetchDashboard } from "../api";
+import MetricCard from "../components/MetricCard";
+import ConfusionMatrixCard from "../components/ConfusionMatrixCard";
+import { useDashboard } from "../hooks/useDashboard";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, ChartTooltip, Legend);
 
 export default function DashboardPage() {
-  const [data, setData] = useState<DashboardData | null>(null);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    fetchDashboard()
-      .then(setData)
-      .catch((e) => setError(e.message));
-  }, []);
+  const { data, error, loading } = useDashboard();
 
   if (error)
     return (
@@ -44,7 +35,7 @@ export default function DashboardPage() {
         {error}
       </Alert>
     );
-  if (!data) return <Loader m="xl" />;
+  if (loading || !data) return <Loader m="xl" />;
 
   const modelNames = Object.keys(data.model_comparison.department);
   const deptAccuracies = modelNames.map(
@@ -281,158 +272,5 @@ export default function DashboardPage() {
         />
       </Card>
     </Container>
-  );
-}
-
-function MetricCard({
-  label,
-  value,
-  color,
-  tooltip,
-}: {
-  label: string;
-  value: number;
-  color: string;
-  tooltip: string;
-}) {
-  const pct = value * 100;
-  return (
-    <Tooltip label={tooltip} multiline w={260} withArrow>
-      <Card
-        shadow="sm"
-        padding="md"
-        radius="md"
-        withBorder
-        style={{ cursor: "help" }}
-      >
-        <Group gap="md" wrap="nowrap">
-          <RingProgress
-            size={56}
-            thickness={5}
-            roundCaps
-            sections={[{ value: pct, color }]}
-            label={
-              <Text size="xs" ta="center" fw={700} style={{ fontSize: 11 }}>
-                {pct.toFixed(0)}
-              </Text>
-            }
-          />
-          <Stack gap={2}>
-            <Text size="xs" c="dimmed" lineClamp={2}>
-              {label}
-            </Text>
-            <Text size="lg" fw={700}>
-              {pct.toFixed(1)}%
-            </Text>
-          </Stack>
-        </Group>
-      </Card>
-    </Tooltip>
-  );
-}
-
-function ConfusionMatrixCard({
-  title,
-  tooltip,
-  matrix,
-  labels,
-}: {
-  title: string;
-  tooltip: string;
-  matrix: number[][];
-  labels: string[];
-}) {
-  return (
-    <Card shadow="sm" padding="lg" radius="md" withBorder>
-      <Group gap="xs" mb="md" align="center">
-        <Title order={3} size="h4">
-          {title}
-        </Title>
-        <Tooltip label={tooltip} multiline w={300} withArrow>
-          <Badge
-            variant="light"
-            color="gray"
-            size="sm"
-            style={{ cursor: "help" }}
-          >
-            Solo Logistic Regression ⓘ
-          </Badge>
-        </Tooltip>
-      </Group>
-      <Text size="xs" c="dimmed" mb="xs">
-        Righe = classe reale · Colonne = classe predetta
-      </Text>
-      <div style={{ overflowX: "auto" }}>
-        <table
-          style={{
-            width: "100%",
-            borderCollapse: "separate",
-            borderSpacing: 3,
-            textAlign: "center",
-            minWidth: 200,
-          }}
-        >
-          <thead>
-            <tr>
-              <th style={{ padding: 8 }}></th>
-              {labels.map((l) => (
-                <th
-                  key={l}
-                  style={{
-                    padding: "6px 8px",
-                    fontSize: 11,
-                    fontWeight: 600,
-                    color: "#868e96",
-                    textTransform: "uppercase",
-                    letterSpacing: 0.5,
-                  }}
-                >
-                  {l}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {matrix.map((row, i) => (
-              <tr key={i}>
-                <td
-                  style={{
-                    padding: "6px 8px",
-                    fontWeight: 600,
-                    fontSize: 11,
-                    color: "#868e96",
-                    textTransform: "uppercase",
-                    letterSpacing: 0.5,
-                    textAlign: "right",
-                  }}
-                >
-                  {labels[i]}
-                </td>
-                {row.map((cell, j) => (
-                  <td
-                    key={j}
-                    style={{
-                      padding: "10px 8px",
-                      background:
-                        i === j
-                          ? `rgba(252,196,25,${Math.max(Math.min(cell / 60, 1), 0.15)})`
-                          : cell > 0
-                            ? `rgba(255,146,43,${Math.max(Math.min(cell / 60, 1), 0.1)})`
-                            : "rgba(0,0,0,0.02)",
-                      borderRadius: 6,
-                      fontWeight: i === j ? 700 : 400,
-                      fontSize: 14,
-                      transition: "transform 0.15s",
-                    }}
-                  >
-                    {cell}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </Card>
   );
 }
