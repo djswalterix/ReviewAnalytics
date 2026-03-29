@@ -1,4 +1,5 @@
-import { Badge, Card, Group, Text, Title, Tooltip } from "@mantine/core";
+import { Badge, Card, Text, Title, Tooltip } from "@mantine/core";
+import { Line } from "react-chartjs-2";
 
 interface ConfusionMatrixCardProps {
   title: string;
@@ -15,21 +16,20 @@ export default function ConfusionMatrixCard({
 }: ConfusionMatrixCardProps) {
   return (
     <Card shadow="sm" padding="lg" radius="md" withBorder>
-      <Group gap="xs" mb="md" align="center">
-        <Title order={3} size="h4">
-          {title}
-        </Title>
-        <Tooltip label={tooltip} multiline w={300} withArrow>
-          <Badge
-            variant="light"
-            color="gray"
-            size="sm"
-            style={{ cursor: "help" }}
-          >
-            Solo Logistic Regression ⓘ
-          </Badge>
-        </Tooltip>
-      </Group>
+      <Title order={3} size="h4" mb={4}>
+        {title}
+      </Title>
+      <Tooltip label={tooltip} multiline w={300} withArrow>
+        <Badge
+          variant="light"
+          color="gray"
+          size="sm"
+          mb="md"
+          style={{ cursor: "help" }}
+        >
+          Solo Logistic Regression ⓘ
+        </Badge>
+      </Tooltip>
       <Text size="xs" c="dimmed" mb="xs">
         Righe = classe reale · Colonne = classe predetta
       </Text>
