@@ -1,5 +1,4 @@
 import { Badge, Card, Text, Title, Tooltip } from "@mantine/core";
-import { Line } from "react-chartjs-2";
 
 interface ConfusionMatrixCardProps {
   title: string;
