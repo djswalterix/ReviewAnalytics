@@ -11,12 +11,15 @@ import joblib
 import json
 from datetime import datetime
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path(__file__).parent.parent
 SEED = 42
 np.random.seed(SEED)
 
 
-def load_stop_words(filepath=BASE_DIR / 'stop_words.txt'):
+BACKEND_DIR = Path(__file__).parent
+
+
+def load_stop_words(filepath=BACKEND_DIR / 'stop_words.txt'):
     """Load stop words from a text file, ignoring comments and empty lines"""
     with open(filepath, 'r', encoding='utf-8') as f:
         return [line.strip() for line in f if line.strip() and not line.startswith('#')]

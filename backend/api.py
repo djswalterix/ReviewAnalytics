@@ -9,7 +9,7 @@ import joblib
 import json
 import numpy as np
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path(__file__).parent.parent
 
 app = FastAPI(
     title="Review Analytics API",

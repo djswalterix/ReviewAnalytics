@@ -5,7 +5,7 @@ dev:
 	$(MAKE) -j2 api frontend
 
 api:
-	uvicorn api:app --host 0.0.0.0 --port 8080 --reload
+	uvicorn backend.api:app --host 0.0.0.0 --port 8080 --reload
 
 frontend:
 	cd frontend && npm run dev
@@ -16,7 +16,7 @@ install:
 
 train:
 	python -m generator
-	python train.py
+	python -m backend.train
 
 build:
 	cd frontend && npm run build

@@ -13,10 +13,11 @@ WORKDIR /app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY api.py dashboard_data.json stop_words.txt ./
+COPY backend/ ./backend/
+COPY dashboard_data.json ./
 COPY *.pkl ./
 
 COPY --from=frontend-build /app/frontend/dist ./frontend/dist
 
 EXPOSE 8080
-CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "backend.api:app", "--host", "0.0.0.0", "--port", "8080"]
