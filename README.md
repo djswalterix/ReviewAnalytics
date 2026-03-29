@@ -88,7 +88,7 @@ make build
 ## Pipeline ML
 
 ```
-CSV → TF-IDF Vectorizer (max 1000 features, stop words italiane)
+CSV → TF-IDF Vectorizer (max 5000 features, bigrammi, sublinear_tf, stop words italiane)
                 │
                 ├── Department (3 classi)  ─→  Logistic Regression
                 │                           ─→  K-Nearest Neighbors

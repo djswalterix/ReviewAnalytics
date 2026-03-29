@@ -62,8 +62,10 @@ def train_model():
     # 3. TF-IDF Vectorization
     stop_words = load_stop_words()
     vectorizer = TfidfVectorizer(
-        max_features=1000, 
-        stop_words=stop_words
+        max_features=5000, 
+        stop_words=stop_words,
+        ngram_range=(1, 2),
+        sublinear_tf=True
     )
     X_train = vectorizer.fit_transform(X_text_train)
     X_test = vectorizer.transform(X_text_test)
@@ -72,13 +74,13 @@ def train_model():
     # 4. Define models
     dept_models = {
         'Logistic Regression': LogisticRegression(solver='lbfgs', max_iter=1000, random_state=SEED, C=1.0),
-        'K-Nearest Neighbors': KNeighborsClassifier(n_neighbors=5, weights='distance', metric='cosine'),
+        'K-Nearest Neighbors': KNeighborsClassifier(n_neighbors=6, weights='distance', metric='cosine'),
         'Random Forest': RandomForestClassifier(n_estimators=100, max_depth=10, min_samples_leaf=1, max_features='sqrt', random_state=SEED)
     }
     
     sent_models = {
         'Logistic Regression': LogisticRegression(solver='lbfgs', max_iter=1000, random_state=SEED, C=1.0),
-        'K-Nearest Neighbors': KNeighborsClassifier(n_neighbors=5, weights='distance', metric='cosine'),
+        'K-Nearest Neighbors': KNeighborsClassifier(n_neighbors=6, weights='distance', metric='cosine'),
         'Random Forest': RandomForestClassifier(n_estimators=100, max_depth=10, min_samples_leaf=1, max_features='sqrt', random_state=SEED)
     }
 

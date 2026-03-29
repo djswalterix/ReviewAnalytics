@@ -21,7 +21,7 @@ python -m backend.train
 
 1. **Caricamento dati**: legge `dataset_recensioni.csv` dalla root
 2. **Preprocessing**: concatena titolo (ripetuto 2×) e corpo — `(title + " ") × 2 + body`
-3. **Vettorizzazione TF-IDF**: max 1000 feature, stop word italiane da `stop_words.txt`
+3. **Vettorizzazione TF-IDF**: max 5000 feature, bigrammi (1,2), scaling sublineare (`1 + log(tf)`), stop word italiane da `stop_words.txt`
 4. **Training**: addestra 3 modelli × 2 task (department e sentiment)
 5. **Valutazione**: accuracy e F1 su test set (80/20 split, seed=42)
 6. **Selezione**: il modello con F1 più alto diventa il "best model"
