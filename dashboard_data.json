@@ -1,23 +1,23 @@
 {
   "metrics": {
-    "department_accuracy": 0.73,
+    "department_accuracy": 0.72,
     "sentiment_accuracy": 0.89,
-    "department_f1": 0.7226662062979402,
+    "department_f1": 0.7271524771524772,
     "sentiment_f1": 0.897196261682243
   },
   "model_comparison": {
     "department": {
       "Logistic Regression": {
-        "accuracy": 0.73,
-        "f1": 0.7226662062979402
+        "accuracy": 0.72,
+        "f1": 0.7126219908913468
       },
       "K-Nearest Neighbors": {
         "accuracy": 0.64,
         "f1": 0.628982128982129
       },
       "Random Forest": {
-        "accuracy": 0.7,
-        "f1": 0.7138028113166399
+        "accuracy": 0.72,
+        "f1": 0.7271524771524772
       }
     },
     "sentiment": {
@@ -38,19 +38,19 @@
   "confusion_matrix": {
     "department": [
       [
-        18,
+        17,
         4,
-        3
-      ],
-      [
-        3,
-        22,
         4
       ],
       [
-        7,
-        6,
-        33
+        0,
+        25,
+        4
+      ],
+      [
+        2,
+        14,
+        30
       ]
     ],
     "sentiment": [
@@ -78,8 +78,8 @@
     "negative": []
   },
   "model_info": {
-    "best_department_model": "Logistic Regression",
+    "best_department_model": "Random Forest",
     "best_sentiment_model": "Random Forest",
-    "training_date": "2026-03-29 15:52:35"
+    "training_date": "2026-03-29 16:13:37"
   }
 }

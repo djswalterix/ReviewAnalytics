@@ -25,7 +25,8 @@ python -m backend.train
 4. **Training**: addestra 3 modelli × 2 task (department e sentiment)
 5. **Valutazione**: accuracy e F1 su test set (80/20 split, seed=42)
 6. **Selezione**: il modello con F1 più alto diventa il "best model"
-7. **Persistenza**: salva modelli (`.pkl`), vettorizzatore e `dashboard_data.json`
+7. **Feature importance**: i coefficienti lineari del modello Logistic Regression vengono sempre estratti (top 10 parole positive e negative per sentiment), indipendentemente da quale modello risulti il migliore
+8. **Persistenza**: salva modelli (`.pkl`), vettorizzatore e `dashboard_data.json`
 
 ### Modelli
 
@@ -112,10 +113,6 @@ Restituisce `dashboard_data.json` con:
 - Matrici di confusione
 - Feature importance (top 10 parole positive/negative)
 - Info sul modello (nome, data training)
-
-#### `GET /health`
-
-Health check per il monitoraggio.
 
 ### Serving Frontend
 

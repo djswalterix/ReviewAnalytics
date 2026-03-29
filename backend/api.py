@@ -215,12 +215,6 @@ def get_department_word_contributions(X) -> list[DepartmentWordImpact]:
     return sorted(word_impacts, key=lambda w: abs(w.impact), reverse=True)
 
 
-@app.get("/health")
-def health_check():
-    """Health check endpoint"""
-    return {"status": "healthy", "models_loaded": True}
-
-
 # Serve the built frontend in production
 FRONTEND_DIR = BASE_DIR / "frontend" / "dist"
 if FRONTEND_DIR.is_dir():

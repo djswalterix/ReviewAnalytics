@@ -15,7 +15,7 @@ ReviewAnalytics/
 │   └── strategies.py   # 6 strategie di generazione a difficoltà crescente
 │
 ├── backend/            # API REST e pipeline di training
-│   ├── api.py          # Server FastAPI (predict, dashboard, health)
+│   ├── api.py          # Server FastAPI (predict, dashboard)
 │   ├── train.py        # Training pipeline (TF-IDF + 3 modelli × 2 task)
 │   └── stop_words.txt  # Lista di stop word italiane per il TF-IDF
 │
@@ -132,4 +132,3 @@ docker run -p 8080:8080 review-analytics
 | ------ | ------------ | ---------------------------------------------------------------------- |
 | `GET`  | `/dashboard` | Metriche, confronto modelli, matrici di confusione, feature importance |
 | `POST` | `/predict`   | Predizione department e sentiment con confidenza e contributo parole   |
-| `GET`  | `/health`    | Health check                                                           |

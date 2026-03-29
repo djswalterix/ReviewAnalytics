@@ -107,27 +107,22 @@ def train_model():
     dept_cm = confusion_matrix(yd_test, best_dept_result['predictions'])
     sent_cm = confusion_matrix(ys_test, best_sent_result['predictions'])
 
-    # 8. Extract feature importance (available for Logistic Regression via coefficients)
+    # 8. Extract feature importance from Logistic Regression coefficients
     feature_names = vectorizer.get_feature_names_out()
-    top_pos_words = []
-    top_neg_words = []
+    lr_sent = sent_models['Logistic Regression']
+    sent_coefs = lr_sent.coef_[0]
 
-    if best_sent_name == 'Logistic Regression':
-        lr_sent = sent_models[best_sent_name]
-        # Extract linear coefficients as feature importance indicators
-        sent_coefs = lr_sent.coef_[0]
+    top_pos_idx = np.argsort(sent_coefs)[-10:][::-1]
+    top_neg_idx = np.argsort(sent_coefs)[:10]
 
-        top_pos_idx = np.argsort(sent_coefs)[-10:][::-1]
-        top_neg_idx = np.argsort(sent_coefs)[:10]
-
-        top_pos_words = [
-            {"word": feature_names[i], "coefficient": float(sent_coefs[i])}
-            for i in top_pos_idx
-        ]
-        top_neg_words = [
-            {"word": feature_names[i], "coefficient": float(sent_coefs[i])}
-            for i in top_neg_idx
-        ]
+    top_pos_words = [
+        {"word": feature_names[i], "coefficient": float(sent_coefs[i])}
+        for i in top_pos_idx
+    ]
+    top_neg_words = [
+        {"word": feature_names[i], "coefficient": float(sent_coefs[i])}
+        for i in top_neg_idx
+    ]
     # 9. Build dashboard data
     dashboard_data = {
         "metrics": {
