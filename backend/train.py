@@ -10,6 +10,15 @@ from sklearn.metrics import accuracy_score, f1_score, confusion_matrix
 import joblib
 import json
 from datetime import datetime
+import string
+import subprocess
+
+try:
+    import spacy
+except ImportError:
+    import subprocess
+    subprocess.run(['pip', 'install', 'spacy'], check=True)
+    import spacy
 
 BASE_DIR = Path(__file__).parent.parent
 SEED = 42
@@ -17,6 +26,25 @@ np.random.seed(SEED)
 
 
 BACKEND_DIR = Path(__file__).parent
+
+
+# Load Italian spaCy model once (for lemmatization)
+try:
+    nlp = spacy.load('it_core_news_sm')
+except OSError:
+    print("⚠️  spaCy model 'it_core_news_sm' not found. Installing...")
+    subprocess.run(['python', '-m', 'spacy', 'download', 'it_core_news_sm'], check=True)
+    nlp = spacy.load('it_core_news_sm')
+
+
+def preprocess_and_lemmatize(text):
+    """Remove punctuation and lemmatize Italian text (e.g., pulita → pulito)"""
+    # Remove punctuation
+    text = text.translate(str.maketrans('', '', string.punctuation))
+    # Lemmatize using spaCy
+    doc = nlp(text)
+    lemmas = [token.lemma_ for token in doc]
+    return ' '.join(lemmas)
 
 
 def load_stop_words(filepath=BACKEND_DIR / 'stop_words.txt'):
@@ -61,14 +89,19 @@ def train_model():
 
     # 3. TF-IDF Vectorization
     stop_words = load_stop_words()
+    
+    # Pre-process: remove punctuation and lemmatize
+    X_text_train_clean = [preprocess_and_lemmatize(text) for text in X_text_train]
+    X_text_test_clean = [preprocess_and_lemmatize(text) for text in X_text_test]
+    
     vectorizer = TfidfVectorizer(
         max_features=5000, 
         stop_words=stop_words,
         ngram_range=(1, 2),
         sublinear_tf=True
     )
-    X_train = vectorizer.fit_transform(X_text_train)
-    X_test = vectorizer.transform(X_text_test)
+    X_train = vectorizer.fit_transform(X_text_train_clean)
+    X_test = vectorizer.transform(X_text_test_clean)
     joblib.dump(vectorizer, BASE_DIR / 'vectorizer.pkl')
 
     # 4. Define models
