@@ -42,7 +42,7 @@ export default function PredictPage() {
           Predizione Recensione
         </Title>
         <Text size="sm" c="dimmed" mb="lg">
-          Inserisci una recensione per analizzare department e sentiment
+          Inserisci una recensione per analizzare reparto e sentiment
         </Text>
       </div>
 
@@ -83,7 +83,7 @@ export default function PredictPage() {
         <>
           <SimpleGrid cols={{ base: 1, md: 2 }} mb="xl">
             <PredictionCard
-              title="Predizioni Department"
+              title="Predizioni Reparto"
               predictions={result.department}
               colorFn={() => "orange"}
             />
@@ -119,8 +119,8 @@ export default function PredictPage() {
           {departmentContributions.length > 0 && (
             <div style={{ marginBottom: "var(--mantine-spacing-xl)" }}>
               <WordImpactChart
-                title="Contributo Parole — Department"
-                tooltip="Associazione di ogni parola al department, calcolata dai coefficienti del modello Logistic Regression. Ogni parola è assegnata al department dove ha l'impatto assoluto più forte."
+                title="Contributo Parole — Reparto"
+                tooltip="Associazione di ogni parola al reparto, calcolata dai coefficienti del modello Logistic Regression. Ogni parola è assegnata al reparto dove ha l'impatto assoluto più forte."
                 labels={departmentContributions.slice(0, 20).map((w) => w.word)}
                 data={departmentContributions.slice(0, 20).map((w) => w.impact)}
                 backgroundColor={departmentContributions

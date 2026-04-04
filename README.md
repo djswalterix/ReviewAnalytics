@@ -33,7 +33,7 @@ ReviewAnalytics/
 
 ## Obiettivi del Progetto
 
-1. **Generazione dati**: creare un dataset sintetico bilanciato di recensioni italiane con etichette di _department_ (Housekeeping, Reception, F&B) e _sentiment_ (Positivo/Negativo), utilizzando strategie di complessità crescente per testare la robustezza dei modelli.
+1. **Generazione dati**: creare un dataset sintetico bilanciato di recensioni italiane con etichette di _reparto_ (Housekeeping, Reception, F&B) e _sentiment_ (Positivo/Negativo), utilizzando strategie di complessità crescente per testare la robustezza dei modelli.
 
 2. **Classificazione multiclasse e binaria**: addestrare e confrontare **Logistic Regression**, **K-Nearest Neighbors** e **Random Forest** su due task paralleli — classificazione del reparto e del sentiment.
 
@@ -66,7 +66,7 @@ make train
 Esegue in sequenza:
 
 1. `python -m generator` — genera `dataset_recensioni.csv` (500 recensioni sintetiche)
-2. `python -m backend.train` — addestra 6 modelli (3 per department, 3 per sentiment), salva i `.pkl` e `dashboard_data.json`
+2. `python -m backend.train` — addestra 6 modelli (3 per reparto, 3 per sentiment), salva i `.pkl` e `dashboard_data.json`
 
 ### Avvio in Sviluppo
 
@@ -90,7 +90,7 @@ make build
 ```
 CSV → TF-IDF Vectorizer (max 5000 features, bigrammi, sublinear_tf, stop words italiane)
                 │
-                ├── Department (3 classi)  ─→  Logistic Regression
+                ├── Reparto (3 classi)     ─→  Logistic Regression
                 │                           ─→  K-Nearest Neighbors
                 │                           ─→  Random Forest
                 │
@@ -100,7 +100,7 @@ CSV → TF-IDF Vectorizer (max 5000 features, bigrammi, sublinear_tf, stop words
 ```
 
 - **Title weighting**: il titolo viene ripetuto 2× per aumentarne l'influenza nel vettore TF-IDF
-- **Valutazione**: accuracy e F1-score (binary per sentiment, macro per department)
+- **Valutazione**: accuracy e F1-score (binary per sentiment, macro per reparto)
 - **Selezione**: il modello migliore per task viene scelto in base all'F1
 
 ## Tecnologie
@@ -131,4 +131,4 @@ docker run -p 8080:8080 review-analytics
 | Metodo | Endpoint     | Descrizione                                                            |
 | ------ | ------------ | ---------------------------------------------------------------------- |
 | `GET`  | `/dashboard` | Metriche, confronto modelli, matrici di confusione, feature importance |
-| `POST` | `/predict`   | Predizione department e sentiment con confidenza e contributo parole   |
+| `POST` | `/predict`   | Predizione reparto e sentiment con confidenza e contributo parole      |

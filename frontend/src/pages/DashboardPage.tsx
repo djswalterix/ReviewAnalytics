@@ -87,7 +87,7 @@ export default function DashboardPage() {
         </div>
         <Group gap="xs">
           <Badge color="orange" variant="light" size="lg">
-            Miglior Department: {data.model_info.best_department_model}
+            Miglior Reparto: {data.model_info.best_department_model}
           </Badge>
           <Badge color="yellow" variant="light" size="lg">
             Miglior Sentiment: {data.model_info.best_sentiment_model}
@@ -97,10 +97,10 @@ export default function DashboardPage() {
 
       <SimpleGrid cols={{ base: 2, sm: 2, md: 4 }} mb="xl">
         <MetricCard
-          label="Accuratezza Department"
+          label="Accuratezza Reparto"
           value={data.metrics.department_accuracy}
           color="#ff922b"
-          tooltip="Percentuale di recensioni il cui department è stato classificato correttamente dal modello migliore"
+          tooltip="Percentuale di recensioni il cui reparto è stato classificato correttamente dal modello migliore"
         />
         <MetricCard
           label="Accuratezza Sentiment"
@@ -109,10 +109,10 @@ export default function DashboardPage() {
           tooltip="Percentuale di recensioni il cui sentiment è stato classificato correttamente dal modello migliore"
         />
         <MetricCard
-          label="F1 Department"
+          label="F1 Reparto"
           value={data.metrics.department_f1}
           color="#ff922b"
-          tooltip="Media armonica di precisione e recall per la classificazione del department (bilancia falsi positivi e falsi negativi)"
+          tooltip="Media armonica di precisione e recall per la classificazione del reparto (bilancia falsi positivi e falsi negativi)"
         />
         <MetricCard
           label="F1 Sentiment"
@@ -136,11 +136,11 @@ export default function DashboardPage() {
       <SimpleGrid cols={{ base: 1, md: 2 }} mt="md">
         <Card shadow="sm" padding="lg" radius="md" withBorder>
           <Title order={3} mb={4} size="h4">
-            Classificazione Department
+            Classificazione Reparto
           </Title>
           <Text size="sm" c="dimmed" mb="md">
             Confronto tra i modelli addestrati per la classificazione del
-            department
+            reparto
           </Text>
           <Bar
             data={{
@@ -204,7 +204,7 @@ export default function DashboardPage() {
 
       <SimpleGrid cols={{ base: 1, sm: 2 }} mt="md">
         <ConfusionMatrixCard
-          title="Matrice di Confusione — Department"
+          title="Matrice di Confusione — Reparto"
           tooltip="Matrice calcolata sul modello Logistic Regression. Le righe indicano la classe reale, le colonne la classe predetta. I valori sulla diagonale (verde) sono le predizioni corrette."
           matrix={data.confusion_matrix.department}
           labels={data.confusion_matrix.labels_dept}
