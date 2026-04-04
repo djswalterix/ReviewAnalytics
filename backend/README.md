@@ -20,13 +20,17 @@ python -m backend.train
 ### Pipeline
 
 1. **Caricamento dati**: legge `dataset_recensioni.csv` dalla root
-2. **Preprocessing**: concatena titolo (ripetuto 2×) e corpo — `(title + " ") × 2 + body`
-3. **Vettorizzazione TF-IDF**: max 5000 feature, bigrammi (1,2), scaling sublineare (`1 + log(tf)`), stop word italiane da `stop_words.txt`
-4. **Training**: addestra 3 modelli × 2 task (department e sentiment)
-5. **Valutazione**: accuracy e F1 su test set (80/20 split, seed=42)
-6. **Selezione**: il modello con F1 più alto diventa il "best model"
-7. **Feature importance**: i coefficienti lineari del modello Logistic Regression vengono sempre estratti (top 10 parole positive e negative per sentiment), indipendentemente da quale modello risulti il migliore
-8. **Persistenza**: salva modelli (`.pkl`), vettorizzatore e `dashboard_data.json`
+2. **Preprocessing testo**: concatena titolo (ripetuto 2×) e corpo — `(title + " ") × 2 + body`
+3. **Pulizia e lemmatizzazione**:
+   - Rimuove **tutta la punteggiatura** (es. "camera." → "camera")
+   - **Lemmatizza** il testo italiano usando spaCy (es. "pulita", "pulito", "pulite" → "pulito")
+   - Utile per normalizzare varianti morfologiche della stessa parola
+4. **Vettorizzazione TF-IDF**: max 5000 feature, bigrammi (1,2), scaling sublineare (`1 + log(tf)`), stop word italiane da `stop_words.txt`
+5. **Training**: addestra 3 modelli × 2 task (department e sentiment)
+6. **Valutazione**: accuracy e F1 su test set (80/20 split, seed=42)
+7. **Selezione**: il modello con F1 più alto diventa il "best model"
+8. **Feature importance**: i coefficienti lineari del modello Logistic Regression vengono sempre estratti (top 10 parole positive e negative per sentiment), indipendentemente da quale modello risulti il migliore
+9. **Persistenza**: salva modelli (`.pkl`), vettorizzatore e `dashboard_data.json`
 
 ### Modelli
 
@@ -38,9 +42,10 @@ python -m backend.train
 
 Ogni modello viene addestrato due volte: una per la classificazione del **department** (3 classi) e una per il **sentiment** (2 classi).
 
-### Stop Word (`stop_words.txt`)
+### Dipendenze NLP
 
-Lista curata di stop word italiane usate dal TF-IDF Vectorizer per filtrare parole grammaticali prive di contenuto semantico (articoli, preposizioni, congiunzioni, pronomi). Questo migliora la qualità delle feature estratte concentrando il modello sulle parole significative.
+- **spaCy** (`it_core_news_sm`): modello italiano per lemmatizzazione. Viene scaricato automaticamente al primo training se non presente.
+- **Stop word** (`stop_words.txt`): lista curata di stop word italiane usate dal TF-IDF Vectorizer per filtrare parole grammaticali prive di contenuto semantico (articoli, preposizioni, congiunzioni, pronomi). Questo migliora la qualità delle feature estratte concentrando il modello sulle parole significative.
 
 ### File prodotti
 

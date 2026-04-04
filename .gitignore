@@ -3,3 +3,6 @@ __pycache__/
 *.pkl
 venv/
 .env
+tesi/
+ProjectWork.md
+.DS_Store

@@ -88,16 +88,23 @@ make build
 ## Pipeline ML
 
 ```
-CSV → TF-IDF Vectorizer (max 5000 features, bigrammi, sublinear_tf, stop words italiane)
-                │
-                ├── Reparto (3 classi)     ─→  Logistic Regression
-                │                           ─→  K-Nearest Neighbors
-                │                           ─→  Random Forest
-                │
-                └── Sentiment (2 classi)   ─→  Logistic Regression
-                                            ─→  K-Nearest Neighbors
-                                            ─→  Random Forest
+CSV → Pulizia & Lemmatizzazione → TF-IDF Vectorizer (max 5000 features, bigrammi, sublinear_tf, stop words italiane)
+         (rimozione punteggiatura                  │
+          e normalizzazione morfologica)           ├── Reparto (3 classi)     ─→  Logistic Regression
+                                                    │                           ─→  K-Nearest Neighbors
+                                                    │                           ─→  Random Forest
+                                                    │
+                                                    └── Sentiment (2 classi)   ─→  Logistic Regression
+                                                                                ─→  K-Nearest Neighbors
+                                                                                ─→  Random Forest
 ```
+
+**Preprocessing:**
+
+- **Rimozione punteggiatura**: elimina tutti i caratteri speciali (es. "camera." → "camera")
+- **Lemmatizzazione**: normalizza varianti morfologiche della stessa parola usando spaCy italiano (es. "pulita", "pulito", "pulite" → "pulito")
+
+**Feature extraction:**
 
 - **Title weighting**: il titolo viene ripetuto 2× per aumentarne l'influenza nel vettore TF-IDF
 - **Valutazione**: accuracy e F1-score (binary per sentiment, macro per reparto)
@@ -105,14 +112,15 @@ CSV → TF-IDF Vectorizer (max 5000 features, bigrammi, sublinear_tf, stop words
 
 ## Tecnologie
 
-| Layer            | Tecnologia                                 |
-| ---------------- | ------------------------------------------ |
-| Generazione dati | Python, Faker                              |
-| ML / NLP         | scikit-learn (TF-IDF, LogReg, KNN, RF)     |
-| API              | FastAPI, Uvicorn                           |
-| Frontend         | React 19, TypeScript, Mantine UI, Chart.js |
-| Build            | Vite, Docker multi-stage                   |
-| CI/CD            | Google Cloud Build                         |
+| Layer               | Tecnologia                                 |
+| ------------------- | ------------------------------------------ |
+| Generazione dati    | Python, Faker                              |
+| NLP / Preprocessing | spaCy (it_core_news_sm)                    |
+| ML / Feature        | scikit-learn (TF-IDF, LogReg, KNN, RF)     |
+| API                 | FastAPI, Uvicorn                           |
+| Frontend            | React 19, TypeScript, Mantine UI, Chart.js |
+| Build               | Vite, Docker multi-stage                   |
+| CI/CD               | Google Cloud Build                         |
 
 ## Deploy
 
