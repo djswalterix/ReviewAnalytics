@@ -195,6 +195,24 @@ export default function PredictPage() {
     URL.revokeObjectURL(url);
   };
 
+  const downloadCsvTemplate = () => {
+    const templateRows = [
+      "title,body",
+      '"Camera confortevole","La camera era pulita e il personale molto gentile."',
+      '"Esperienza negativa","Reception lenta e colazione scarsa."',
+    ];
+
+    const csv = templateRows.join("\n");
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "template_batch_reviews.csv";
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <Container size="lg" py={{ base: "md", md: "xl" }}>
       <div>
@@ -313,9 +331,8 @@ export default function PredictPage() {
               Predizione Batch da CSV
             </Title>
             <Text size="sm" c="dimmed">
-              Carica un CSV con colonna obbligatoria "body" e opzionale "title".
-              Output: reparto consigliato, sentiment e probabilita. Il file
-              viene inviato al backend in chunk da {BATCH_CHUNK_SIZE} righe.
+              Carica un CSV per ottenere reparto consigliato, sentiment e
+              probabilita. Se non hai un file pronto, scarica il template.
             </Text>
           </div>
 
@@ -328,6 +345,9 @@ export default function PredictPage() {
               accept=".csv,text/csv"
               style={{ flex: 1 }}
             />
+            <Button variant="default" onClick={downloadCsvTemplate}>
+              Download Template CSV
+            </Button>
             <Button
               onClick={handleBatchPredict}
               loading={batchLoading}
