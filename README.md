@@ -17,6 +17,7 @@ ReviewAnalytics/
 ├── backend/            # API REST e pipeline di training
 │   ├── api.py          # Server FastAPI (predict, dashboard)
 │   ├── train.py        # Training pipeline (TF-IDF + 3 modelli × 2 task)
+│   ├── preprocessing.py# Preprocessing condiviso (lemmatizzazione, pulizia testo)
 │   └── stop_words.txt  # Lista di stop word italiane per il TF-IDF
 │
 ├── frontend/           # Dashboard React + Mantine UI
@@ -98,6 +99,8 @@ CSV → Pulizia & Lemmatizzazione → TF-IDF Vectorizer (max 5000 features, bigr
                                                                                 ─→  K-Nearest Neighbors
                                                                                 ─→  Random Forest
 ```
+
+> Lo stesso preprocessing (rimozione punteggiatura + lemmatizzazione) viene applicato sia durante il training che al momento dell'inferenza nell'API, garantendo coerenza tra le due fasi.
 
 **Preprocessing:**
 

@@ -1,9 +1,9 @@
 {
   "metrics": {
     "department_accuracy": 0.77,
-    "sentiment_accuracy": 0.89,
+    "sentiment_accuracy": 0.91,
     "department_f1": 0.7601687371802314,
-    "sentiment_f1": 0.897196261682243
+    "sentiment_f1": 0.9158878504672897
   },
   "model_comparison": {
     "department": {
@@ -16,8 +16,8 @@
         "f1": 0.6522904972553685
       },
       "Random Forest": {
-        "accuracy": 0.72,
-        "f1": 0.7213621813413552
+        "accuracy": 0.66,
+        "f1": 0.6752801682922165
       }
     },
     "sentiment": {
@@ -30,8 +30,8 @@
         "f1": 0.8288288288288288
       },
       "Random Forest": {
-        "accuracy": 0.89,
-        "f1": 0.897196261682243
+        "accuracy": 0.91,
+        "f1": 0.9158878504672897
       }
     }
   },
@@ -55,12 +55,12 @@
     ],
     "sentiment": [
       [
-        41,
-        6
+        42,
+        5
       ],
       [
-        5,
-        48
+        4,
+        49
       ]
     ],
     "labels_dept": [
@@ -77,91 +77,91 @@
     "positive": [
       {
         "word": "perfetto",
-        "coefficient": 1.4599448454796067
+        "coefficient": 1.462485268481405
       },
       {
         "word": "top",
-        "coefficient": 1.2931950972616226
+        "coefficient": 1.2932090834276524
       },
       {
         "word": "disponibile",
-        "coefficient": 1.0875546093927544
+        "coefficient": 1.0873904231393354
       },
       {
         "word": "dire",
-        "coefficient": 0.9923632747640901
+        "coefficient": 0.9922133891439958
       },
       {
         "word": "torneremo",
-        "coefficient": 0.9228020560762495
+        "coefficient": 0.924586688717559
       },
       {
         "word": "eccellente",
-        "coefficient": 0.8899500887457589
+        "coefficient": 0.8897955510723654
       },
       {
         "word": "straordinario",
-        "coefficient": 0.7795673713295
+        "coefficient": 0.7793681506707747
       },
       {
         "word": "personale fantastico",
-        "coefficient": 0.770274621528198
+        "coefficient": 0.77047754228519
       },
       {
         "word": "discreto",
-        "coefficient": 0.7665072793158253
+        "coefficient": 0.7663097388361202
       },
       {
         "word": "ottimo",
-        "coefficient": 0.7037762987895296
+        "coefficient": 0.7076136528820864
       }
     ],
     "negative": [
       {
         "word": "pessimo",
-        "coefficient": -1.3824203336828838
+        "coefficient": -1.3820424703838559
       },
       {
         "word": "pessima",
-        "coefficient": -1.1082992726345051
+        "coefficient": -1.1096625975862378
       },
       {
         "word": "assente",
-        "coefficient": -1.0005706911582162
+        "coefficient": -1.000478925074742
       },
       {
         "word": "rovinare",
-        "coefficient": -0.9258715039881427
+        "coefficient": -0.9270988604682514
       },
       {
         "word": "inaccettabile",
-        "coefficient": -0.9128154183537475
+        "coefficient": -0.912822063139489
       },
       {
         "word": "pessimo camera",
-        "coefficient": -0.8940958582630343
+        "coefficient": -0.8957947183664398
       },
       {
         "word": "peccato",
-        "coefficient": -0.7845714834519174
+        "coefficient": -0.7846862180076808
       },
       {
         "word": "sgarbare",
-        "coefficient": -0.7615344176606136
+        "coefficient": -0.7629736247940532
       },
       {
         "word": "disastro",
-        "coefficient": -0.7515610857384367
+        "coefficient": -0.7590955166234391
       },
       {
         "word": "deludente",
-        "coefficient": -0.7514187085183354
+        "coefficient": -0.7515015112275811
       }
     ]
   },
   "model_info": {
     "best_department_model": "Logistic Regression",
     "best_sentiment_model": "Random Forest",
-    "training_date": "2026-04-04 12:46:07"
+    "training_date": "2026-04-04 21:26:25"
   }
 }

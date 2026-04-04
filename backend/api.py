@@ -11,6 +11,7 @@ import numpy as np
 import csv
 import io
 from datetime import datetime, timezone
+from backend.preprocessing import preprocess_and_lemmatize
 
 BASE_DIR = Path(__file__).parent.parent
 
@@ -44,7 +45,7 @@ TITLE_WEIGHT = 2
 
 
 def prepare_text(title: Optional[str], body: str):
-    """Validate input, apply title weighting, and return vectorized features"""
+    """Validate input, apply title weighting, lemmatize, and return vectorized features"""
     body = body.strip()
     if not body:
         raise HTTPException(status_code=400, detail="Review body cannot be empty")
@@ -52,6 +53,7 @@ def prepare_text(title: Optional[str], body: str):
         text = (title.strip() + ' ') * TITLE_WEIGHT + body
     else:
         text = body
+    text = preprocess_and_lemmatize(text)
     X = vectorizer.transform([text])
     return X
 

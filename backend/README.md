@@ -6,9 +6,10 @@ Server FastAPI per la predizione di recensioni e pipeline di addestramento dei m
 
 ```
 backend/
-├── api.py          # Server REST (FastAPI)
-├── train.py        # Pipeline di training
-└── stop_words.txt  # Stop word italiane per il TF-IDF
+├── api.py             # Server REST (FastAPI)
+├── train.py           # Pipeline di training
+├── preprocessing.py   # Preprocessing condiviso (lemmatizzazione, pulizia testo)
+└── stop_words.txt     # Stop word italiane per il TF-IDF
 ```
 
 ## Training (`train.py`)
@@ -61,6 +62,8 @@ Ogni modello viene addestrato due volte: una per la classificazione del **depart
 ```bash
 uvicorn backend.api:app --host 0.0.0.0 --port 8080 --reload
 ```
+
+> **Nota**: il preprocessing (rimozione punteggiatura + lemmatizzazione spaCy) è definito in `preprocessing.py` e importato sia da `train.py` che da `api.py`, garantendo la stessa trasformazione a training e a inferenza.
 
 ### Endpoints
 
