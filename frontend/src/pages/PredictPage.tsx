@@ -12,11 +12,19 @@ import {
   Group,
   Alert,
   Text,
+  FileInput,
+  Table,
+  ScrollArea,
+  Progress,
 } from "@mantine/core";
-import type { PredictionResult } from "../api";
+import type { BatchPredictionRow, PredictionResult } from "../api";
 import PredictionCard from "../components/PredictionCard";
 import WordImpactChart from "../components/WordImpactChart";
 import { usePredict } from "../hooks/usePredict";
+import { predictBatch } from "../api";
+
+const BATCH_CHUNK_SIZE = 200;
+const BATCH_MAX_CONCURRENCY = 5;
 
 export default function PredictPage() {
   const [titleInput, setTitleInput] = useState(
@@ -28,12 +36,164 @@ export default function PredictPage() {
       "Il ristorante dell'hotel offriva poca scelta e la qualità del cibo era mediocre. " +
       "Unico punto positivo: la posizione centrale dell'hotel, comoda per visitare la città.",
   );
+  const [batchFile, setBatchFile] = useState<File | null>(null);
+  const [batchLoading, setBatchLoading] = useState(false);
+  const [batchError, setBatchError] = useState<string | null>(null);
+  const [batchRows, setBatchRows] = useState<BatchPredictionRow[]>([]);
+  const [batchProgress, setBatchProgress] = useState<number>(0);
   const { result, error, loading, run } = usePredict();
 
   const handleSubmit = () => run(bodyInput, titleInput || undefined);
 
   const sentimentContributions = result?.sentiment_word_contributions ?? [];
   const departmentContributions = result?.department_word_contributions ?? [];
+
+  const buildChunkFiles = (fileText: string, chunkSize: number): File[] => {
+    const lines = fileText.split(/\r?\n/);
+    if (lines.length < 2) {
+      throw new Error("CSV vuoto o non valido");
+    }
+
+    const header = lines[0];
+    const dataRows = lines.slice(1).filter((line) => line.trim() !== "");
+    if (dataRows.length === 0) {
+      throw new Error("Nessuna riga dati trovata nel CSV");
+    }
+
+    const chunks: File[] = [];
+    for (let i = 0; i < dataRows.length; i += chunkSize) {
+      const chunkRows = dataRows.slice(i, i + chunkSize);
+      const chunkCsv = [header, ...chunkRows].join("\n");
+      chunks.push(
+        new File(
+          [chunkCsv],
+          `batch_chunk_${Math.floor(i / chunkSize) + 1}.csv`,
+          {
+            type: "text/csv",
+          },
+        ),
+      );
+    }
+
+    return chunks;
+  };
+
+  const handleBatchPredict = async () => {
+    if (!batchFile) return;
+    setBatchLoading(true);
+    setBatchError(null);
+    setBatchRows([]);
+    setBatchProgress(0);
+
+    try {
+      const fileText = await batchFile.text();
+      const chunkFiles = buildChunkFiles(fileText, BATCH_CHUNK_SIZE);
+
+      setBatchProgress(0);
+
+      const responses: Array<{
+        chunkIndex: number;
+        response: Awaited<ReturnType<typeof predictBatch>>;
+      }> = [];
+
+      for (
+        let batchStart = 0;
+        batchStart < chunkFiles.length;
+        batchStart += BATCH_MAX_CONCURRENCY
+      ) {
+        const batch = chunkFiles
+          .slice(batchStart, batchStart + BATCH_MAX_CONCURRENCY)
+          .map((chunkFile, localIndex) => ({
+            chunkFile,
+            chunkIndex: batchStart + localIndex,
+          }));
+
+        const batchResponses = await Promise.all(
+          batch.map(async ({ chunkFile, chunkIndex }) => {
+            const response = await predictBatch(chunkFile);
+            // Update progress on every completed chunk for smoother UI feedback.
+            setBatchProgress((prev) =>
+              Math.min(100, prev + 100 / chunkFiles.length),
+            );
+            return { chunkIndex, response };
+          }),
+        );
+
+        responses.push(...batchResponses);
+      }
+
+      const ordered = responses.sort((a, b) => a.chunkIndex - b.chunkIndex);
+
+      const mergedRows: BatchPredictionRow[] = [];
+      let rowOffset = 0;
+      for (const { response } of ordered) {
+        const normalized = response.results.map((row) => ({
+          ...row,
+          row: row.row + rowOffset,
+        }));
+        mergedRows.push(...normalized);
+        rowOffset += response.total_rows;
+      }
+
+      setBatchRows(mergedRows);
+      setBatchProgress(100);
+    } catch (e) {
+      setBatchError(
+        e instanceof Error ? e.message : "Errore batch sconosciuto",
+      );
+      setBatchProgress(0);
+    } finally {
+      setBatchLoading(false);
+    }
+  };
+
+  const exportBatchResults = () => {
+    if (batchRows.length === 0) return;
+
+    const escapeCsv = (value: string) => `"${value.replace(/"/g, '""')}"`;
+    const header = [
+      "row",
+      "title",
+      "body",
+      "reparto_consigliato",
+      "modello_reparto",
+      "probabilita_reparto",
+      "sentiment",
+      "modello_sentiment",
+      "probabilita_sentiment",
+      "predicted_at",
+    ].join(",");
+
+    const lines = batchRows.map((r) =>
+      [
+        r.row,
+        escapeCsv(r.title ?? ""),
+        escapeCsv(r.body),
+        escapeCsv(r.reparto_consigliato),
+        escapeCsv(r.modello_reparto),
+        r.probabilita_reparto != null
+          ? (r.probabilita_reparto * 100).toFixed(1)
+          : "",
+        escapeCsv(r.sentiment),
+        escapeCsv(r.modello_sentiment),
+        r.probabilita_sentiment != null
+          ? (r.probabilita_sentiment * 100).toFixed(1)
+          : "",
+        escapeCsv(r.predicted_at),
+      ].join(","),
+    );
+
+    const csv = [header, ...lines].join("\n");
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `batch_predictions_${timestamp}.csv`;
+    link.click();
+    URL.revokeObjectURL(url);
+  };
 
   return (
     <Container size="lg" py={{ base: "md", md: "xl" }}>
@@ -145,6 +305,112 @@ export default function PredictPage() {
           )}
         </>
       )}
+
+      <Card shadow="sm" padding="lg" radius="md" withBorder mt="xl">
+        <Stack gap="md">
+          <div>
+            <Title order={3} size="h4" mb={4}>
+              Predizione Batch da CSV
+            </Title>
+            <Text size="sm" c="dimmed">
+              Carica un CSV con colonna obbligatoria "body" e opzionale "title".
+              Output: reparto consigliato, sentiment e probabilita. Il file
+              viene inviato al backend in chunk da {BATCH_CHUNK_SIZE} righe.
+            </Text>
+          </div>
+
+          <Group align="flex-end">
+            <FileInput
+              label="File CSV"
+              placeholder="Seleziona file .csv"
+              value={batchFile}
+              onChange={setBatchFile}
+              accept=".csv,text/csv"
+              style={{ flex: 1 }}
+            />
+            <Button
+              onClick={handleBatchPredict}
+              loading={batchLoading}
+              color="orange"
+            >
+              Predici Batch
+            </Button>
+            <Button
+              variant="light"
+              color="yellow"
+              onClick={exportBatchResults}
+              disabled={batchRows.length === 0}
+            >
+              Export CSV
+            </Button>
+          </Group>
+
+          {batchError && <Alert color="red">{batchError}</Alert>}
+          {batchLoading && (
+            <div>
+              <Text size="sm" mb={6}>
+                Elaborazione in corso...
+              </Text>
+              <Progress value={batchProgress} color="orange" radius="xl" />
+            </div>
+          )}
+
+          {batchRows.length > 0 && (
+            <>
+              <Text size="sm">Righe processate: {batchRows.length}</Text>
+              <ScrollArea>
+                <Table
+                  striped
+                  highlightOnHover
+                  withTableBorder
+                  withColumnBorders
+                >
+                  <Table.Thead>
+                    <Table.Tr>
+                      <Table.Th>#</Table.Th>
+                      <Table.Th>Reparto Consigliato</Table.Th>
+                      <Table.Th>Modello Reparto</Table.Th>
+                      <Table.Th>Prob. Reparto</Table.Th>
+                      <Table.Th>Sentiment</Table.Th>
+                      <Table.Th>Modello Sentiment</Table.Th>
+                      <Table.Th>Prob. Sentiment</Table.Th>
+                      <Table.Th>Timestamp</Table.Th>
+                    </Table.Tr>
+                  </Table.Thead>
+                  <Table.Tbody>
+                    {batchRows.map((row) => (
+                      <Table.Tr key={`${row.row}-${row.predicted_at}`}>
+                        <Table.Td>{row.row}</Table.Td>
+                        <Table.Td>{row.reparto_consigliato}</Table.Td>
+                        <Table.Td>{row.modello_reparto}</Table.Td>
+                        <Table.Td>
+                          {row.probabilita_reparto != null
+                            ? `${(row.probabilita_reparto * 100).toFixed(1)}%`
+                            : "-"}
+                        </Table.Td>
+                        <Table.Td>
+                          {row.sentiment === "Positive"
+                            ? "Positivo"
+                            : "Negativo"}
+                        </Table.Td>
+                        <Table.Td>{row.modello_sentiment}</Table.Td>
+                        <Table.Td>
+                          {row.probabilita_sentiment != null
+                            ? `${(row.probabilita_sentiment * 100).toFixed(1)}%`
+                            : "-"}
+                        </Table.Td>
+                        <Table.Td>
+                          {new Date(row.predicted_at).toLocaleString()}
+                        </Table.Td>
+                      </Table.Tr>
+                    ))}
+                  </Table.Tbody>
+                </Table>
+              </ScrollArea>
+            </>
+          )}
+        </Stack>
+      </Card>
     </Container>
   );
 }

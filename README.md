@@ -136,7 +136,8 @@ docker run -p 8080:8080 review-analytics
 
 ## API Endpoints
 
-| Metodo | Endpoint     | Descrizione                                                            |
-| ------ | ------------ | ---------------------------------------------------------------------- |
-| `GET`  | `/dashboard` | Metriche, confronto modelli, matrici di confusione, feature importance |
-| `POST` | `/predict`   | Predizione reparto e sentiment con confidenza e contributo parole      |
+| Metodo | Endpoint         | Descrizione                                                            |
+| ------ | ---------------- | ---------------------------------------------------------------------- |
+| `GET`  | `/dashboard`     | Metriche, confronto modelli, matrici di confusione, feature importance |
+| `POST` | `/predict`       | Predizione reparto e sentiment con confidenza e contributo parole      |
+| `POST` | `/predict/batch` | Upload CSV per predizioni batch con export risultati timestampati      |

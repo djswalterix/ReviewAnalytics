@@ -6,3 +6,4 @@ fastapi>=0.115.0
 uvicorn[standard]
 faker
 spacy>=3.7.2
+python-multipart

@@ -52,6 +52,9 @@ Form per analizzare nuove recensioni:
 - Risultati per ogni modello con barre di confidenza
 - Grafico impatto parole sul sentiment (contributo di ogni parola)
 - Grafico impatto parole per department
+- Upload CSV per predizioni batch (colonne `body` e opzionale `title`)
+- Tabella risultati batch con reparto consigliato, sentiment e probabilita
+- Export risultati batch in CSV con timestamp nel nome file
 
 ## Schema Colori
 

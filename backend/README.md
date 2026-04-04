@@ -107,6 +107,20 @@ Il campo `sentiment_word_contributions` mostra l'impatto di ogni parola sulla pr
 
 Il campo `department_word_contributions` assegna ogni parola al reparto dove ha il coefficiente assoluto più forte.
 
+#### `POST /predict/batch`
+
+Predizione in batch da file CSV.
+
+- Upload file `.csv` con colonna obbligatoria `body` e colonna opzionale `title`
+- Restituisce per ogni riga:
+  - `reparto_consigliato`
+  - `probabilita_reparto`
+  - `sentiment`
+  - `probabilita_sentiment`
+  - `predicted_at` (timestamp ISO UTC)
+
+Questa API e usata dalla dashboard per l'upload batch e l'export CSV dei risultati con timestamp.
+
 #### `GET /dashboard`
 
 Restituisce `dashboard_data.json` con:

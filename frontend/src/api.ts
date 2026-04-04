@@ -53,6 +53,24 @@ export interface PredictResponse {
   department_word_contributions: DepartmentWordImpact[];
 }
 
+export interface BatchPredictionRow {
+  row: number;
+  title: string | null;
+  body: string;
+  reparto_consigliato: string;
+  modello_reparto: string;
+  probabilita_reparto: number | null;
+  sentiment: string;
+  modello_sentiment: string;
+  probabilita_sentiment: number | null;
+  predicted_at: string;
+}
+
+export interface BatchPredictResponse {
+  total_rows: number;
+  results: BatchPredictionRow[];
+}
+
 export async function fetchDashboard(): Promise<DashboardData> {
   const res = await fetch(`${BASE_URL}/dashboard`);
   if (!res.ok) throw new Error("Failed to fetch dashboard data");
@@ -69,5 +87,17 @@ export async function predict(
     body: JSON.stringify({ body, title: title || null }),
   });
   if (!res.ok) throw new Error("Prediction failed");
+  return res.json();
+}
+
+export async function predictBatch(file: File): Promise<BatchPredictResponse> {
+  const formData = new FormData();
+  formData.append("file", file);
+
+  const res = await fetch(`${BASE_URL}/predict/batch`, {
+    method: "POST",
+    body: formData,
+  });
+  if (!res.ok) throw new Error("Batch prediction failed");
   return res.json();
 }
