@@ -68,7 +68,7 @@ def train_model():
     X_text_test_clean = [preprocess_and_lemmatize(text) for text in X_text_test]
     
     vectorizer = TfidfVectorizer(
-        max_features=5000, 
+        max_features=2000, 
         stop_words=stop_words,
         ngram_range=(1, 2),
         sublinear_tf=True
