@@ -1,4 +1,4 @@
-.PHONY: dev api frontend install train build
+.PHONY: dev api frontend install train generate generate-and-train build
 
 dev:
 	@echo "Starting API and frontend..."
@@ -14,7 +14,13 @@ install:
 	pip install -r requirements.txt
 	cd frontend && npm install
 
+generate:
+	python -m generator
+
 train:
+	python -m backend.train
+
+generate-and-train:
 	python -m generator
 	python -m backend.train
 

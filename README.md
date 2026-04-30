@@ -53,10 +53,13 @@ ReviewAnalytics/
 ### Installazione
 
 ```bash
+python3 -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
 make install
+python -m spacy download it_core_news_sm
 ```
 
-Installa le dipendenze Python (`requirements.txt`) e quelle del frontend (`npm install`).
+Installa le dipendenze Python (`requirements.txt`), il modello spaCy italiano e le dipendenze del frontend (`npm install`).
 
 ### Training dei Modelli
 
@@ -89,7 +92,7 @@ make build
 ## Pipeline ML
 
 ```
-CSV → Pulizia & Lemmatizzazione → TF-IDF Vectorizer (max 5000 features, bigrammi, sublinear_tf, stop words italiane)
+CSV → Pulizia & Lemmatizzazione → TF-IDF Vectorizer (max 2000 features, bigrammi, sublinear_tf, stop words italiane)
          (rimozione punteggiatura                  │
           e normalizzazione morfologica)           ├── Reparto (3 classi)     ─→  Logistic Regression
                                                     │                           ─→  K-Nearest Neighbors

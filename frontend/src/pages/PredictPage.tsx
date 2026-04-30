@@ -55,6 +55,11 @@ export default function PredictPage() {
     }
 
     const header = lines[0];
+    const columns = header.split(",").map((c) => c.trim().replace(/^"|"$/g, "").toLowerCase());
+    if (!columns.includes("body")) {
+      throw new Error(`Colonna 'body' mancante. Colonne trovate: ${columns.join(", ")}`);
+    }
+
     const dataRows = lines.slice(1).filter((line) => line.trim() !== "");
     if (dataRows.length === 0) {
       throw new Error("Nessuna riga dati trovata nel CSV");
@@ -388,6 +393,7 @@ export default function PredictPage() {
                   <Table.Thead>
                     <Table.Tr>
                       <Table.Th>#</Table.Th>
+                      <Table.Th>Testo</Table.Th>
                       <Table.Th>Reparto Consigliato</Table.Th>
                       <Table.Th>Modello Reparto</Table.Th>
                       <Table.Th>Prob. Reparto</Table.Th>
@@ -401,6 +407,11 @@ export default function PredictPage() {
                     {batchRows.map((row) => (
                       <Table.Tr key={`${row.row}-${row.predicted_at}`}>
                         <Table.Td>{row.row}</Table.Td>
+                        <Table.Td style={{ maxWidth: 260 }}>
+                          <div style={{ maxHeight: 80, overflowY: "auto", wordBreak: "break-word", fontSize: 12 }}>
+                            {row.body}
+                          </div>
+                        </Table.Td>
                         <Table.Td>{row.reparto_consigliato}</Table.Td>
                         <Table.Td>{row.modello_reparto}</Table.Td>
                         <Table.Td>

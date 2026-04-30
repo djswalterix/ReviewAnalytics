@@ -8,7 +8,6 @@ import {
   Badge,
   Loader,
   Alert,
-  Tooltip,
   Divider,
 } from "@mantine/core";
 import {
@@ -22,6 +21,7 @@ import {
 import { Bar } from "react-chartjs-2";
 import MetricCard from "../components/MetricCard";
 import ConfusionMatrixCard from "../components/ConfusionMatrixCard";
+import WordImpactChart from "../components/WordImpactChart";
 import { useDashboard } from "../hooks/useDashboard";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, ChartTooltip, Legend);
@@ -73,6 +73,18 @@ export default function DashboardPage() {
     ...data.feature_importance.positive,
     ...data.feature_importance.negative,
   ].sort((a, b) => a.coefficient - b.coefficient);
+
+  const DEPT_COLORS: Record<string, string> = {
+    Housekeeping: "rgba(34,139,230,0.7)",
+    Reception: "rgba(18,184,134,0.7)",
+    "F&B": "rgba(255,146,43,0.7)",
+  };
+
+  const deptFeatureWords = Object.entries(
+    data.feature_importance.department ?? {}
+  ).flatMap(([dept, words]) =>
+    words.map((w) => ({ ...w, department: dept }))
+  ).sort((a, b) => b.coefficient - a.coefficient);
 
   return (
     <Container size="lg" py={{ base: "md", md: "xl" }}>
@@ -205,15 +217,17 @@ export default function DashboardPage() {
       <SimpleGrid cols={{ base: 1, sm: 2 }} mt="md">
         <ConfusionMatrixCard
           title="Matrice di Confusione — Reparto"
-          tooltip="Matrice calcolata sul modello Logistic Regression. Le righe indicano la classe reale, le colonne la classe predetta. I valori sulla diagonale (verde) sono le predizioni corrette."
+          tooltip={`Matrice calcolata sul modello ${data.model_info.best_department_model}. Le righe indicano la classe reale, le colonne la classe predetta. I valori sulla diagonale (verde) sono le predizioni corrette.`}
           matrix={data.confusion_matrix.department}
           labels={data.confusion_matrix.labels_dept}
+          modelName={data.model_info.best_department_model}
         />
         <ConfusionMatrixCard
           title="Matrice di Confusione — Sentiment"
-          tooltip="Matrice calcolata sul modello Logistic Regression. Le righe indicano la classe reale, le colonne la classe predetta. I valori sulla diagonale (verde) sono le predizioni corrette."
+          tooltip={`Matrice calcolata sul modello ${data.model_info.best_sentiment_model}. Le righe indicano la classe reale, le colonne la classe predetta. I valori sulla diagonale (verde) sono le predizioni corrette.`}
           matrix={data.confusion_matrix.sentiment}
           labels={data.confusion_matrix.labels_sent}
+          modelName={data.model_info.best_sentiment_model}
         />
       </SimpleGrid>
 
@@ -224,53 +238,40 @@ export default function DashboardPage() {
         styles={{ label: { fontWeight: 600, fontSize: 13 } }}
       />
 
-      <Card shadow="sm" padding="lg" radius="md" withBorder mt="md">
-        <Group gap="xs" mb="md" align="center">
-          <Title order={3} size="h4">
-            Importanza delle Parole — Sentiment
-          </Title>
-          <Tooltip
-            label="Coefficienti estratti dal modello Logistic Regression per il sentiment. Valori positivi indicano parole associate a recensioni positive, valori negativi a recensioni negative."
-            multiline
-            w={300}
-            withArrow
-          >
-            <Badge
-              variant="light"
-              color="gray"
-              size="sm"
-              style={{ cursor: "help" }}
-            >
-              Solo Logistic Regression ⓘ
-            </Badge>
-          </Tooltip>
-        </Group>
-        <Bar
-          data={{
-            labels: featureWords.map((w) => w.word),
-            datasets: [
-              {
-                label: "Coefficiente",
-                data: featureWords.map((w) => w.coefficient),
-                backgroundColor: featureWords.map((w) =>
-                  w.coefficient >= 0
-                    ? "rgba(252,196,25,0.7)"
-                    : "rgba(255,146,43,0.7)",
-                ),
-              },
-            ],
-          }}
-          options={{
-            indexAxis: "y",
-            responsive: true,
-            plugins: { legend: { display: false } },
-            scales: {
-              x: { grid: { color: "rgba(0,0,0,0.04)" } },
-              y: { grid: { display: false } },
-            },
-          }}
-        />
-      </Card>
+      <WordImpactChart
+        title="Importanza delle Parole — Sentiment"
+        tooltip="Coefficienti estratti dalla Logistic Regression per il sentiment. Valori positivi → parole associate a recensioni positive, negativi → negative. Il modello predittivo migliore è Random Forest; la LR è usata solo per l'interpretabilità."
+        badgeLabel="Spiegabilità via Logistic Regression ⓘ"
+        labels={featureWords.map((w) => w.word)}
+        data={featureWords.map((w) => w.coefficient)}
+        backgroundColor={featureWords.map((w) =>
+          w.coefficient >= 0 ? "rgba(252,196,25,0.7)" : "rgba(255,146,43,0.7)"
+        )}
+        xAxisTitle="Coefficiente (Negativo ← → Positivo)"
+      />
+
+      {deptFeatureWords.length > 0 && (
+        <div style={{ marginTop: "var(--mantine-spacing-md)" }}>
+          <WordImpactChart
+            title="Importanza delle Parole — Reparto"
+            tooltip="Top 8 parole per classe estratte dai coefficienti della Logistic Regression per il reparto. Ogni barra rappresenta il peso del termine nel classificare quel reparto. La LR è anche il modello migliore per questo task."
+            badgeLabel="Logistic Regression — modello migliore ⓘ"
+            labels={deptFeatureWords.map((w) => w.word)}
+            data={deptFeatureWords.map((w) => w.coefficient)}
+            backgroundColor={deptFeatureWords.map(
+              (w) => DEPT_COLORS[w.department] ?? "rgba(150,150,150,0.7)"
+            )}
+            xAxisTitle="Coefficiente"
+            legend={
+              <Group gap="xs" mb="md">
+                <Badge color="blue">Housekeeping</Badge>
+                <Badge color="teal">Reception</Badge>
+                <Badge color="orange">F&B</Badge>
+              </Group>
+            }
+          />
+        </div>
+      )}
     </Container>
   );
 }

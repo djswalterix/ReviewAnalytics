@@ -1,9 +1,9 @@
 {
   "metrics": {
     "department_accuracy": 0.79,
-    "sentiment_accuracy": 0.94,
+    "sentiment_accuracy": 0.93,
     "department_f1": 0.7828924162257497,
-    "sentiment_f1": 0.9454545454545454
+    "sentiment_f1": 0.9345794392523364
   },
   "model_comparison": {
     "department": {
@@ -12,12 +12,12 @@
         "f1": 0.7828924162257497
       },
       "K-Nearest Neighbors": {
-        "accuracy": 0.65,
-        "f1": 0.6359349371241115
+        "accuracy": 0.66,
+        "f1": 0.6483489490121767
       },
       "Random Forest": {
-        "accuracy": 0.7,
-        "f1": 0.70995670995671
+        "accuracy": 0.69,
+        "f1": 0.6956343431009216
       }
     },
     "sentiment": {
@@ -30,8 +30,8 @@
         "f1": 0.8256880733944955
       },
       "Random Forest": {
-        "accuracy": 0.94,
-        "f1": 0.9454545454545454
+        "accuracy": 0.93,
+        "f1": 0.9345794392523364
       }
     }
   },
@@ -55,12 +55,12 @@
     ],
     "sentiment": [
       [
-        42,
-        5
+        43,
+        4
       ],
       [
-        1,
-        52
+        3,
+        50
       ]
     ],
     "labels_dept": [
@@ -77,91 +77,195 @@
     "positive": [
       {
         "word": "perfetto",
-        "coefficient": 1.53437973025202
+        "coefficient": 1.5305474540619033
       },
       {
         "word": "top",
-        "coefficient": 1.3390915141068398
+        "coefficient": 1.3372265061020356
       },
       {
         "word": "disponibile",
-        "coefficient": 1.1313656341097014
+        "coefficient": 1.1216191841714054
       },
       {
         "word": "dire",
-        "coefficient": 1.0362580148320564
+        "coefficient": 1.0339407785137986
       },
       {
         "word": "torneremo",
-        "coefficient": 0.9634480759888078
+        "coefficient": 0.9610382929652869
       },
       {
         "word": "eccellente",
-        "coefficient": 0.9462942120074189
+        "coefficient": 0.946177498374372
       },
       {
         "word": "straordinario",
-        "coefficient": 0.8115092424533527
+        "coefficient": 0.8095854080047716
       },
       {
         "word": "personale fantastico",
-        "coefficient": 0.7964781002904868
+        "coefficient": 0.7961514448238762
       },
       {
         "word": "discreto",
-        "coefficient": 0.7947614744716435
+        "coefficient": 0.7930132236019052
       },
       {
         "word": "ottimo",
-        "coefficient": 0.7574755366666948
+        "coefficient": 0.7571379670744882
       }
     ],
     "negative": [
       {
         "word": "pessimo",
-        "coefficient": -1.422585072057062
+        "coefficient": -1.4283919877569402
       },
       {
         "word": "pessima",
-        "coefficient": -1.139497483822745
+        "coefficient": -1.1320812059818068
       },
       {
         "word": "assente",
-        "coefficient": -1.0370316135549071
+        "coefficient": -1.0423831005623727
       },
       {
         "word": "inaccettabile",
-        "coefficient": -0.9964381528110665
+        "coefficient": -0.9973827483591065
       },
       {
         "word": "rovinare",
-        "coefficient": -0.9694780853556818
+        "coefficient": -0.9723135805379858
       },
       {
         "word": "pessimo camera",
-        "coefficient": -0.9149407764153632
+        "coefficient": -0.9141599607049172
       },
       {
         "word": "peccato",
-        "coefficient": -0.7971872545491997
+        "coefficient": -0.798767645318599
       },
       {
         "word": "disastro",
-        "coefficient": -0.7959346061006107
+        "coefficient": -0.7982432480984261
       },
       {
         "word": "sgarbare",
-        "coefficient": -0.7850791137241232
+        "coefficient": -0.7905508320675689
       },
       {
         "word": "deludente",
-        "coefficient": -0.7802364583125313
+        "coefficient": -0.7843932800008926
       }
-    ]
+    ],
+    "department": {
+      "Housekeeping": [
+        {
+          "word": "ambiente",
+          "coefficient": 1.0537408332769564
+        },
+        {
+          "word": "stanza",
+          "coefficient": 0.7741268856553509
+        },
+        {
+          "word": "manutenzione",
+          "coefficient": 0.7174329226670048
+        },
+        {
+          "word": "pulizia",
+          "coefficient": 0.7007192466486011
+        },
+        {
+          "word": "lordine",
+          "coefficient": 0.6832093459429995
+        },
+        {
+          "word": "camera",
+          "coefficient": 0.6239256063955879
+        },
+        {
+          "word": "larmadio",
+          "coefficient": 0.604080650364933
+        },
+        {
+          "word": "dolente",
+          "coefficient": 0.5934474331926887
+        }
+      ],
+      "Reception": [
+        {
+          "word": "personale",
+          "coefficient": 1.2672149300108033
+        },
+        {
+          "word": "reception",
+          "coefficient": 1.215932701256523
+        },
+        {
+          "word": "staff",
+          "coefficient": 1.197397779719955
+        },
+        {
+          "word": "servizio",
+          "coefficient": 0.9856392948202781
+        },
+        {
+          "word": "gentile",
+          "coefficient": 0.8245955128657859
+        },
+        {
+          "word": "sgarbare",
+          "coefficient": 0.7588877447118616
+        },
+        {
+          "word": "disponibile",
+          "coefficient": 0.7170638181130319
+        },
+        {
+          "word": "team",
+          "coefficient": 0.7105452254654351
+        }
+      ],
+      "F&B": [
+        {
+          "word": "cibo",
+          "coefficient": 1.2021165457745673
+        },
+        {
+          "word": "colazione",
+          "coefficient": 0.9268061170121967
+        },
+        {
+          "word": "menu",
+          "coefficient": 0.8907167110022951
+        },
+        {
+          "word": "piatto",
+          "coefficient": 0.7273278154287606
+        },
+        {
+          "word": "delizioso",
+          "coefficient": 0.7165067758163735
+        },
+        {
+          "word": "bar",
+          "coefficient": 0.6325792978102783
+        },
+        {
+          "word": "pranzo",
+          "coefficient": 0.6041189504970125
+        },
+        {
+          "word": "colazione ottimo",
+          "coefficient": 0.5865695581389605
+        }
+      ]
+    }
   },
   "model_info": {
     "best_department_model": "Logistic Regression",
     "best_sentiment_model": "Random Forest",
-    "training_date": "2026-04-04 22:48:06"
+    "training_date": "2026-04-30 20:52:19"
   }
 }

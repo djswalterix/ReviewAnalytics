@@ -131,6 +131,17 @@ def train_model():
         {"word": feature_names[i], "coefficient": float(sent_coefs[i])}
         for i in top_neg_idx
     ]
+
+    lr_dept = dept_models['Logistic Regression']
+    dept_feature_importance = {}
+    for class_idx, dept_name in enumerate(dept_names):
+        coefs = lr_dept.coef_[class_idx]
+        top_idx = np.argsort(coefs)[-8:][::-1]
+        dept_feature_importance[dept_name] = [
+            {"word": feature_names[i], "coefficient": float(coefs[i])}
+            for i in top_idx
+        ]
+
     # 9. Build dashboard data
     dashboard_data = {
         "metrics": {
@@ -151,7 +162,8 @@ def train_model():
         },
         "feature_importance": {
             "positive": top_pos_words,
-            "negative": top_neg_words
+            "negative": top_neg_words,
+            "department": dept_feature_importance
         },
         "model_info": {
             "best_department_model": best_dept_name,
