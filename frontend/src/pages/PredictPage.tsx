@@ -407,8 +407,10 @@ export default function PredictPage() {
                     {batchRows.map((row) => (
                       <Table.Tr key={`${row.row}-${row.predicted_at}`}>
                         <Table.Td>{row.row}</Table.Td>
-                        <Table.Td style={{ maxWidth: 260, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                          <span title={row.body}>{row.body}</span>
+                        <Table.Td style={{ maxWidth: 260 }}>
+                          <div style={{ maxHeight: 80, overflowY: "auto", wordBreak: "break-word", fontSize: 12 }}>
+                            {row.body}
+                          </div>
                         </Table.Td>
                         <Table.Td>{row.reparto_consigliato}</Table.Td>
                         <Table.Td>{row.modello_reparto}</Table.Td>
