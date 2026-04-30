@@ -14,6 +14,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, ChartTooltip, Legend);
 interface WordImpactChartProps {
   title: string;
   tooltip: string;
+  badgeLabel?: string;
   labels: string[];
   data: number[];
   backgroundColor: string[];
@@ -24,6 +25,7 @@ interface WordImpactChartProps {
 export default function WordImpactChart({
   title,
   tooltip,
+  badgeLabel = "Solo Logistic Regression ⓘ",
   labels,
   data,
   backgroundColor,
@@ -43,7 +45,7 @@ export default function WordImpactChart({
             size="sm"
             style={{ cursor: "help" }}
           >
-            Solo Logistic Regression ⓘ
+            {badgeLabel}
           </Badge>
         </Tooltip>
       </Group>
