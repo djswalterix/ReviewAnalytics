@@ -5,6 +5,7 @@ interface ConfusionMatrixCardProps {
   tooltip: string;
   matrix: number[][];
   labels: string[];
+  modelName?: string;
 }
 
 export default function ConfusionMatrixCard({
@@ -12,6 +13,7 @@ export default function ConfusionMatrixCard({
   tooltip,
   matrix,
   labels,
+  modelName,
 }: ConfusionMatrixCardProps) {
   return (
     <Card shadow="sm" padding="lg" radius="md" withBorder>
@@ -26,7 +28,7 @@ export default function ConfusionMatrixCard({
           mb="md"
           style={{ cursor: "help" }}
         >
-          Solo Logistic Regression ⓘ
+          {modelName ?? "Miglior modello"} ⓘ
         </Badge>
       </Tooltip>
       <Text size="xs" c="dimmed" mb="xs">
