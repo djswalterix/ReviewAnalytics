@@ -20,6 +20,7 @@ export interface DashboardData {
   feature_importance: {
     positive: { word: string; coefficient: number }[];
     negative: { word: string; coefficient: number }[];
+    department: Record<string, { word: string; coefficient: number }[]>;
   };
   model_info: {
     best_department_model: string;
