@@ -205,15 +205,17 @@ export default function DashboardPage() {
       <SimpleGrid cols={{ base: 1, sm: 2 }} mt="md">
         <ConfusionMatrixCard
           title="Matrice di Confusione — Reparto"
-          tooltip="Matrice calcolata sul modello Logistic Regression. Le righe indicano la classe reale, le colonne la classe predetta. I valori sulla diagonale (verde) sono le predizioni corrette."
+          tooltip={`Matrice calcolata sul modello ${data.model_info.best_department_model}. Le righe indicano la classe reale, le colonne la classe predetta. I valori sulla diagonale (verde) sono le predizioni corrette.`}
           matrix={data.confusion_matrix.department}
           labels={data.confusion_matrix.labels_dept}
+          modelName={data.model_info.best_department_model}
         />
         <ConfusionMatrixCard
           title="Matrice di Confusione — Sentiment"
-          tooltip="Matrice calcolata sul modello Logistic Regression. Le righe indicano la classe reale, le colonne la classe predetta. I valori sulla diagonale (verde) sono le predizioni corrette."
+          tooltip={`Matrice calcolata sul modello ${data.model_info.best_sentiment_model}. Le righe indicano la classe reale, le colonne la classe predetta. I valori sulla diagonale (verde) sono le predizioni corrette.`}
           matrix={data.confusion_matrix.sentiment}
           labels={data.confusion_matrix.labels_sent}
+          modelName={data.model_info.best_sentiment_model}
         />
       </SimpleGrid>
 
